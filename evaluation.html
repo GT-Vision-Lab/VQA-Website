@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>VQA: Visual Question Answering</title>
+    <link rel="stylesheet" href="./static/css/foundation.css">
+    <link rel="stylesheet" href="./static/css/main.css">
+</head>
+
+<body class="off-canvas hide-extras" style="min-width:1200px; min-height:750px;">
+    <header>
+        <div class="row">
+            <a href="http://visualqa.org/"><img style="height: 100px; position:absolute; top:4px; left:0px;" src="./static/img/main.png" alt="logo" /></a>
+            <h1><img style="height: 90px;" src="./static/img/logo.png" alt="logo" /><br></h1>
+            <br>
+        </div>
+    </header>
+    <div class="contain-to-grid">
+        <nav class="top-bar" data-topbar>
+            <section class="top-bar-section">
+                <!-- Right Nav Section -->
+                <ul class="right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="people.html">People</a></li>
+                    <li><a href="code.html">Code</a></li>
+                    <li><a href="http://vqa.cloudcv.org/" onClick="ga('send', 'event', { eventCategory: 'Outgoing Link', eventAction: 'Demo', eventLabel: 'Demo'});">Demo</a></li>
+                    <li class="has-dropdown"><a href="download.html">Download</a>
+                        <ul class="dropdown">
+                            <li><a href="download.html">VQA v2</a></li>
+                            <li><a href="vqa_v1_download.html">VQA v1</a></li>
+                        </ul>
+                    </li>
+                    <li class="active"><a href="evaluation.html">Evaluation</a></li>
+                    <li class="has-dropdown"><a href="challenge.html">Challenge</a>
+                        <ul class="dropdown">
+                            <li><a href="challenge.html">2018</a></li>
+                            <li><a href="challenge_2017.html">2017</a></li>
+                            <li><a href="challenge_2016.html">2016</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown"><a href="http://visualqa.org/vqa_v2_teaser.html">Browse</a>
+                        <ul class="dropdown">
+                            <li><a href="http://visualqa.org/vqa_v2_teaser.html">VQA v2</a></li>
+                            <li><a href="http://visualqa.org/browser/">VQA v1</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://visualqa.org/visualize/">Visualize</a></li>
+                    <!--                     <li class="has-dropdown"><a href="http://visualqa.org/visualize/">Visualize</a>
+                        <ul class="dropdown">
+                            <li><a href="http://visualqa.org/visualize/">VQA v2</a></li>
+                            <li><a href="http://visualqa.org/visualize/">VQA v1</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="has-dropdown"><a href="workshop.html">Workshop</a>
+                        <ul class="dropdown">
+                            <li><a href="workshop.html">2018</a></li>
+                            <li><a href="workshop_2017.html">2017</a></li>
+                            <li><a href="workshop_2016.html">2016</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sponsors.html">Sponsors</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="external.html">External</a></li>
+                </ul>
+            </section>
+        </nav>
+    </div>
+    <section role="main" style="padding: 1em;">
+        <div class="row">
+            <h1 style="font-size:30px; color:grey; font-weight: 200">Results Format Overview</h1>
+            <div class="large-12 columns" style="text-align:left;">
+                <p style="font-size:15px; font-weight: 200; text-align:left">This page describes the results format used by the VQA <a href="https://github.com/VT-vision-lab/VQA/" target="_blank">evaluation code</a>.
+<!--                     <br>The general structure of the results format is same for all four VQA challenges (Open-Ended/Multiple-Choice for real images/abstract scenes). -->              </p>
+            </div>
+            <hr>
+        </div>
+        <div class="row">
+            <h1 style="font-size:30px; color:grey; font-weight: 200">Results Format</h1>
+            <div class="large-12 columns" style="text-align:left;">
+                <p style="font-size:15px; font-weight: 200; border-style: solid;
+                border-width: 1px; text-align:justify; padding:5px;">
+                    <code>results = [result]<br>
+                    <br>
+                    result{<br>
+                    "question_id": int,<br>
+                    "answer": str<br>
+                    }<br>
+                </code>
+                </p>
+                <p style="font-size:15px; font-weight: 200;">We have provided an example result JSON file <a href="https://github.com/VT-vision-lab/VQA/blob/master/Results/OpenEnded_mscoco_train2014_fake_results.json" target="_blank">here</a>.
+                </p>
+            </div>
+            <hr>
+        </div>
+        <div class="row">
+            <h1 style="font-size:30px; color:grey; font-weight: 200">Evaluation Code</h1>
+            <div class="large-12 columns" style="text-align:left;">
+                <p style="font-size:15px; font-weight: 200; display: inline;" align=left>We introduce a new evaluation metric which is robust to inter-human variability in phrasing the answers:</p>
+                <br>
+                <img src="static/img/equation.png" style="height:35px;">
+                <br>
+                <p style="font-size:15px; font-weight: 200; display: inline;" align=left>In order to be consistent with ‘human accuracies’, machine accuracies are averaged over all 10 choose 9 sets of human annotators.</p>
+                <br>
+                <br>
+                <p style="font-size:15px; font-weight: 200; display: inline;" align=left>Before evaluating machine generated answers, we do the following processing:</p>
+                <div class="large-12 columns" style="margin-top:0px;margin-left:20px;">
+                    <ul style="font-size:13px; font-weight: 200; display: inline;">
+                        <li>Making all characters lowercase</li>
+                        <li>Removing periods except if it occurs as decimal</li>
+                        <li>Converting number words to digits</li>
+                        <li>Removing articles (a, an, the)</li>
+                        <li>Adding apostrophe if a contraction is missing it (e.g., convert "dont" to "don't")</li>
+                        <li>Replacing all punctuation (except apostrophe and colon) with a space character. We do not remove apostrophe because it can incorrectly change possessives to plural, e.g., “girl’s” to “girls” and colons because they often refer to time, e.g., 2:50 pm. In case of comma, no space is inserted if it occurs between digits, e.g., convert 100,978 to 100978. (This processing step is done for ground truth answers as well.)</li>
+                    </ul>
+                    <br>
+                </div>
+                <p style="font-size:15px; font-weight: 200;">A demo script of the evaluation code is available <a href="https://github.com/VT-vision-lab/VQA/blob/master/PythonEvaluationTools/vqaEvalDemo.py" target="_blank">here</a>.
+                </p>
+            </div>
+            <hr>
+        </div>
+        <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-63638588-1', 'auto');
+        ga('send', 'pageview');
+        </script>
+        <!-- jquery smooth scroll to id's -->
+        <script>
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+        </script>
+</body>
+
+</html>

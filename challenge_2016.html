@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>VQA: Visual Question Answering</title>
+    <link rel="stylesheet" href="./static/css/foundation.css">
+    <link rel="stylesheet" href="./static/css/main.css">
+    <script src="./static/js/vendor/jquery.js"></script>
+    <script src="./static/js/jquery-2.1.3.min.js"></script>
+</head>
+
+<body class="off-canvas hide-extras" style="min-width:1200px; min-height:750px;">
+    <header>
+        <div class="row">
+            <a href="http://visualqa.org/"><img style="height: 100px; position:absolute; top:4px; left:0px;" src="./static/img/main.png" alt="logo" /></a>
+            <h1><img style="height: 90px;" src="./static/img/logo.png" alt="logo" /><br></h1>
+            <br>
+        </div>
+    </header>
+    <div class="contain-to-grid">
+        <nav class="top-bar" data-topbar>
+            <section class="top-bar-section">
+                <!-- Right Nav Section -->
+                <ul class="right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="people.html">People</a></li>
+                    <li><a href="code.html">Code</a></li>
+                    <li><a href="http://vqa.cloudcv.org/" onClick="ga('send', 'event', { eventCategory: 'Outgoing Link', eventAction: 'Demo', eventLabel: 'Demo'});">Demo</a></li>
+                    <li class="has-dropdown"><a href="download.html">Download</a>
+                        <ul class="dropdown">
+                            <li><a href="download.html">VQA v2</a></li>
+                            <li><a href="vqa_v1_download.html">VQA v1</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="evaluation.html">Evaluation</a></li>
+                    <li class="active has-dropdown"><a href="challenge.html">Challenge</a>
+                        <ul class="dropdown">
+                            <li><a href="challenge.html">2018</a></li>
+                            <li><a href="challenge_2017.html">2017</a></li>
+                            <li><a href="challenge_2016.html">2016</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown"><a href="http://visualqa.org/vqa_v2_teaser.html">Browse</a>
+                        <ul class="dropdown">
+                            <li><a href="http://visualqa.org/vqa_v2_teaser.html">VQA v2</a></li>
+                            <li><a href="http://visualqa.org/browser/">VQA v1</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://visualqa.org/visualize/">Visualize</a></li>
+                    <!--                     <li class="has-dropdown"><a href="http://visualqa.org/visualize/">Visualize</a>
+                        <ul class="dropdown">
+                            <li><a href="http://visualqa.org/visualize/">VQA v2</a></li>
+                            <li><a href="http://visualqa.org/visualize/">VQA v1</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="has-dropdown"><a href="workshop.html">Workshop</a>
+                        <ul class="dropdown">
+                            <li><a href="workshop.html">2018</a></li>
+                            <li><a href="workshop_2017.html">2017</a></li>
+                            <li><a href="workshop_2016.html">2016</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sponsors.html">Sponsors</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="external.html">External</a></li>
+                </ul>
+            </section>
+        </nav>
+    </div>
+    <section role="main" style="padding: 1em;">
+        <div class="row">
+            <p style="font-size:30px; color:black; font-weight: 50" align=center>Welcome to the VQA Challenge</p>
+            <p style="font-size:20px; color:black; font-weight: 50" align=center><a href="#overview" style="padding:13px">Overview</a> <a href="#guidelines" style="padding:13px">Challenge Guidelines</a> <a href="#" data-dropdown="hover1" data-options="is_hover:true; hover_timeout:5000">Leaderboards &darr;</a>
+                <ul id="hover1" class="f-dropdown" data-dropdown-content>
+                    <li><a href="roe_2016.html">Real Open-Ended</a></li>
+                    <li><a href="aoe_2016.html">Abstract Open-Ended</a></li>
+                    <li><a href="rmc_2016.html">Real Multiple-Choice</a></li>
+                    <li><a href="amc_2016.html">Abstract Multiple-Choice</a></li>
+                </ul>
+            </p>
+            <hr>
+            <div class="large-12 columns">
+                <img src="./static/img/challenge.png" height="900" width="500" style="display:block; margin:auto;" frameBorder="0">
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="large-12 columns">
+                <p align=left style="margin-top:-10px;"><b>The VQA Challenge Winners and Honorable Mentions were announced at the <a href="http://www.visualqa.org/workshop.html">VQA Challenge Workshop</a> where they were awarded TitanX GPUs sponsored by NVIDIA!</b>
+                    <br>
+                    <br>The Codalab evaluation servers are still open to evalaute results for test-dev and test-standard splits.
+                    <br>
+                    <p align=left style="margin-top:-10px;">In order to be consistent with Challenge test2015 phase (which closed exactly at 23:59:59 UTC, June 5), submissions to leaderboard for test2015 phase before 23:59:59 UTC, June 5 were only considered towards the challenge, for all four challenges.
+                        <br>
+                        <p align=left style="margin-top:-10px;">The challenge deadline has been extended to June 5, 23:59:59 UTC.
+                            <br>
+                            <br>Papers reporting results on the VQA dataset should --</p>
+                        <p align=left style="margin-top:-10px;">1) Report test-standard accuracies, which can be calculated using either of the non-test-dev phases, i.e., "test2015" or "Challenge test2015" on the following links: [<a href="https://www.codalab.org/competitions/6961">oe-real</a> | <a href="https://www.codalab.org/competitions/6981">oe-abstract</a> | <a href="https://www.codalab.org/competitions/6971">mc-real</a> | <a href="https://www.codalab.org/competitions/6991">mc-abstract</a>].
+                            <br>
+                            <br> 2) Compare their test-standard accuracies with those on the corresponding test2015 leaderboards [<a href="http://www.visualqa.org/roe_2016.html">oe-real-leaderboard</a> | <a href="http://www.visualqa.org/aoe_2016.html">oe-abstract-leaderboard</a> | <a href="http://www.visualqa.org/rmc_2016.html">mc-real-leaderboard</a> | <a href="http://www.visualqa.org/amc_2016.html">mc-abstract-leaderboard</a>]. </p>
+            </div>
+        </div>
+        <div class="row" id="overview">
+            <h1 style="font-size:30px; color:grey; font-weight: 200">Overview</h1>
+            <div class="large-12 columns" style="text-align:left;">
+                <p style="font-size:15px; font-weight: 200; text-align:left">
+                    We are pleased to announce the Visual Question Answering (VQA) Challenge. Given an image and a natural language question about the image, the task is to provide an accurate natural language answer. Visual questions selectively target different areas of an image, including background details and underlying context. As a result, a system that succeeds at VQA typically needs a detailed understanding of the image and complex reasoning. Teams are encouraged to compete in one or more of the following four VQA challenges:
+                </p>
+                <div class="large-12 columns">
+                    <ul style="font-size:15px; font-weight: 200; display: inline;" align=left>
+                        <li>Open-Ended for real images: <a href="https://www.codalab.org/competitions/6961">Submission</a> and <a href="https://www.codalab.org/competitions/6961#results">Leaderboard</a></li>
+                        <li>Open-Ended for abstract scenes: <a href="https://www.codalab.org/competitions/6981">Submission</a> and <a href="https://www.codalab.org/competitions/6981#results">Leaderboard</a></li>
+                        <li>Multiple-Choice for real images: <a href="https://www.codalab.org/competitions/6971">Submission</a> and <a href="https://www.codalab.org/competitions/6971#results">Leaderboard</a></li>
+                        <li>Multiple-Choice for abstract scenes: <a href="https://www.codalab.org/competitions/6991">Submission</a> and <a href="https://www.codalab.org/competitions/6991#results">Leaderboard</a></li>
+                    </ul>
+                    <br>
+                </div>
+                <p style="font-size:15px; font-weight: 200; text-align:left">
+                    The VQA train, validation, and test sets, containing more than 250,000 images and 760,000 questions, are available on the <a href="download.html">download</a> page. All questions are annotated with 10 concise, open-ended answers each. Annotations on the training and validation sets are publicly available.
+                </p>
+                <p style="font-size:15px; font-weight: 200; text-align:left">
+                    Answers to some common questions about the challenge can be found in <a href="#faq">the FAQ section</a>.
+                </p>
+            </div>
+            <hr>
+        </div>
+        <div class="row">
+            <h1 style="font-size:30px; color:grey; font-weight: 200">Dates</h1>
+            <div class="large-12 columns" style="text-align:left;">
+                <p style="font-size:15px; font-weight: 200; border-style: solid;
+                border-width: 1px; text-align:justify; padding:5px; width:99%">
+                    <code>
+                    <span style="width:20%; margin:5px; display:inline-block;">October 5, 2015</span> <span style="display:inline-block; margin:0px;">Version 1.0 of train/val/test data and evaluation software released</span><br>
+                    <span style="width:20%; margin:5px; display:inline-block;">June 5, 2016 <span style="background-color:red; color:white;">Extended</span></span> <span style="display:inline-block; margin:0px;">Submission deadline at 23:59:59 UTC</span>
+                </code></p>
+            </div>
+            <div class="large-12 columns" style="text-align:left;">
+                <p style="font-size:15px; font-weight: 200; text-align:justify; padding:5px; width:99%">
+                    After the challenge deadline, all challenge participant results on test-standard will be made public on a test-standard leaderboard.
+                </p>
+            </div>
+            <hr>
+        </div>
+        <div class="row">
+            <h1 style="font-size:30px; color:grey; font-weight: 200">Organizers</h1>
+            <div class="large-12 columns">
+                <ul style="font-size:15px; font-weight: 200; display: inline; list-style-type: none;" align=left>
+                    <li>Aishwarya Agrawal (Virginia Tech)</li>
+                    <li>Stanislaw Antol (Virginia Tech)</li>
+                    <li>Larry Zitnick (Facebook AI Research)</li>
+                    <li>Dhruv Batra (Virginia Tech)</li>
+                    <li>Devi Parikh (Virginia Tech)</li>
+                </ul>
+                <br>
+            </div>
+            <hr>
+        </div>
+        <div class="row" id="guidelines">
+            <h1 style="font-size:30px; color:grey; font-weight: 200">Challenge Guidelines</h1>
+            <div class="large-12 columns" style="text-align:left;">
+                <p style="font-size:15px; font-weight: 200; text-align:left">
+                    Following <a href="http://mscoco.org/dataset/#detections-upload">MSCOCO</a>, we have divided the test set for real images into a number of splits, including test-dev (same images as in MSCOCO test-dev split), test-standard, test-challenge, and test-reserve (other three splits are roughly same size as that of MSCOCO each, but the images might be different), to limit overfitting while giving researchers more flexibility to test their system. Test-dev is used for debugging and validation experiments and allows for maximum 10 submissions per day.
+                    <!--and allows for unlimited submission to the evaluation server.-->
+                    Test-standard is the default test data for the VQA competition. When comparing to the state of the art (e.g., in papers), results should be reported on test-standard. Test-standard is also used to maintain a public leaderboard that is updated upon submission. Test-reserve is used to protect against possible overfitting. If there are substantial differences between a method's scores on test-standard and test-reserve, this will raise a red-flag and prompt further investigation. Results on test-reserve will not be publicly revealed. Finally, test-challenge is used to determine the winners of the challenge. For abstract scenes, there is only one test set which is available for download on the <a href="download.html">download</a> page.
+                </p>
+                <p style="font-size:15px; font-weight: 200; text-align:left">
+                    The <a href="evaluation.html">evaluation</a> page lists detailed information regarding how submissions will be scored. The evaluation servers are open. We encourage people to first submit to test-dev for either <a href="https://www.codalab.org/competitions/6961">open-ended</a> and <a href="https://www.codalab.org/competitions/6971">multiple-choice</a> tasks for real images to make sure that you understand the submission procedure, as it is identical to the full test set submission procedure. <b>Note that the test-dev and "Challenge" evaluation servers do not have a public leaderboards (if you try to make your results public, your entry will be filled with zeros)</b>.
+                </p>
+                <p style="font-size:15px; font-weight: 200; text-align:left">
+                    To <b>enter the competition</b>, first you need to create an account on CodaLab. From your account you will be able to participate in all VQA challenges. We allow people to enter our challenge either privately or publicly. Any submissions to the phase marked with "Challenge" will be considered to be participating in the challenge. For submissions to the non-"Challenge" phase, only ones that were submitted before the challenge deadline and posted to the public leaderboard will be considered to be participating in the challenge.
+                    <br>
+                    <br> Before uploading your results to the evaluation server, you will need to create a JSON file containing your results in the correct format as described on the <a href="evaluation.html">evaluation</a> page. The file should be named "vqa_[task_type]_[dataset]_[datasubset]_[alg_name]_results.json". Replace [task_type] with either "OpenEnded" or "MultipleChoice" depending on the challenge you are participating in, [dataset] with either "mscoco" or "abstract_v002" depending on whether you are participating in the challenge for real images or abstract scenes, [datasubset] with either "test-dev2015" or "test2015" depending on the test split you are using, and [alg] with your algorithm name. Place the JSON file into a zip file named "results.zip".
+                </p>
+                <p style="font-size:15px; font-weight: 200; text-align:left">
+                    To <b>submit</b> your zipped result file to the VQA Challenge click on the “Participate” tab on the appropriate CodaLab evaluation server [
+                    <a href="https://www.codalab.org/competitions/6961">oe-real</a> | <a href="https://www.codalab.org/competitions/6981">oe-abstract</a> | <a href="https://www.codalab.org/competitions/6971">mc-real</a> | <a href="https://www.codalab.org/competitions/6991">mc-abstract</a>]. Select the challenge type (open-ended for real or open-ended for abstract or multiple-choice for real or multiple-choice for abstract) and test split (test-dev or test). When you select “Submit / View Results” you will be given the option to submit new results.
+                    <b>Please fill in the required fields such as method description and click “Submit”.</b> A pop-up will prompt you to select the results zip file for upload. After the file is uploaded the evaluation server will begin processing. To view the status of your submission please select “Refresh Status”. Please be patient, the evaluation may take quite some time to complete (~2min on test-dev and ~10min on the full test set). If the status of your submission is “Failed” please check your file is named correctly and has the right format.
+                </p>
+                <p style="font-size:15px; font-weight: 200; text-align:left">
+                    After evaluation is complete and the server shows a status of “Finished”, you will have the option to download your evaluation results by selecting “Download evaluation output from scoring step.” The zip file will contain three files:
+                    <p style="font-size:15px; font-weight: 200; border-style: solid;
+                border-width: 1px; text-align:justify; padding:5px;"><code>
+                    <span style="width:55%; margin:5px; display:inline-block;">vqa_[task_type]_[dataset]_[datasubset]_[alg_name]_accuracy.json</span> <span style="display:inline-block; margin:0px;">aggregated evaluation on test</span><br>
+                    <span style="width:55%; margin:5px; display:inline-block;">metadata</span> <span style="display:inline-block; margin:0px;">automatically generated (safe to ignore)</span><br>
+                    <span style="width:55%; margin:5px; display:inline-block;">scores.txt</span> <span style="display:inline-block; margin:0px;">automatically generated (safe to ignore)</span>
+                </code></p>
+                </p>
+                <p style="font-size:15px; font-weight: 200; text-align:left">
+                    Please limit the number of entries to the challenge evaluation server to a reasonable number, e.g., one entry per paper. To avoid overfitting, the number of submissions per user is limited to 1 upload per day and a maximum of 5 submissions per user. It is not acceptable to create multiple accounts for a single project to circumvent this limit. The exception to this is if a group publishes two papers describing unrelated methods, in this case both sets of results can be submitted for evaluation. However, test-dev allows for 10 submissions per day. Please refer to the section on "Test-Dev Best Practices" in the <a href="http://mscoco.org/dataset/#detections-upload">MSCOCO detection challenge</a> page for more information about the test-dev set.
+                </p>
+                <p style="font-size:15px; font-weight: 200; text-align:left">
+                    <!-- Competitors are recommended but not restricted to train their algorithms on VQA train and val sets.  -->
+                    The <a href="download.html">download</a> page contains links to all VQA train/val/test images, questions, and associated annotations (for train/val only). Please specify any and all external data used for training in the "method description" when uploading results to the evaluation server.
+                </p>
+                <p style="font-size:15px; font-weight: 200; text-align:left">
+                    Results must be submitted to the evaluation server by the challenge deadline. Competitors' algorithms will be evaluated according to the rules described on the <a href="evaluation.html">evaluation</a> page. Challenge participants with the most successful and innovative methods will be invited to present.
+                    <!-- Challenge participants with the most successful and innovative methods will be invited to present. -->
+                </p>
+            </div>
+            <hr>
+        </div>
+        <div class="row">
+            <h1 style="font-size:30px; color:grey; font-weight: 200">Tools and Instructions</h1>
+            <div class="large-12 columns" style="text-align:left;">
+                <p style="font-size:15px; font-weight: 200; text-align:left">
+                    We provide API support for the VQA annotations and evaluation code. To download the VQA API, please visit our <a href="https://github.com/VT-vision-lab/VQA">GitHub repository</a>. For an overview of how to use the API, please visit the <a href="download.html">download</a> page and consult the section entitled VQA API. To obtain API support for MSCOCO images, please visit the <a href="http://mscoco.org/dataset/#download">MSCOCO download</a> page. To obtain API support for abstract scenes, please visit the <a href="https://github.com/VT-vision-lab/abstract_scenes_v002">GitHub repository</a>.
+                </p>
+                <p>
+                    <!--     Due to the large size of the VQA dataset and the complexity of this challenge, the process of competing in this challenge may not seem simple.
+                 To help guide competitors to victory, we provide explanations and instructions for each step of the process on the download, evaluation pages.  -->
+                    For additional questions, please contact <a href="mailto:visualqa@gmail.com" target="_top">visualqa@gmail.com</a>.
+                </p>
+            </div>
+            <hr>
+        </div>
+        <div class="row">
+            <a name="faq"></a>
+            <h1 style="font-size:30px; color:grey; font-weight: 200">Frequently Asked Questions (FAQ)</h1>
+            <div class="large-12 columns" style="text-align:left;">
+                <p style="font-size:15px; font-weight: 200; text-align:left">
+                    As a reminder, any submissions before the challenge deadline whose results are made publicly visible on the test-standard leaderboard <em><b>or</b></em> are submitted to the "Challange" phase will be enrolled in the challenge. For further clarity, we answer some common questions below:
+                    <div class="large-12 columns">
+                        <ul style="font-size:15px; font-weight: 200; display: inline;" align=left>
+                            <li>
+                                <b>Q:</b> What do I do if I want to make my test-standard results public <em><b>and</b></em> participate in the challenge?
+                                </br>
+                                <b>A:</b> Making your results public (<i>i.e.</i>, visible on the leaderboard) on the CodaLab phase that <em><b>does not have "Challenge"</b></em> in the name implies that you are participating in the challenge.
+                            </li>
+                            <li>
+                                <b>Q:</b> What do I do if I want to make my test-standard results public, but I do not want to participate in the challenge?
+                                </br>
+                                <b>A:</b> We do not allow for this option.
+                            </li>
+                            <li>
+                                <b>Q:</b> What do I do if I want to participate in the challenge, but I do not want to make my test-standard results public yet?
+                                </br>
+                                <b>A:</b> Submitting to the CodaLab phase explicitly marked with "Challenge" in the name was created for this scenario.
+                            </li>
+                            <li>
+                                <b>Q:</b> When will I find out my test-challenge accuracies?
+                                </br>
+                                <b>A:</b> We will reveal challenge results some time after the deadline. Results will first be announced at our <a href="http://www.visualqa.org/workshop.html">CVPR VQA Challenge workshop</a>.
+                            </li>
+                            <li>
+                                <b>Q:</b> I'm getting an error during my submission that says something like, "Traceback (most recent call last): File "/codalabtemp/tmpa4H1nE/run/program/evaluate.py", line 96, in resFile = glob.glob(resFileFmt)[0] IndexError: list index out of range", how do I fix this?
+                                </br>
+                                <b>A:</b> This typically happens when the results filename (<i>i.e.</i>, the JSON filename) does not match the template, "vqa_[task_type]_[dataset]_[datasubset]_[alg_name]_results.json", as described above, so please try to rename it according to the template.
+                            </li>
+                        </ul>
+                </p>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-63638588-1', 'auto');
+        ga('send', 'pageview');
+        </script>
+        <script src="./static/js/foundation.js"></script>
+        <script src="./static/js/foundation.dropdown.js"></script>
+        <script>
+        $(document).foundation();
+        </script>
+        <!-- jquery smooth scroll to id's -->
+        <script>
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+        </script>
+</body>
+
+</html>

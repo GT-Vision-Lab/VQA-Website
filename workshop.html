@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--Open Graph Related Stuff-->
+    <meta property="og:title" content="VQA Workshop 2018" />
+    <meta property="og:url" content="http://visualqa.org/workshop.html" />
+    <meta property="og:description" content="June 18th at CVPR 2018" />
+    <meta property="og:site_name" content="Visual Question Answering" />
+    <meta property="og:image" content="http://visualqa.org/static/img/vqa_facebook_teaser_v4_jpg_100.jpg" />
+    <meta property="og:image:url" content="http://visualqa.org/static/img/vqa_facebook_teaser_v4_jpg_100.jpg" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="VQA Workshop 2018">
+    <meta name="twitter:description" content="June 18th at CVPR 2018">
+    <meta name="twitter:image" content="http://visualqa.org/static/img/vqa_facebook_teaser_v4_jpg_100.jpg">
+    <title>VQA: Visual Question Answering</title>
+    <link rel="stylesheet" href="./static/css/foundation.css">
+    <link rel="stylesheet" href="./static/css/main.css">
+    <script src="./static/js/vendor/jquery.js"></script>
+    <script src="./static/js/jquery-2.1.3.min.js"></script>
+</head>
+<style type="text/css">
+.schedule table {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.schedule tr:hover {
+    background-color: #D3D3D3;
+}
+
+.schedule img {
+    max-height: 95px;
+    max-width: 140px;
+    margin-right: 2px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border-radius: 50%;
+}
+</style>
+
+<body class="off-canvas hide-extras" style="min-width:1200px; min-height:750px;">
+    <header>
+        <div class="row">
+            <a href="http://visualqa.org/"><img style="height: 100px; position:absolute; top:4px; left:0px;" src="./static/img/main.png" alt="logo" /></a>
+            <h1><img style="height: 90px;" src="./static/img/logo.png" alt="logo" /><br></h1>
+            <br>
+        </div>
+    </header>
+    <div class="contain-to-grid">
+        <nav class="top-bar" data-topbar>
+            <section class="top-bar-section">
+                <!-- Right Nav Section -->
+                <ul class="right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="people.html">People</a></li>
+                    <li><a href="code.html">Code</a></li>
+                    <li><a href="http://vqa.cloudcv.org/" onClick="ga('send', 'event', { eventCategory: 'Outgoing Link', eventAction: 'Demo', eventLabel: 'Demo'});">Demo</a></li>
+                    <li class="has-dropdown"><a href="download.html">Download</a>
+                        <ul class="dropdown">
+                            <li><a href="download.html">VQA v2</a></li>
+                            <li><a href="vqa_v1_download.html">VQA v1</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="evaluation.html">Evaluation</a></li>
+                    <li class="has-dropdown"><a href="challenge.html">Challenge</a>
+                        <ul class="dropdown">
+                            <li><a href="challenge.html">2018</a></li>
+                            <li><a href="challenge_2017.html">2017</a></li>
+                            <li><a href="challenge_2016.html">2016</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown"><a href="http://visualqa.org/vqa_v2_teaser.html">Browse</a>
+                        <ul class="dropdown">
+                            <li><a href="http://visualqa.org/vqa_v2_teaser.html">VQA v2</a></li>
+                            <li><a href="http://visualqa.org/browser/">VQA v1</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://visualqa.org/visualize/">Visualize</a></li>
+                    <!--                     <li class="has-dropdown"><a href="http://visualqa.org/visualize/">Visualize</a>
+                        <ul class="dropdown">
+                            <li><a href="http://visualqa.org/visualize/">VQA v2</a></li>
+                            <li><a href="http://visualqa.org/visualize/">VQA v1</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="active has-dropdown"><a href="workshop.html">Workshop</a>
+                        <ul class="dropdown">
+                            <li><a href="workshop.html">2018</a></li>
+                            <li><a href="workshop_2017.html">2017</a></li>
+                            <li><a href="workshop_2016.html">2016</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sponsors.html">Sponsors</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="external.html">External</a></li>
+                </ul>
+            </section>
+        </nav>
+    </div>
+    <section role="main" style="padding: 1em;">
+        <div class="row">
+            <p style="font-size:30px; color:black; font-weight: 50" align=center>VQA Challenge and Visual Dialog Workshop
+                <br>
+                <span style="font-size:20px; color:black; font-weight: 400" align=center>Location: <b>Room 155A, Calvin L. Rampton Salt Palace Convention Center</b></span>
+                <br>
+                <span style="font-size:18px; color:gray; font-weight: 50" align=center>at CVPR 2018, June 18, Salt Lake City, Utah, USA</span> </p>
+            <p style="font-size:20px; color:black; font-weight: 50" align=center><a href="workshop.html" style="padding:13px">Home</a> <a href="#program" style="padding:13px">Program</a> <a href="#sub" style="padding:13px">Submission</a>
+                 <a href="abstracts.html" style="padding:13px">Accepted Abstracts</a></p>
+            <hr>
+            <div class="large-12 columns">
+                <!-- <img src="./static/img/challenge.png" height="900" width="500" style="display:block; margin:auto;" frameBorder="0"> -->
+                <img src="./static/img/visualqa_workshop.png" height="900" width="1200" style="display:block; margin:auto;" frameBorder="0">
+            </div>
+        </div>
+        <br>
+        <br>
+        <!--
+            <p style="font-size:15px; font-weight: 200; text-align:center"><b>The VQA Challenge Winners and Honorable Mentions were announced at the <a href="http://www.visualqa.org/workshop.html">VQA Challenge Workshop</a> where they were awarded TitanX GPUs sponsored by NVIDIA!</b>
+            </p>
+-->
+        <div class="row">
+            <h1 style="font-size:30px; color:grey; font-weight: 200">Introduction</h1>
+            <div class="large-12 columns" style="text-align:left;">
+                <p style="font-size:15px; font-weight: 400; text-align:left">
+                    The primary purpose of this workshop is two-fold. First is to benchmark progress in Visual Question Answering by hosting the 3rd edition of the Visual Question Answering Challenge on the <a href="http://visualqa.org/download.html">VQA v2.0 dataset</a> introduced in <a href="https://arxiv.org/abs/1612.00837"> Goyal et al., CVPR 2017</a>. The <a href="http://visualqa.org/challenge.html">2nd edition of the VQA Challenge</a> was organized at CVPR 2017 on VQA v2.0 dataset. The <a href="http://visualqa.org/vqa_v1_challenge.html">1st edition of the VQA Challenge</a> was organized at CVPR 2016 on the <a href="http://visualqa.org/vqa_v1_download.html"> 1st edition (v1.0) of the VQA dataset</a> introduced in <a href="http://arxiv.org/abs/1505.00468">Antol et al., ICCV 2015</a>. VQA v2.0 is more balanced and reduces language biases over VQA v1.0, and is about twice the size of VQA v1.0.
+                    <br>
+                    <br>Our idea in creating this new "balanced" VQA dataset is the following: For every (image, question, answer) triplet (I,Q,A) in the VQA v1.0 dataset, we identify an image I' that has an answer A' to Q such that A and A' are different. Both the old (I,Q,A) and the new (I',Q,A') triplets are present in the VQA v2.0 dataset balancing the VQA v1.0 dataset on a per question basis. Since I and I' are semantically similar, a VQA model will have to understand the subtle differences between I and I' to provide the right answer to both images. It cannot succeed as easily by making "guesses" based on the language alone. This workshop will provide an opportunity to benchmark algorithms on VQA v2.0 and to identify state-of-the-art algorithms that need to truly understand the image content in order to perform well on this balanced VQA dataset.
+                    <br>
+                    <br>The second goal of this workshop is to continue to bring together researchers interested in visually grounded question answering and dialog systems to share state-of-the-art approaches, best practices, and future directions in multi-modal AI. In particular, this year, the workshop committee will extend the scope of invited talks, submitted papers, and poster presentations to include work on the related topic of <a href="http://visualdialog.org/">Visual Dialog</a> introduced by <a href="https://arxiv.org/abs/1611.08669">Das et al., CVPR 2017</a>. The concrete task in Visual Dialog is the following -- given an image I, a history of a dialog consisting of a sequence of question-answer pairs (Q1: `How many people are in wheelchairs?', A1: `Two', Q2: `What are their genders?', A2: `One male and one female'), and a natural language follow-up question (Q3: `Which one is holding a racket?'), the task for the machine is to answer the question in free-form natural language (A3: `The woman'). In addition to VQA style reasoning, Visual Dialog requires rich language understanding including co-reference resolution and memory.
+                    <br>
+                    <br>We invite submissions of extended abstracts of >= 2 pages describing work in relevant areas including: Visual Question Answering, Visual Dialog, (Textual) Question Answering, (Textual) Dialog Systems, Commonsense knowledge, Video Question Answering, Video Dialog, Vision + Language, and Vision + Language + Action (Embodied Agents). All accepted abstracts will be presented as posters at the workshop. The workshop is on June 18th, 2018 at the <a href="http://cvpr2018.thecvf.com/">IEEE Conference on Computer Vision and Pattern Recognition, 2018</a>.
+                </p>
+            </div>
+            <hr>
+        </div>
+        <div class="row">
+            <h1 style="font-size:30px; color:grey; font-weight: 200">Invited Speakers</h1>
+            <div class="team" id="people">
+                <div class="row">
+                    <div class="large-1 columns" style="padding-left:200px">
+                        <p></p>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="https://aaroncourville.wordpress.com/"><img src="./static/invited/aaron.jpeg" class="home_team_picture style=" width="150" height="150" ;>
+                            <br>
+                            <p style="font-weight: 200;">Aaron Courville</a>
+                        <br>University of Montreal</p>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="http://people.cs.pitt.edu/~kovashka/"><img src="./static/invited/adriana.jpg" class="home_team_picture style=" width="150" height="150" ;>
+                            <br>
+                            <p style="font-weight: 200;">Adriana Kovashka</a>
+                        <br>University of Pittsburgh</p>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="http://people.eecs.berkeley.edu/~jda/"><img src="./static/invited/jacob.jpg" class="home_team_picture style=" width="150" height="150" ;>
+                            <br>
+                            <p style="font-weight: 200;">Jacob Andreas</a>
+                        <br>Microsoft Research --> MIT</p>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="https://www.cs.cmu.edu/~jbigham/"><img src="./static/invited/jeff.jpg" class="home_team_picture style=" width="150" height="150" ;>
+                            <br>
+                            <p style="font-weight: 200;">Jeffrey Bigham</a>
+                        <br>Carnegie Mellon University</p>
+                    </div>
+                    <div class="large-2 columns"></div>
+                </div>
+                <div class="row">
+                    <div class="large-1 columns" style="padding-left:0px">
+                        <p></p>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="http://www.cs.berkeley.edu/~malik/"><img src="./static/invited/jitendra.jpg" class="home_team_picture style=" width="150" height="150" ;>
+                            <br>
+                            <p style="font-weight: 200;">Jitendra Malik</a>
+                        <br>University of California, Berkeley & Facebook AI Research</p>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="http://www.cs.rochester.edu/~nasrinm/"><img src="./static/invited/nasrin.jpeg" class="home_team_picture style=" width="150" height="150" ;>
+                            <br>
+                            <p style="font-weight: 200;">Nasrin Mostafazadeh</a>
+                        <br>Elemental Cognition</p>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="http://www.panderson.me/"><img src="./static/invited/peter.jpg" class="home_team_picture style=" width="150" height="150" ;>
+                            <br>
+                            <p style="font-weight: 200;">Peter Anderson</a>
+                        <br>Australian National University</p>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="http://www.rossgirshick.info/"><img src="./static/invited/ross.jpeg" class="home_team_picture style=" width="150" height="150" ;>
+                            <br>
+                            <p style="font-weight: 200;">Ross Girshick</a>
+                        <br>Facebook AI Research</p>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="https://homes.cs.washington.edu/~yejin"><img src="./static/invited/yejin.jpg" class="home_team_picture style=" width="150" height="150" ;>
+                            <br>
+                            <p style="font-weight: 200;">Yejin Choi</a>
+                        <br>University of Washington & AI2</p>
+                    </div>
+                    <div class="large-2 columns"></div>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <div class="row" id="program">
+            <h1 style="font-size:30px; color:grey; font-weight: 200"> (Tentative) Program <b>(Venue: 155A)</b></h1>
+            <div id="content">
+                <div class="schedule">
+                    <table width="100%">
+                        <tr>
+                            <td width=140>
+                                <center>9:00 AM - 9:10 AM</center>
+                            </td>
+                            <td width=240>
+                                <center><img src="./static/img/devi.jpg"><img src="./static/img/dhruv.jpg"></center>
+                            </td>
+                            <td style="padding-left:8px"><b>Welcome</b></td>
+                        </tr>
+                        <tr>
+                            <td width=140>
+                                <center>9:10 AM - 9:35 AM</center>
+                            </td>
+                            <td width=240>
+                                <center><img src="./static/invited/jeff.jpg"></center>
+                            </td>
+                            <td style="padding-left:8px"><b>Invited Talk</b>
+                                <br>Jeffrey Bigham (Carnegie Mellon University)
+                                <br><a href="static/slides/2018_workshop_jeff_slides.pptx">[Slides]</a>
+                                <!-- <br><a href="https://www.youtube.com/watch?v=3Kr1-8k9yMw&index=1&list=PL_bDvITUYucC0r43EXIHkQE_fHVXlmboH">[Video]</a> -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width=170>
+                                <center>9:35 AM - 10:00 AM</center>
+                            </td>
+                            <td width=240>
+                                <center><img src="./static/invited/adriana.jpg"></center>
+                            </td>
+                            <td style="padding-left:8px"><b>Invited Talk</b>
+                                <br>Adriana Kovashka (University of Pittsburgh)
+                                <br><a href="static/slides/2018_workshop_adriana_slides.pdf">[Slides]</a>
+                                <!-- <br><a href="https://www.youtube.com/watch?v=gyhknQPwav8&index=2&list=PL_bDvITUYucC0r43EXIHkQE_fHVXlmboH">[Video]</a> -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width=140>
+                                <center>10:00 AM - 10:25 AM</center>
+                            </td>
+                            <td width=240>
+                                <center><img src="./static/invited/jacob.jpg"></center>
+                            </td>
+                            <td style="padding-left:8px"><b>Invited Talk</b>
+                                <br>Jacob Andreas (Microsoft Research --> MIT)
+                                <br><a href="static/slides/2018_workshop_jacob_slides.pdf">[Slides]</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width=140>
+                                <center>10:25 AM - 10:50 AM</center>
+                            </td>
+                            <td width=240>
+                                <center></center>
+                            </td>
+                            <td style="padding-left:8px"><b>Morning Break</b></td>
+                        </tr>
+                        <tr>
+                            <td width=140>
+                                <center>10:50 AM - 11:15 AM</center>
+                            </td>
+                            <td width=240>
+                                <center><img src="./static/invited/jitendra.jpg"></center>
+                            </td>
+                            <td style="padding-left:8px"><b>Invited Talk</b>
+                                <br>Jitendra Malik (University of California, Berkeley & Facebook AI Research)
+                                <!-- <br><a href="https://www.youtube.com/watch?v=FVZdqohlTPU&index=6&list=PL_bDvITUYucC0r43EXIHkQE_fHVXlmboH">[Video]</a> -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width=140>
+                                <center>11:15 AM - 11:35 AM</center>
+                            </td>
+                            <td width=240>
+                                <center><img src="./static/img/yash.jpg"></center>
+                            </td>
+                            <td style="padding-left:8px"><b>Overview of challenge, winner announcements, analysis of results</b>
+                                <br>Yash Goyal (Georgia Tech)
+                                <!-- <br><a href="static/slides/vqa_challenge_overview_2016.pptx">[Slides]</a><a href="https://www.youtube.com/watch?v=PuuDdfTVtp4&index=12&list=PL_bDvITUYucC0r43EXIHkQE_fHVXlmboH">[Video]</a> -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width=140>
+                                <center>11:35 AM - 11:45 AM</center>
+                            </td>
+                            <td width=240>
+                                <center>
+                                    <img src="./static/invited/challenge_runner_up_1_2018/jin-hwa.png">
+                                    <img src="./static/invited/challenge_runner_up_1_2018/jaehyun.png">
+                                    <img src="./static/invited/challenge_runner_up_1_2018/zhang.png">
+                                    <br>
+                                    <img src="./static/invited/challenge_runner_up_1_2018/seoul.png">
+                                    <img src="./static/invited/challenge_runner_up_1_2018/surromind.jpg" style="border-radius: 0%;">
+                                </center>
+                                <!-- <center><img src="./static/invited/andrew_shin.png"><img src="./static/invited/kuniaki_saito.jpg"><img src="./static/invited/tatsuya_harada.jpg"><img src="./static/invited/yoshitaka_ushiku.png">
+                                  <br><img src="./static/invited/logo_MIL.png"></center> -->
+                            </td>
+                            <td style="padding-left:8px"><b>Challenge Runner-Up Talk</b>
+                                <br>Jin-Hwa Kim, Jaehyun Jun and Byoung-Tak Zhang
+                                <!-- <br><a href="static/slides/MIL_UT_slide.pdf">[Slides]</a><a href="https://www.youtube.com/watch?v=YtOj4y0X0OA&index=7&list=PL_bDvITUYucC0r43EXIHkQE_fHVXlmboH">[Video}</a> -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width=140>
+                                <center>11:45 AM - 11:55 AM</center>
+                            </td>
+                            <td width=240>
+                                <center>
+                                    <img src="./static/invited/challenge_runner_up_2_2018/zhou_yu.jpg">
+                                    <img src="./static/invited/challenge_runner_up_2_2018/jun_yu.jpg">
+                                    <img src="./static/invited/challenge_runner_up_2_2018/chenchao_xiang.jpg">
+                                <br>
+                                    <img src="./static/invited/challenge_runner_up_2_2018/liang_wang.jpg">
+                                    <img src="./static/invited/challenge_runner_up_2_2018/dalu_guo.jpg">
+                                    <img src="./static/invited/challenge_runner_up_2_2018/qingming_huang.png">
+                                <br>
+                                    <img src="./static/invited/challenge_runner_up_2_2018/jianping_fan.jpg">
+                                    <img src="./static/invited/challenge_runner_up_2_2018/dacheng_tao.jpg">
+                                <br>
+                                    <img src="./static/invited/challenge_runner_up_2_2018/hangzhou_logo.png" style="border-radius: 0%;">
+                                    <img src="./static/invited/challenge_runner_up_2_2018/university_of_sydney_logo.png" style="border-radius: 0%;">
+                                    <img src="./static/invited/challenge_runner_up_2_2018/chinese_academy.jpg" style="border-radius: 0%;">
+                                </center></td>
+                            </td>
+                            <td style="padding-left:8px"><b>Challenge Runner-Up Talk</b>
+                                <br> Zhou Yu, Jun Yu, Chenchao Xiang, Liang Wang, Dalu Guo, Qingming Huang, Jianping Fan and Dacheng Tao
+                                <!-- <br><a href="static/slides/Highway Networks for VQA.pdf">[Slides]</a><a href="https://www.youtube.com/watch?v=Fc2v_-VTRSY&index=14&list=PL_bDvITUYucC0r43EXIHkQE_fHVXlmboH">[Video]</a> -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width=140>
+                                <center>11:55 AM - 12:10 PM</center>
+                            </td>
+                            <td width=240>
+                                <center>
+                                    <img src="./static/invited/challenge_winner_2018/tina_yu.jpg">
+                                    <img src="./static/invited/challenge_winner_2018/vivek.jpg">
+                                    <img src="./static/invited/challenge_winner_2018/xinlei.jpg">
+                                <br>
+                                    <img src="./static/invited/challenge_winner_2018/marcus.png">
+                                    <img src="./static/invited/challenge_winner_2018/dhruv.jpg">
+                                    <img src="./static/invited/challenge_winner_2018/devi.jpg">
+                                <br>
+                                    <img src="./static/invited/challenge_winner_2018/fair_transparent.png" style="border-radius: 0%;">
+                                    <img src="./static/invited/challenge_winner_2018/gt.png" style="border-radius: 0%;">
+                                </center>
+                            </td>
+                            <td style="padding-left:8px"><b>Challenge Winner Talk</b>
+                                <br>Yu Jiang*, Vivek Natarajan*, Xinlei Chen*, Marcus Rohrbach, Dhruv Batra and Devi Parikh
+                                <!--   <br><a href="https://www.youtube.com/watch?v=liuhY6v3c2I&index=10&list=PL_bDvITUYucC0r43EXIHkQE_fHVXlmboH">[Video]</a> -->
+                            </td>
+                        </tr>
+                        <!-- <tr>
+                          <td width=140>
+                              <center>12:15 PM - 12:30 PM</center>
+                          </td>
+                          <td width=240>
+                              <center><img src="./static/img/blank.jpg"><img src="./static/invited/dong.jpg"><img src="./static/invited/daylen.jpg">
+                                  <br><img src="./static/invited/anna.jpg"><img src="./static/invited/trevor.jpg"><img src="./static/invited/marcus.jpg">
+                                  <br><img src="./static/invited/berkeley.jpg" style="border-radius: 0%;"><img src="./static/invited/sony.jpg" style="border-radius: 0%;"></center>
+                          </td>
+                          <td style="padding-left:8px"><b>Challenge Winner Talk (Real Images)</b>
+                              <br>Akira Fukui, Dong Huk Park, Daylen Yang, Anna Rohrbach, Trevor Darrell and Marcus Rohrbach
+                              <br><a href="static/slides/vqa_final.pdf">[Slides]</a><a href="https://www.youtube.com/watch?v=i6WW0meGRLk&index=13&list=PL_bDvITUYucC0r43EXIHkQE_fHVXlmboH">[Video]</a></td>
+                      </tr> -->
+                        <tr>
+                            <td width=140>
+                                <center>12:10 PM - 1:20 PM</center>
+                            </td>
+                            <td width=240>
+                                <center></center>
+                            </td>
+                            <td style="padding-left:8px"><b>Lunch (On your own)</b></td>
+                        </tr>
+                        <tr>
+                            <td width=140>
+                                <center>1:20 PM - 1:45 PM</center>
+                            </td>
+                            <td width=240>
+                                <center><img src="./static/invited/ross.jpeg"></center>
+                            </td>
+                            <td style="padding-left:8px"><b>Invited Talk</b>
+                                <br>Ross Girshick (Facebook AI Research)
+                                <br><a href="static/slides/2018_workshop_ross_slides.pptx">[Slides]</a>
+                                <!-- <br><a href="https://www.youtube.com/watch?v=p8o_FMatt0k&index=5&list=PL_bDvITUYucC0r43EXIHkQE_fHVXlmboH">[Video]</a> -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width=140>
+                                <center>1:45 PM - 2:10 PM</center>
+                            </td>
+                            <td width=240>
+                                <center><img src="./static/invited/yejin.jpg"></center>
+                            </td>
+                            <td style="padding-left:8px"><b>Invited Talk</b>
+                                <br>Yejin Choi (University of Washigton & AI2)
+                                <!-- <br><a href="https://www.youtube.com/watch?v=p8o_FMatt0k&index=5&list=PL_bDvITUYucC0r43EXIHkQE_fHVXlmboH">[Video]</a> -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width=140>
+                                <center>2:10 PM - 2:35 PM</center>
+                            </td>
+                            <td width=240>
+                                <center><img src="./static/invited/nasrin.jpeg"></center>
+                            </td>
+                            <td style="padding-left:8px"><b>Invited Talk</b>
+                                <br>Nasrin Mostafazadeh (Elemental Cognition)
+                                <br><a href="static/slides/2018_workshop_nasrin_slides.pptx">[Slides]</a>
+                                <!-- <br><a href="https://www.youtube.com/watch?v=0p-LQKzj0_A&index=4&list=PL_bDvITUYucC0r43EXIHkQE_fHVXlmboH">[Video]</a> -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width=140>
+                                <center>2:35 PM - 3:50 PM</center>
+                            </td>
+                            <td width=240>
+                                <center><img src="./static/invited/poster.png" style="width: 80px; height: 80px; border-radius: 0%;"><img src="./static/invited/poster.png" style="width: 80px; height: 80px; border-radius: 0%;"><img src="./static/invited/poster.png" style="width: 80px; height: 80px; border-radius: 0%;"><img src="./static/invited/poster.png" style="width: 80px; height: 80px; border-radius: 0%;">
+                                    <br><img src="./static/invited/poster.png" style="width: 80px; height: 80px; border-radius: 0%;"><img src="./static/invited/poster.png" style="width: 80px; height: 80px; border-radius: 0%;"><img src="./static/invited/poster.png" style="width: 80px; height: 80px; border-radius: 0%;"><img src="./static/invited/poster.png" style="width: 80px; height: 80px; border-radius: 0%;"></center>
+                            </td>
+                            <td style="padding-left:8px"><b>Poster session and Afternoon break</b></td>
+                        </tr>
+                        <tr>
+                            <td width=140>
+                                <center>3:50 PM - 4:15 PM</center>
+                            </td>
+                            <td width=240>
+                                <center><img src="./static/invited/aaron.jpeg"></center>
+                            </td>
+                            <td style="padding-left:8px"><b>Invited Talk</b>
+                                <br>Aaron Courville (University of Montreal)
+                                <br><a href="static/slides/2018_workshop_aaron_slides.key">[Slides]</a>
+                                <!-- <br><a href="https://www.youtube.com/watch?v=TcfkWtg6V3M&index=11&list=PL_bDvITUYucC0r43EXIHkQE_fHVXlmboH">[Video]</a> -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width=140>
+                                <center>4:15 PM - 4:40 PM</center>
+                            </td>
+                            <td width=240>
+                                <center><img src="./static/invited/peter.jpg"></center>
+                            </td>
+                            <td style="padding-left:8px"><b>Invited Talk</b>
+                                <br>Peter Anderson (Australian National University)
+                                <br><a href="static/slides/2018_workshop_peter_slides.pptx">[Slides]</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width=140>
+                                <center>4:40 PM - 5:25 PM</center>
+                            </td>
+                            <td width=500>
+                                <center><img src="./static/invited/aaron.jpeg"><img src="./static/invited/adriana.jpg"><img src="./static/invited/jacob.jpg"><img src="./static/invited/jeff.jpg">
+                                    <br><img src="./static/invited/jitendra.jpg"><img src="./static/invited/nasrin.jpeg"><img src="./static/invited/peter.jpg"><img src="./static/invited/ross.jpeg"><img src="./static/invited/yejin.jpg"></center>
+                            </td>
+                            <td style="padding-left:8px"><b>Panel: Future Directions</b></td>
+                        </tr>
+                        <tr>
+                            <td width=140>
+                                <center>5:25 PM</center>
+                            </td>
+                            <td width=240>
+                                <center><img src="./static/img/devi.jpg"><img src="./static/img/dhruv.jpg"></center>
+                            </td>
+                            <td style="padding-left:8px"><b>Closing Remarks</b>
+                                <!-- <br><a href="static/slides/2016_06_VQA_workshop_closing.pptx">[Slides]</a> -->
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <div class="row" id="sub">
+            <h1 style="font-size:30px; color:grey; font-weight: 200">Poster Presentation Instructions</h1>
+            <div class="large-12 columns" style="text-align:left;">
+                <p style="font-size:15px; font-weight: 400; text-align:left">Poster stands will be 8 feet wide by 4 feet high. Please review the <a href="http://cvpr2018.thecvf.com/files/cvpr18_poster_template_n.pptx">CVPR18 poster template</a> for more details on how to prepare your poster. You do not need to use this template, but please read the instructions carefully and prepare your posters accordingly.
+                    <!-- <br><br>
+                        2. Poster presenters are asked to install their posters between 12:15 PM and 1:45 PM. Push pins will be provided for attaching posters to the boards. -->
+                </p>
+            </div>
+            <hr>
+        </div>
+        <div class="row" id="sub">
+            <h1 style="font-size:30px; color:grey; font-weight: 200">Submission Instructions</h1>
+            <div class="large-12 columns" style="text-align:left;">
+                <p style="font-size:15px; font-weight: 400; text-align:left">We invite submissions of extended abstracts of >= 2 pages describing work in areas such as: Visual Question Answering, Visual Dialog, (Textual) Question Answering, (Textual) Dialog Systems, Commonsense knowledge, Video Question Answering, Video Dialog, Vision + Language, and Vision + Language + Action (Embodied Agents). Accepted submissions will be presented as posters at the workshop. The extended abstract should follow the CVPR formatting guidelines and be emailed as a single PDF to the <a href="#submit">email id</a> mentioned below. Please use the following LaTeX/Word templates.
+                    <li style="font-size:15px; font-weight: 200; text-align:left">LaTeX/Word Templates (tar): <a href="http://cvpr2018.thecvf.com/files/cvpr2018AuthorKit.tgz">cvpr2018AuthorKit.tgz</a></li>
+                    <li style="font-size:15px; font-weight: 200; text-align:left">LaTeX/Word Templates (zip): <a href="http://cvpr2018.thecvf.com/files/cvpr2018AuthorKit.zip">cvpr2018AuthorKit.zip</a></li>
+                </p>
+            </div>
+            <hr>
+        </div>
+        <div class="row">
+            <h1 style="font-size:30px; color:grey; font-weight: 200">Dual Submissions</h1>
+            <div class="large-12 columns" style="text-align:left;">
+                <p style="font-size:15px; font-weight: 400; text-align:left">We encourage submissions of relevant work that has been previously published, or is to be presented at the main conference. The accepted abstracts will not appear in the official IEEE proceedings.</p>
+            </div>
+            <hr>
+        </div>
+        <div class="row">
+            <h1 style="font-size:30px; color:grey; font-weight: 200">Dates</h1>
+            <div class="large-12 columns" style="text-align:left;">
+                <div class="large-12 columns" style="text-align:left;">
+                    <p style="font-size:15px; font-weight: 200; border-style: solid;
+                                  border-width: 1px; text-align:justify; padding:5px; width:65%">
+                        <code>
+                                <!-- <span style="width:40%; margin:5px; display:inline-block;">May 21, 2018</span> -->
+                                <span style="width:40%; margin:5px; display:inline-block;">May 25, 2018 <span style="background-color:red; color:white;">Extended</span></span>
+                                <span style="display:inline-block; margin-left:100px;">Submission Deadline</span><br>
+                                <span style="width:40%; margin:5px; display:inline-block;">May 28, 2018</span>
+                                <span style="display:inline-block; margin-left:100px;">Decision to Authors</span>
+                            </code></p>
+                    <p style="font-size:15px; font-weight: 400;">If you missed the deadline and are interested in presenting at the workshop, please shoot us an email.</p>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="row" id="submit">
+            <h1 style="font-size:30px; color:grey; font-weight: 200">Where to Submit?</h1>
+            <div class="large-12 columns" style="text-align:left;">
+                <p style="font-size:15px; font-weight: 400; text-align:left">Please send your abstracts to <a href="mailto:visualqa.workshop@gmail.com">visualqa.workshop@gmail.com</a></p>
+            </div>
+            <hr>
+        </div>
+        <div class="row">
+            <h1 style="font-size:30px; color:grey; font-weight: 200">Organizers</h1>
+            <div class="team" id="people">
+                <div class="row">
+                    <div class="large-2 columns" style="padding-left:100px">
+                        <p></p>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="https://www.cc.gatech.edu/~ygoyal3/"><img src="./static/img/yash.jpg" class="home_team_picture" style="width: 100px; height:100px;">
+                            <br>
+                        </a>
+                        <p style="font-weight: 200;">Yash Goyal
+                            <br>Georgia Tech</p>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="https://satwikkottur.github.io/"><img src="./static/img/satwik.jpg" class="home_team_picture" style="width: 100px; height:100px;">
+                            <br>
+                        </a>
+                        <p style="font-weight: 200;">Satwik Kottur
+                            <br>Carnegie Mellon University</p>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="https://abhishekdas.com/"><img src="./static/img/abhishek.jpg" class="home_team_picture" style="width: 100px; height:100px;">
+                            <br>
+                        </a>
+                        <p style="font-weight: 200;">Abhishek Das
+                            <br>Georgia Tech</p>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="https://www.cc.gatech.edu/~aagrawal307/"><img src="./static/img/aishwarya.jpg" class="home_team_picture" style="width: 100px; height:100px;">
+                            <br>
+                        </a>
+                        <p style="font-weight: 200; margin-left:-20px;">Aishwarya Agrawal
+                            <br>Georgia Tech</p>
+                    </div>
+                    <!-- <div class="large-2 columns">
+                        <a href="https://tejaskhot.github.io/"><img src="./static/img/tejas.jpg" class="home_team_picture" style="width: 100px; height:100px;">
+                            <br>
+                        </a>
+                        <p style="font-weight: 200;">Tejas Khot
+                            <br>Virginia Tech</p>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="https://filebox.ece.vt.edu/~penghuiwin/"><img src="./static/img/peng.jpg" class="home_team_picture" style="width: 100px; height:100px;">
+                            <br>
+                        </a>
+                        <p style="font-weight: 200;">Peng Zhang
+                            <br>Virginia Tech</p>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="https://computing.ece.vt.edu/~jiasenlu/"><img src="./static/img/jiasen.jpg" class="home_team_picture" style="width: 100px; height:100px;">
+                            <br>
+                        </a>
+                        <p style="font-weight: 200; align: center;">Jiasen Lu
+                            <br>Virginia Tech</p>
+                    </div> -->
+                    <div class="large-2 columns"></div>
+                </div>
+                <div class="row" style="padding-left: 1em; padding-right: 1em;">
+                    <div class="large-1 columns" style="padding-left:300px">
+                        <p></p>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="https://www.cc.gatech.edu/~slee3191/"><img src="./static/img/stefan.jpeg" class="home_team_picture" style="width: 100px; height:100px;">
+                            <br>
+                        </a>
+                        <p style="font-weight: 200;">Stefan Lee
+                            <br>Georgia Tech</p>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="https://www.cc.gatech.edu/~dbatra/"><img src="./static/img/dhruv.jpg" class="home_team_picture" style="width: 100px; height:100px;">
+                            <br>
+                        </a>
+                        <p style="font-weight: 200;">Dhruv Batra
+                            <br>Georgia Tech / Facebook AI Research</p>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="https://www.cc.gatech.edu/~parikh/"><img src="./static/img/devi.jpg" class="home_team_picture" style="width: 100px; height:100px;">
+                            <br>
+                        </a>
+                        <p style="font-weight: 200;">Devi Parikh
+                            <br>Georgia Tech / Facebook AI Research</p>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h1 style="font-size:30px; color:grey; font-weight: 200; text-align: left">Webmaster</h1>
+            <div class="team">
+                <div class="large-12 columns" style="text-align:center; margin-top:20px">
+                    <a href="https://computing.ece.vt.edu/~akrit/"><img src="./static/img/akrit.jpg" class="home_team_picture" style="width: 100px; height:100px;">
+                        <br>
+                    </a>
+                    <p style="font-weight: 200;">Akrit Mohapatra
+                        <br>Virginia Tech</p>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <!--
+            <div class="row team">
+                <h1 style="font-size:30px; color:grey; font-weight: 200; text-align: left">Sponsors</h1>
+                <div class="large-7 columns" style="margin-left:40px">
+                    <img src="./static/img/nvidia_logo.jpg" style="width:20%; height:20%;">
+                </div>
+                <div class="large-4 columns"  style="margin-top:-20px; margin-left:-170px">
+                    <img src="./static/img/ictas_logo.jpg" style="width:350px; height:160px;"><br><br>
+                </div>
+                <hr>
+            </div>
+-->
+        <div class="large-12 columns" style="background: white;">
+            <p style="color:black; text-align:center; display:block; margin-top:7px;">Contact: <a href="mailto:visualqa@gmail.com" target="_top">visualqa@gmail.com</a></p>
+        </div>
+    </section>
+    <script>
+    $(document).foundation();
+    </script>
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-63638588-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <!-- jquery smooth scroll to id's -->
+    <script>
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+</body>
+
+</html>

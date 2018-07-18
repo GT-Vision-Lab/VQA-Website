@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--Open Graph Related Stuff-->
+    <meta property="og:title" content="Announcing the VQA Challenge 2018!" />
+    <meta property="og:url" content="http://visualqa.org" />
+    <meta property="og:description" content="On VQA v2.0 dataset. Challenge deadline: May 20, 2018" />
+    <meta property="og:site_name" content="Visual Question Answering" />
+    <meta property="og:image" content="http://visualqa.org/static/img/fb_challenge_2.jpg" />
+    <meta property="og:image:url" content="http://visualqa.org/static/img/fb_challenge_2.jpg" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Announcing the VQA Challenge 2018!">
+    <meta name="twitter:description" content="On VQA v2.0 dataset. Challenge deadline: May 20, 2018">
+    <meta name="twitter:image" content="http://visualqa.org/static/img/twitter_challenge_2.jpg">
+    <!-- <meta name="twitter:image" content="http://visualqa.org/static/img/fb_challenge_2.jpg"> -->
+    <title>VQA: Visual Question Answering</title>
+    <link rel="stylesheet" href="./static/css/foundation.css">
+    <link rel="stylesheet" href="./static/css/main.css">
+    <script src="./static/js/vendor/jquery.js"></script>
+    <script src="./static/js/jquery-2.1.3.min.js"></script>
+    <style>
+    /* For embedded YouTube videos */
+
+    .auto-resizable-iframe {
+        max-width: 640px;
+        margin: 0px auto;
+    }
+
+    .auto-resizable-iframe > div {
+        position: relative;
+        padding-bottom: 25%;
+        height: 0px;
+    }
+
+    @media screen and (max-width: 767px) {
+        #tot {
+            display: none;
+        }
+    }
+    </style>
+</head>
+
+<body class="off-canvas hide-extras" style="min-width:1200px; min-height:750px;">
+    <header>
+        <div class="row">
+            <a href="http://visualqa.org/"><img style="height: 100px; position:absolute; top:4px; left:0px;" src="./static/img/main.png" alt="logo" /></a>
+            <h1><img style="height: 90px;" src="./static/img/logo.png" alt="logo" /><br></h1>
+            <br>
+        </div>
+    </header>
+    <div class="contain-to-grid">
+        <nav class="top-bar" data-topbar>
+            <ul class="title-area">
+                <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a>
+                </li>
+            </ul>
+            <section class="top-bar-section">
+                <!-- Right Nav Section -->
+                <ul class="right">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="people.html">People</a></li>
+                    <li><a href="code.html">Code</a></li>
+                    <li><a href="http://vqa.cloudcv.org/" onClick="ga('send', 'event', { eventCategory: 'Outgoing Link', eventAction: 'Demo', eventLabel: 'Demo'});">Demo</a></li>
+                    <li class="has-dropdown"><a href="download.html">Download</a>
+                        <ul class="dropdown">
+                            <li><a href="download.html">VQA v2</a></li>
+                            <li><a href="vqa_v1_download.html">VQA v1</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="evaluation.html">Evaluation</a></li>
+                    <li class="has-dropdown"><a href="challenge.html">Challenge</a>
+                        <ul class="dropdown">
+                            <li><a href="challenge.html">2018</a></li>
+                            <li><a href="challenge_2017.html">2017</a></li>
+                            <li><a href="challenge_2016.html">2016</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown"><a href="http://visualqa.org/vqa_v2_teaser.html">Browse</a>
+                        <ul class="dropdown">
+                            <li><a href="http://visualqa.org/vqa_v2_teaser.html">VQA v2</a></li>
+                            <li><a href="http://visualqa.org/browser/">VQA v1</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://visualqa.org/visualize/">Visualize</a></li>
+                    <!--                     <li class="has-dropdown"><a href="http://visualqa.org/visualize/">Visualize</a>
+                        <ul class="dropdown">
+                            <li><a href="http://visualqa.org/visualize/">VQA v2</a></li>
+                            <li><a href="http://visualqa.org/visualize/">VQA v1</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="has-dropdown"><a href="workshop.html">Workshop</a>
+                        <ul class="dropdown">
+                            <li><a href="workshop.html">2018</a></li>
+                            <li><a href="workshop_2017.html">2017</a></li>
+                            <li><a href="workshop_2016.html">2016</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sponsors.html">Sponsors</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="external.html">External</a></li>
+                </ul>
+            </section>
+        </nav>
+    </div>
+    <section role="main">
+        <div class="row">
+            <div class="large-12 columns">
+                <p style="text-align: center; font-size:30px; margin-top:-20px">VQA Challenge 2018 launched!</p>
+                <p style="text-align: center; font-size:22px; margin-top:-20px">For more details, see <a href="challenge.html">challenge page</a>.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-5 columns" style="padding-left: 1em;">
+                <div class="row">
+                    <h1 style="font-size:20px; color:grey; font-weight: 200;" align=left>What is VQA?</h1>
+                </div>
+                <div class="row">
+                    <div class="large-11 columns" style="-webkit-text-size-adjust:none; -ms-text-size-adjust:none; -moz-text-size-adjust:none; text-size-adjust:none;">
+                        <p style="font-size:15px; font-weight: 200; display: inline;" align=justify>VQA is a new dataset containing open-ended questions about images. These questions require an understanding of vision, language and commonsense knowledge to answer.</p>
+                        <div class="large-12 columns">
+                            <ul style="font-size:13px; font-weight: 200; display: inline;" align=justify>
+                                <li>265,016 images (COCO and abstract scenes)</li>
+                                <li>At least 3 questions (5.4 questions on average) per image
+                                    <!--(764,163 total)-->
+                                </li>
+                                <li>10 ground truth answers per question</li>
+                                <li>3 plausible (but likely incorrect) answers per question</li>
+                                <!--<li>Open-ended and multiple-choice answering tasks</li> -->
+                                <li>Automatic evaluation metric</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--                     <div id="tot" class="large-1 columns" style="margin-left:-113px; margin-top: 5px;">
+                        <p style="font-family:courier new; font-size:32px; font-weight: 100;" align=left>
+                            <br>
+                            <br><span style="font-weight: 100">}</span></p>
+                        <div style="width: 200px; margin-left: 15px; margin-top: -73px;"><span style="font-size:13px; font-weight: 200;">       9,934,119 total</span></div>
+                    </div> -->
+                    <div class="large-12 columns">
+                        <p style="font-size:15px; font-weight: 200;" align=justify>
+                            <br><a href="https://groups.google.com/a/vt.edu/forum/#!forum/vqa-cvmlp-g/join">Subscribe</a> to our group for updates!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="large-7 columns">
+                <div class="row">
+                    <h1 style="font-size:20px; color:grey; font-weight: 200;" align=left>Dataset</h1>
+                </div>
+                <div class="large-10 columns" style="margin-left:-10px">
+                    <p style="font-size:15px; font-weight: 200; display: inline;">Details on downloading the latest dataset may be found on the <a href="download.html">download webpage</a>.</p>
+                </div>
+                <div class="large-12 columns" style="-webkit-text-size-adjust:none; -ms-text-size-adjust:none; -moz-text-size-adjust:none; text-size-adjust:none;">
+                    <ul class="unilist">
+                        <li>
+                            <p style="font-size:15px; font-weight: 600; display: inline;" align=justify>April 2017: Full release (v2.0)</p>
+                        </li>
+                    </ul>
+                    <div class="large-5 columns">
+                        <div class="row" style="font-size:14px; font-weight:400; margin-top: -20px; padding-right: 1em;" align=justify>Balanced Real Images
+                            <br> </div>
+                        <div class="row">
+                            <div class="large-12 columns">
+                                <ul style="font-size:12px; font-weight:200;">
+                                    <li>204,721 COCO images
+                                        <br>(all of current train/val/test)
+                                        <!--123287<br>(all of current train/val/test)</li>-->
+                                        <li>1,105,904 questions</li>
+                                        <li>11,059,040 ground truth answers</li>
+                                        <!--                                         <li>1,974,333 plausible answers</li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="large-5 columns">
+                        <!--                         <div class="row" style="font-size:14px; font-weight:400; margin-top: -20px; " id="hiddenText11" align=justify>Balanced Binary Abstract Scenes </div>
+
+                        <div class="row">
+                            <div class="large-11 columns" id="hiddenText12">
+                                <ul style="font-size:12px; font-weight:200;">
+                                    <li>31,325 abstract scenes<br>(only train/val)
+                                        <li>33,383 questions</li>
+                                        <li>333,830 ground truth answers</li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="large-4 columns" style="left: 40px;">
+                    </div>
+                </div>
+                <div class="large-12 columns" style="-webkit-text-size-adjust:none; -ms-text-size-adjust:none; -moz-text-size-adjust:none; text-size-adjust:none;">
+                    <ul class="unilist">
+                        <li>
+                            <a href="javascript:void(0)" id="March"><span id="plus1" style="font-size:20px;" class="unibull">&#8853;</span></a>
+                            <p style="font-size:15px; font-weight: 600; display: inline;" align=justify>March 2017: Beta v1.9 release</p>
+                        </li>
+                    </ul>
+                    <div class="large-5 columns">
+                        <div class="row" style="font-size:14px; font-weight:400; display: none; margin-top: -20px; padding-right: 1em;" id="hiddenText11" align=justify>Balanced Real Images
+                            <br> </div>
+                        <div class="row">
+                            <div class="large-12 columns" style="display: none;" id="hiddenText12">
+                                <ul style="font-size:12px; font-weight:200;">
+                                    <li>123,287 COCO images
+                                        <br>(only train/val)
+                                        <!--123287<br>(all of current train/val/test)</li>-->
+                                        <li>658,111 questions</li>
+                                        <li>6,581,110 ground truth answers</li>
+                                        <li>1,974,333 plausible answers</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="large-5 columns">
+                        <div class="row" style="font-size:14px; font-weight:400; display: none; margin-top: -20px; " id="hiddenText13" align=justify>Balanced Binary Abstract Scenes </div>
+                        <div class="row">
+                            <div class="large-11 columns" style="display: none;" id="hiddenText14">
+                                <ul style="font-size:12px; font-weight:200;">
+                                    <li>31,325 abstract scenes
+                                        <br>(only train/val)
+                                        <li>33,383 questions</li>
+                                        <li>333,830 ground truth answers</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="large-4 columns" style="left: 40px;">
+                        <!--                         <div class="row" style="font-size:14px; font-weight:400; margin-top: -20px;" id="hiddenText13" align=justify>Abstract Scenes
+                            <br> (same as v1.0 release)</div>
+                        <div class="row">
+                            <div class="large-11 columns" id="hiddenText14">
+                                <ul style="font-size:12px; font-weight:200;">
+                                    <li>50,000 abstract scenes</li>
+                                    <li>150,000 questions</li>
+                                    <li>1,500,000 ground truth answers</li>
+                                    <li>450,000 plausible answers</li>
+                                    <li>250,000 captions</li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="large-12 columns" style="-webkit-text-size-adjust:none; -ms-text-size-adjust:none; -moz-text-size-adjust:none; text-size-adjust:none;">
+                    <ul class="unilist">
+                        <li><a href="javascript:void(0)" id="October"><span id="plus2" style="font-size:20px;" class="unibull">&#8853;</span></a>
+                            <p style="font-size:15px; font-weight: 600; display: inline;" align=justify>October 2015: Full release (v1.0)</p>
+                        </li>
+                    </ul>
+                    <div class="large-5 columns">
+                        <div class="row" style="font-size:14px; font-weight:400; display: none; margin-top: -20px;" id="hiddenText21" align=justify>Real Images</div>
+                        <div class="row">
+                            <div class="large-11 columns" style="display: none;" id="hiddenText22">
+                                <ul style="font-size:12px; font-weight:200;">
+                                    <li>204,721 COCO images
+                                        <br>(all of current train/val/test)</li>
+                                    <li>614,163 questions</li>
+                                    <li>6,141,630 ground truth answers</li>
+                                    <li>1,842,489 plausible answers</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="large-5 columns">
+                        <div class="row" style="font-size:14px; font-weight:400; display:none; margin-top: -20px;" id="hiddenText23" align=justify>Abstract Scenes</div>
+                        <div class="row">
+                            <div class="large-11 columns" style="display: none;" id="hiddenText24">
+                                <ul style="font-size:12px; font-weight:200;">
+                                    <li>50,000 abstract scenes</li>
+                                    <li>150,000 questions</li>
+                                    <li>1,500,000 ground truth answers</li>
+                                    <li>450,000 plausible answers</li>
+                                    <li>250,000 captions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="large-4 columns"></div>
+                </div>
+                <div class="large-12 columns">
+                    <ul class="unilist">
+                        <li><a href="javascript:void(0)" id="July"><span id="plus3" style="font-size:20px;" class="unibull">&#8853;</span></a>
+                            <p style="font-size:15px; font-weight: 600; display: inline;" align=justify>July 2015: Beta v0.9 release</p>
+                        </li>
+                    </ul>
+                    <div class="large-12 columns" style="display: none; margin-top: -20px;" id="hiddenText3">
+                        <ul style="font-size:12px; font-weight: 200; display: inline;" align=justify>
+                            <li>123,287 COCO images (all of train/val)</li>
+                            <li>369,861 questions</li>
+                            <li>3,698,610 ground truth answers</li>
+                            <li>1,109,583 plausible answers</li>
+                        </ul>
+                        <br>
+                    </div>
+                </div>
+                <div class="large-12 columns">
+                    <ul class="unilist">
+                        <li><a href="javascript:void(0)" id="June"><span id="plus4" style="font-size:20px;" class="unibull">&#8853;</span></a>
+                            <p id="June" style="font-size:15px; font-weight: 600; display: inline;" align=justify>June 2015: Beta v0.1 release</p>
+                        </li>
+                    </ul>
+                    <div class="large-11 columns" style="display: none; margin-top: -20px;" id="hiddenText4">
+                        <ul style="font-size:12px; font-weight: 200; display: inline;" align=justify>
+                            <li>10,000 COCO images (from train)</li>
+                            <li>30,000 questions</li>
+                            <li>300,000 ground truth answers</li>
+                            <li>90,000 plausible answers</li>
+                        </ul>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="large-12 columns">
+                    <h1 style="font-size:30px; color:grey; font-weight: 200;" align=left>Papers</h1>
+                    <p style="font-size:20px; font-weight: 200;" align=justify>Making the V in VQA Matter: Elevating the Role of Image Understanding in Visual Question Answering (CVPR 2017)</p>
+                    <br>
+                    <div class="large-2 columns">
+                        <a href="https://arxiv.org/pdf/1612.00837.pdf" onClick="ga('send', 'event', { eventCategory: 'VQA2.0', eventAction: 'VQA2.0_Paper', eventLabel: 'VQA2.0_Paper'});"><img src="./static/img/paper_vqa2.jpg" height="400" width="200" style="border : 2px solid #b3b3b3; border-radius : 0px; display:block; margin:auto;" class="pull-right"></a>
+                        <br>
+                        <br>
+                        <p style="font-size:15px; font-weight: 200;" align=justify>Download the <a href="https://arxiv.org/pdf/1612.00837.pdf" onClick="ga('send', 'event', { eventCategory: 'VQA2.0', eventAction: 'VQA2.0_Paper', eventLabel: 'VQA2.0_Paper'});">paper</a></p>
+                        <p id="bibtex2" style="font-size:15px; font-weight: 200;" align=justify><a href="#" onclick="document.getElementById('bibtex21').style.display='block'; document.getElementById('bibtex2').style.display='none'; return false;">BibTeX</a></p>
+                        <div style="display: none;" id="bibtex21">
+                            <p style="font-size:12px; font-weight: 200; width:200%; text-align: left;">
+                                @InProceedings{balanced_vqa_v2,
+                                <br> author = {Yash Goyal and Tejas Khot and Douglas Summers{-}Stay and Dhruv Batra and Devi Parikh},
+                                <br> title = {Making the {V} in {VQA} Matter: Elevating the Role of Image Understanding in {V}isual {Q}uestion {A}nswering},
+                                <br> booktitle = {Conference on Computer Vision and Pattern Recognition (CVPR)},
+                                <br> year = {2017},
+                                <br> }
+                            </p>
+                        </div>
+                    </div>
+                    <div class="large-10 columns" style="left: -2em; top: -1em;">
+                        <img src="./static/img/vqa_examples.jpg" height="500" width="600" style="display:block; margin:auto;" frameBorder="0">
+                    </div>
+                    <!-- <hr> -->
+                </div>
+                <div class="large-12 columns">
+                    <h1 style="font-size:20px; color:grey; font-weight: 200;" align=left></h1>
+                    <p style="font-size:20px; font-weight: 200;" align=justify>Yin and Yang: Balancing and Answering Binary Visual Questions (CVPR 2016)</p>
+                    <br>
+                    <div class="large-2 columns">
+                        <a href="https://arxiv.org/pdf/1511.05099.pdf"><img src="./static/img/paper_yinyang.png" style="border : 2px solid #b3b3b3; border-radius : 0px; height: 200px;"></a>
+                        <br>
+                        <br>
+                        <p style="font-size:15px; font-weight: 200;" align=justify>Download the <a href="https://arxiv.org/pdf/1511.05099.pdf">paper</a></p>
+                        <p id="bibtex1" style="font-size:15px; font-weight: 200;" align=justify><a href="#" onclick="document.getElementById('bibtex11').style.display='block'; document.getElementById('bibtex1').style.display='none'; return false;">BibTeX</a></p>
+                        <div style="display: none;" id="bibtex11">
+                            <p style="font-size:12px; font-weight: 200; width:150%;">
+                                @InProceedings{balanced_binary_vqa,
+                                <br> author = {Peng Zhang and Yash Goyal and Douglas Summers{-}Stay and Dhruv Batra and Devi Parikh},
+                                <br> title = {{Y}in and {Y}ang: Balancing and Answering Binary Visual Questions},
+                                <br> booktitle = {Conference on Computer Vision and Pattern Recognition (CVPR)},
+                                <br> year = {2016},
+                                <br> }
+                            </p>
+                        </div>
+                    </div>
+                    <div class="large-10 columns">
+                        <img src="./static/img/yinyang.png" width="400" height="400" style="display:block; margin:auto; margin-left: 180px;" frameBorder="0">
+                    </div>
+                    <!-- <hr> -->
+                </div>
+                <div class="large-12 columns">
+                    <h1 style="font-size:20px; color:grey; font-weight: 200;" align=left></h1>
+                    <p style="font-size:20px; font-weight: 200;" align=justify>VQA: Visual Question Answering (ICCV 2015)</p>
+                    <br>
+                    <div class="large-2 columns">
+                        <a href="http://arxiv.org/pdf/1505.00468v6.pdf" onClick="ga('send', 'event', { eventCategory: 'ICCV2015 Paper Download', eventAction: 'Paper', eventLabel: 'ICCV2015_Paper'});"><img src="./static/img/paper_vqa.png" style="border : 2px solid #b3b3b3; border-radius : 0px; height: 200px;"></a>
+                        <br>
+                        <br>
+                        <p style="font-size:15px; font-weight: 200;" align=justify>Download the <a href="http://arxiv.org/pdf/1505.00468v6.pdf" onClick="ga('send', 'event', { eventCategory: 'ICCV2015 Paper Download', eventAction: 'Paper', eventLabel: 'ICCV2015_Paper'});">paper</a></p>
+                        <p id="bibtex3" style="font-size:15px; font-weight: 200;" align=justify><a href="#" onclick="document.getElementById('bibtex31').style.display='block'; document.getElementById('bibtex3').style.display='none'; return false;">BibTeX</a></p>
+                        <div style="display: none;" id="bibtex31">
+                            <p style="font-size:12px; font-weight: 200; width:150%;">
+                                @InProceedings{{VQA},
+                                <br> author = {Stanislaw Antol and Aishwarya Agrawal and Jiasen Lu and Margaret Mitchell and Dhruv Batra and C. Lawrence Zitnick and Devi Parikh},
+                                <br> title = {{VQA}: {V}isual {Q}uestion {A}nswering},
+                                <br> booktitle = {International Conference on Computer Vision (ICCV)},
+                                <br> year = {2015},
+                                <br> }
+                            </p>
+                        </div>
+                    </div>
+                    <div class="large-10 columns">
+                        <img src="./static/img/teaser_small.jpg" width="1200" height="2200" style="display:block; margin:auto;" frameBorder="0">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="large-12 columns">
+                    <h1 style="font-size:30px; color:grey; font-weight: 200;" align=left>Videos</h1>
+                    <div class="auto-resizable-iframe">
+                        <div class="large-2 columns" style="margin-left: 0px; left: -250px; width: 400px;">
+                            <iframe frameborder="0" allowfullscreen="" src="https://www.youtube.com/embed/nMr_sSAMpkE"></iframe>
+                        </div>
+                        <div class="large-2 columns" style="margin-left: -250px; left: -54px; width: 400px;">
+                            <iframe frameborder="0" allowfullscreen="" src="https://www.youtube.com/embed/gar88i-V0RE"></iframe>
+                        </div>
+                        <div class="large-2 columns" style="margin-left: -350px; left: 200px; width: 400px;">
+                            <iframe frameborder="0" allowfullscreen="" src="https://www.youtube.com/embed/Qw4tqz1diM4"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="large-12 columns">
+                    <h1 style="font-size:30px; color:grey; font-weight: 200">Feedback</h1>
+                    <div class="large-12 columns" style="text-align:left;">
+                        <p style="font-size:18px; font-weight: 200;">
+                            Any feedback is very welcome! Please send it to <a href="mailto:visualqa@gmail.com" target="_top">visualqa@gmail.com</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+    var button = document.getElementById('March'); // Assumes element with id='button'
+    button.onclick = function() {
+        var div = document.getElementById('hiddenText11');
+        var div1 = document.getElementById('hiddenText12');
+        var div2 = document.getElementById('hiddenText13');
+        var div3 = document.getElementById('hiddenText14');
+        if (div.style.display !== 'none') {
+            $("#plus1").html("&#8853");
+            div.style.display = 'none';
+            div1.style.display = 'none';
+            div2.style.display = 'none';
+            div3.style.display = 'none';
+        } else {
+            $("#plus1").html("&#8854");
+            div.style.display = 'block';
+            div1.style.display = 'block';
+            div2.style.display = 'block';
+            div3.style.display = 'block';
+        }
+    };
+    </script>
+    <script>
+    var button = document.getElementById('October'); // Assumes element with id='button'
+    button.onclick = function() {
+        var div = document.getElementById('hiddenText21');
+        var div1 = document.getElementById('hiddenText22');
+        var div2 = document.getElementById('hiddenText23');
+        var div3 = document.getElementById('hiddenText24');
+        if (div.style.display !== 'none') {
+            $("#plus2").html("&#8853");
+            div.style.display = 'none';
+            div1.style.display = 'none';
+            div2.style.display = 'none';
+            div3.style.display = 'none';
+        } else {
+            $("#plus2").html("&#8854");
+            div.style.display = 'block';
+            div1.style.display = 'block';
+            div2.style.display = 'block';
+            div3.style.display = 'block';
+        }
+    };
+    </script>
+    <script>
+    var button = document.getElementById('July'); // Assumes element with id='button'
+    button.onclick = function() {
+        var div = document.getElementById('hiddenText3');
+        if (div.style.display !== 'none') {
+            $("#plus3").html("&#8853");
+            div.style.display = 'none';
+        } else {
+            $("#plus3").html("&#8854");
+            div.style.display = 'block';
+        }
+    };
+    </script>
+    <script>
+    var button2 = document.getElementById('June'); // Assumes element with id='button'
+
+    button2.onclick = function() {
+        var div = document.getElementById('hiddenText4');
+        if (div.style.display !== 'none') {
+            $("#plus4").html("&#8853");
+            div.style.display = 'none';
+        } else {
+            $("#plus4").html("&#8854");
+            div.style.display = 'block';
+        }
+    };
+    </script>
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-63638588-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <script src="./static/js/foundation.js"></script>
+    <script src="./static/js/foundation.dropdown.js"></script>
+    <script>
+    $(document).foundation();
+    </script>
+    <!-- jquery smooth scroll to id's -->
+    <script>
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+</body>
+
+</html>

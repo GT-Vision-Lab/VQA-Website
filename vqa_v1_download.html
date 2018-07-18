@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>VQA: Visual Question Answering</title>
+    <link rel="stylesheet" href="./static/css/foundation.css">
+    <link rel="stylesheet" href="./static/css/main.css">
+</head>
+
+<body class="off-canvas hide-extras" style="min-width:1200px; min-height:750px;">
+    <header>
+        <div class="row">
+            <a href="http://visualqa.org/"><img style="height: 100px; position:absolute; top:4px; left:0px;" src="./static/img/main.png" alt="logo" /></a>
+            <h1><img style="height: 90px;" src="./static/img/logo.png" alt="logo" /><br></h1>
+            <br>
+        </div>
+    </header>
+    <div class="contain-to-grid">
+        <nav class="top-bar" data-topbar>
+            <section class="top-bar-section">
+                <!-- Right Nav Section -->
+                <ul class="right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="people.html">People</a></li>
+                    <li><a href="code.html">Code</a></li>
+                    <li><a href="http://vqa.cloudcv.org/" onClick="ga('send', 'event', { eventCategory: 'Outgoing Link', eventAction: 'Demo', eventLabel: 'Demo'});">Demo</a></li>
+                    <li class="active has-dropdown"><a href="download.html">Download</a>
+                        <ul class="dropdown">
+                            <li><a href="download.html">VQA v2</a></li>
+                            <li><a href="vqa_v1_download.html">VQA v1</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="evaluation.html">Evaluation</a></li>
+                    <li class="has-dropdown"><a href="challenge.html">Challenge</a>
+                        <ul class="dropdown">
+                            <li><a href="challenge.html">2018</a></li>
+                            <li><a href="challenge_2017.html">2017</a></li>
+                            <li><a href="challenge_2016.html">2016</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown"><a href="http://visualqa.org/vqa_v2_teaser.html">Browse</a>
+                        <ul class="dropdown">
+                            <li><a href="http://visualqa.org/vqa_v2_teaser.html">VQA v2</a></li>
+                            <li><a href="http://visualqa.org/browser/">VQA v1</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://visualqa.org/visualize/">Visualize</a></li>
+                    <!--                     <li class="has-dropdown"><a href="http://visualqa.org/visualize/">Visualize</a>
+                        <ul class="dropdown">
+                            <li><a href="http://visualqa.org/visualize/">VQA v2</a></li>
+                            <li><a href="http://visualqa.org/visualize/">VQA v1</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="has-dropdown"><a href="workshop.html">Workshop</a>
+                        <ul class="dropdown">
+                            <li><a href="workshop.html">2018</a></li>
+                            <li><a href="workshop_2017.html">2017</a></li>
+                            <li><a href="workshop_2016.html">2016</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sponsors.html">Sponsors</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="external.html">External</a></li>
+                </ul>
+            </section>
+        </nav>
+    </div>
+    <section role="main" style="padding: 1em;">
+        <div class="row">
+            <h1 style="font-size:30px; color:grey; font-weight: 200; text-align:left;">Download</h1>
+            <div class="large-3 columns">
+                <div class="row">
+                    <h1 style="font-size:19px; color:grey; font-weight:200;" align=left>VQA Annotations</h1></div>
+                <div class="row">
+                    <h1 style="font-size:18px; color:grey; font-weight:200; text-align:left;">Real Images</h1>
+                    <div class="row" style="font-size:15px;">
+                        <div class="large-12 columns">&nbsp;</div>
+                    </div>
+                    <div class="large-12 columns" style="margin-top:0px;">
+                        <div class="large-12 columns">
+                            <ul>
+                                <li>
+                                    <a style="font-size: 15px" href="http://visualqa.org/data/mscoco/vqa/Annotations_Train_mscoco.zip" onClick="ga('send', 'event', { eventCategory: 'Training Set Download', eventAction: 'Training Annotations', eventLabel: 'Train_Annotations_Real'});">Training annotations 2015 v1.0</a>
+                                    <br>
+                                    <span style="font-size: 13px">2,483,490 answers</span>
+                                </li>
+                                <li>
+                                    <a style="font-size: 15px" href="http://visualqa.org/data/mscoco/vqa/Annotations_Val_mscoco.zip" onClick="ga('send', 'event', { eventCategory: 'Validation Set Download', eventAction: 'Validation Annotations', eventLabel: 'Val_Annotations_Real'});">Validation annotations 2015 v1.0</a>
+                                    <br>
+                                    <span style="font-size:13px">1,215,120 answers</span>
+                                </li>
+                                <li style="color: white;"><span style="font-size: 15px">&nbsp;</span>
+                                    <br><span style="font-size:13px">&nbsp;</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h1 style="font-size:18px; color:grey; font-weight:200; text-align:left;">Abstract Scenes</h1>
+                    <div class="row" style="font-size:15px;">
+                        <div class="large-12 columns">&nbsp;</div>
+                    </div>
+                    <div class="large-12 columns" style="margin-top:0px;">
+                        <div class="large-12 columns">
+                            <ul>
+                                <li>
+                                    <a style="font-size: 15px" href="http://visualqa.org/data/abstract_v002/vqa/Annotations_Train_abstract_v002.zip" onClick="ga('send', 'event', { eventCategory: 'Training Set Download', eventAction: 'Training Annotations', eventLabel: 'Train_Annotations_Abstract'});">Training annotations 2015 v1.0</a>
+                                    <br>
+                                    <span style="font-size: 13px">600,000 answers</span>
+                                </li>
+                                <li>
+                                    <a style="font-size: 15px" href="http://visualqa.org/data/abstract_v002/vqa/Annotations_Val_abstract_v002.zip" onClick="ga('send', 'event', { eventCategory: 'Validation Set Download', eventAction: 'Validation Annotations', eventLabel: 'Val_Annotations_Abstract'});">Validation annotations 2015 v1.0</a>
+                                    <br>
+                                    <span style="font-size: 13px">300,000 answers</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="large-3 columns">
+                <div class="row">
+                    <h1 style="font-size:19px; color:grey; font-weight:200;" align=left>VQA Input Questions</h1></div>
+                <div class="row">
+                    <h1 style="font-size:18px; color:grey; font-weight:200; text-align:left;">&nbsp;</h1>
+                    <div class="row" style="font-size:15px;">
+                        <div class="large-12 columns">&nbsp;</div>
+                    </div>
+                    <div class="large-12 columns" style="margin-top:0px;">
+                        <div class="large-12 columns">
+                            <ul>
+                                <li><a style="font-size: 15px" href="http://visualqa.org/data/mscoco/vqa/Questions_Train_mscoco.zip" onClick="ga('send', 'event', { eventCategory: 'Training Set Download', eventAction: 'Training Questions', eventLabel: 'Train_Questions_Real'});">Training questions 2015 v1.0</a>
+                                    <br>
+                                    <span style="font-size: 13px">248,349 questions</span>
+                                </li>
+                                <li><a style="font-size: 15px" href="http://visualqa.org/data/mscoco/vqa/Questions_Val_mscoco.zip" onClick="ga('send', 'event', { eventCategory: 'Validation Set Download', eventAction: 'Validation Questions', eventLabel: 'Val_Questions_Real'});">Validation questions 2015 v1.0</a>
+                                    <br>
+                                    <span style="font-size: 13px">121,512 questions</span>
+                                </li>
+                                <li><a style="font-size: 15px" href="http://visualqa.org/data/mscoco/vqa/Questions_Test_mscoco.zip" onClick="ga('send', 'event', { eventCategory: 'Test Set Download', eventAction: 'Testing Questions', eventLabel: 'Test_Questions_Real'});">Testing questions 2015 v1.0</a>
+                                    <br>
+                                    <span style="font-size: 13px">244,302 questions</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h1 style="font-size:18px; color:grey; font-weight:200; text-align:left;">&nbsp;</h1>
+                    <div class="row" style="font-size:15px;">
+                        <div class="large-12 columns">&nbsp;</div>
+                    </div>
+                    <div class="large-12 columns" style="margin-top:0px;">
+                        <div class="large-12 columns">
+                            <ul>
+                                <li><a style="font-size: 15px" href="http://visualqa.org/data/abstract_v002/vqa/Questions_Train_abstract_v002.zip" onClick="ga('send', 'event', { eventCategory: 'Training Set Download', eventAction: 'Training Questions', eventLabel: 'Train_Questions_Abstract'});">Training questions 2015 v1.0</a>
+                                    <br>
+                                    <span style="font-size: 13px">60,000 questions</span>
+                                </li>
+                                <li><a style="font-size: 15px" href="http://visualqa.org/data/abstract_v002/vqa/Questions_Val_abstract_v002.zip" onClick="ga('send', 'event', { eventCategory: 'Validation Set Download', eventAction: 'Validation Questions', eventLabel: 'Val_Questions_Abstract'});">Validation questions 2015 v1.0</a>
+                                    <br>
+                                    <span style="font-size: 13px">30,000 questions</span>
+                                </li>
+                                <li><a style="font-size: 15px" href="http://visualqa.org/data/abstract_v002/vqa/Questions_Test_abstract_v002.zip" onClick="ga('send', 'event', { eventCategory: 'Testing Set Download', eventAction: 'Testing Questions', eventLabel: 'Test_Questions_Abstract'});">Testing questions 2015 v1.0</a>
+                                    <br>
+                                    <span style="font-size: 13px">60,000 questions</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="large-2 columns" style="margin-left:0px;">
+                <div class="row">
+                    <h1 style="font-size:19px; color:grey; font-weight:200;" align=left>VQA Input Images</h1></div>
+                <div class="row">
+                    <h1 style="font-size:18px; color:grey; font-weight: 200; text-align:left;">&nbsp;</h1>
+                    <div class="row" style="font-size:15px;">
+                        <div class="large-12 columns" style="margin-left:30px;"><a href="http://mscoco.org/dataset/#download">MSCOCO</a></div>
+                    </div>
+                    <div class="large-12 columns" style="margin-top:0px;">
+                        <div class="large-12 columns">
+                            <ul>
+                                <li>
+                                    <a style="font-size: 15px" 
+                                    href="http://images.cocodataset.org/zips/train2014.zip" 
+                                    onClick="ga('send', 'event', { eventCategory: 'Training Set Download', eventAction: 'Training Images', eventLabel: 'Train_Images_Real'});">Training images</a>
+                                    <br><span style="font-size: 13px">82,783 images</span>
+                                </li>
+                                <li>
+                                    <a style="font-size: 15px" 
+                                    href="http://images.cocodataset.org/zips/val2014.zip" 
+                                    onClick="ga('send', 'event', { eventCategory: 'Validation Set Download', eventAction: 'Validation Images', eventLabel: 'Val_Images_Real'});">Validation images</a>
+                                    <br><span style="font-size: 13px">40,504 images</span>
+                                </li>
+                                <li>
+                                    <a style="font-size: 15px" 
+                                    href="http://images.cocodataset.org/zips/test2015.zip" 
+                                    onClick="ga('send', 'event', { eventCategory: 'Test Set Download', eventAction: 'Testing Images', eventLabel: 'Test_Images_Real'});">Testing images</a>
+                                    <br><span style="font-size: 13px">81,434 images</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h1 style="font-size:18px; color:grey; font-weight: 200; text-align:left;">&nbsp;</h1>
+                    <div class="row" style="font-size:15px;">
+                        <div class="large-12 columns">&nbsp;</div>
+                    </div>
+                    <div class="large-12 columns" style="margin-top:0px;">
+                        <div class="large-12 columns">
+                            <ul>
+                                <li>
+                                    <a style="font-size: 15px" href="http://visualqa.org/data/abstract_v002/scene_img/scene_img_abstract_v002_train2015.zip" onClick="ga('send', 'event', { eventCategory: 'Training Set Download', eventAction: 'Training Images', eventLabel: 'Train_Images_Abstract'});">Training images</a>
+                                    <br><span style="font-size: 13px">20,000 images</span>
+                                </li>
+                                <li>
+                                    <a style="font-size: 15px" href="http://visualqa.org/data/abstract_v002/scene_img/scene_img_abstract_v002_val2015.zip" onClick="ga('send', 'event', { eventCategory: 'Validation Set Download', eventAction: 'Validation Images', eventLabel: 'Val_Images_Abstract'});">Validation images</a>
+                                    <br><span style="font-size: 13px">10,000 images</span>
+                                </li>
+                                <li>
+                                    <a style="font-size: 15px" href="http://visualqa.org/data/abstract_v002/scene_img/scene_img_abstract_v002_test2015.zip" onClick="ga('send', 'event', { eventCategory: 'Testing Set Download', eventAction: 'Testing Images', eventLabel: 'Test_Images_Abstract'});">Testing images</a>
+                                    <br><span style="font-size: 13px">20,000 images</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="large-3 columns" style="margin-left:0px;">
+                <div class="row">
+                    <h1 style="font-size:19px; color:grey; font-weight: 200;" align=left>Tools (Real &amp; Abstract)</h1></div>
+                <div class="row">
+                    <h1 style="font-size:18px; color:grey; font-weight: 200; text-align:left;">&nbsp;</h1>
+                    <div class="row" style="font-size:15px;">
+                        <div class="large-12 columns">&nbsp;</div>
+                    </div>
+                    <div class="row">
+                        <div class="large-12 columns" style="margin-top:0px;">
+                            <div class="large-12 columns">
+                                <ul>
+                                    <li><a style="font-size: 15px" href="https://github.com/VT-vision-lab/VQA">VQA API</a></li>
+                                    <li><a style="font-size: 15px" href="https://github.com/VT-vision-lab/VQA/tree/master/PythonEvaluationTools">Evaluation Code</a></li>
+                                    <li><a style="font-size: 15px" href="https://github.com/VT-vision-lab/abstract_scenes_v002">Abstract Scenes Code</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-11 columns">
+                    <h1 style="font-size:15px; color:black; font-weight: 200; text-align:left;">The captions for training and validation sets of the abstract scenes can be downloaded from
+                <a href="http://visualqa.org/data/abstract_v002/captions_abstract_v002_train-val2015.zip" onClick="ga('send', 'event', { eventCategory: 'Trainval Download', eventAction: 'Trainval Captions', eventLabel: 'Trainval_Captions_Abstract'});">here</a>.</h1>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <!-- End of the download table thing -->
+        <div class="row">
+            <h1 style="font-size:30px; color:grey; font-weight: 200; text-align:left;">Overview</h1>
+            <div class="large-12 columns">
+                <p style="font-size:15px; font-weight: 200; display: inline;" align=left>
+                    For every image, we collected 3 free-form natural-language questions with 10 concise open-ended answers each. We provide two formats of the VQA task: open-ended and multiple-choice. For additional details, please see the <a href="http://arxiv.org/pdf/1505.00468v6.pdf" onClick="ga('send', 'event', { eventCategory: 'ICCV2015 Paper Download', eventAction: 'Paper', eventLabel: 'ICCV2015_Paper'});">VQA paper</a>.
+                    <br>
+                    <br> The annotations we release are the result of the following post-processing steps on the raw crowdsourced data:</p>
+                <div class="large-12 columns">
+                    <ul style="font-size:15px; font-weight: 200; display: inline;" align=left>
+                        <li>Spelling correction (using Bing Speller) of question and answer strings</li>
+                        <li>Question normalization (first char uppercase, last char ‘?’)</li>
+                        <li>Answer normalization (all chars lowercase, no period except as decimal point, number words —> digits, strip articles (a, an the))</li>
+                        <li>Adding apostrophe if a contraction is missing it (e.g., convert "dont" to "don't")</li>
+                    </ul>
+                    <br>
+                </div>
+            </div>
+            <div class="large-12 columns">
+                <p style="font-size:15px; font-weight: 200; text-align:left">Please follow the instructions in the <a href="https://github.com/VT-vision-lab/VQA/blob/master/README.md" target="_blank">README</a> to download and setup the VQA data (annotations and images).
+                    <br> By downloading this dataset, you agree to our <a href="terms.html">Terms of Use</a>.
+                </p>
+            </div>
+            <hr>
+        </div>
+        <div class="row">
+            <h1 style="font-size:30px; color:grey; font-weight: 200; text-align:left;">VQA API</h1>
+            <div class="large-12 columns" style="text-align:left;">
+                <p style="font-size:15px; font-weight: 200; text-align:left; border-style: solid; padding-left:5px; border-width: 1px;"><code>getQuesIds - Get question ids that satisfy given filter conditions.<br>
+                    getImgIds - Get image ids that satisfy given filter conditions.<br>
+                    loadQA - Load questions and answers with the specified question ids.<br>
+                    showQA - Display the specified questions and answers.<br>
+                    loadRes - Load result file and create result object.</code></p>
+                <p style="font-size:15px; font-weight: 200;">Here is a <a href="https://github.com/VT-vision-lab/VQA/blob/master/PythonHelperTools/vqaDemo.py" target="_blank">link</a> to the python API demo script.</p>
+            </div>
+            <hr>
+        </div>
+        <div class="row">
+            <h1 style="font-size:30px; color:grey; font-weight: 200">Input Questions Format</h1>
+            <div class="large-12 columns" style="text-align:center;">
+                <p style="font-size:15px; font-weight: 200; text-align:left;">VQA currently has two different question formats: OpenEnded and MultipleChoice. The questions are stored using the JSON file format.
+                    <br>
+                    <br> The OpenEnded format has the following data structure:
+                    <br>
+                </p>
+                <p style="font-size:15px; font-weight: 200; border-style: solid;
+                border-width: 1px; text-align:left; padding:5px;"><code>{<br>
+                    "info" : info,<br>
+                    "task_type" : str,<br>
+                    "data_type": str,<br>
+                    "data_subtype": str,<br>
+                    "questions" : [question],<br>
+                    "license" : license<br>
+                    }<br>
+                    <br>
+                    info {<br>
+                    "year" : int,<br>
+                    "version" : str,<br>
+                    "description" : str,<br>
+                    "contributor" : str,<br>
+                    "url" : str,<br>
+                    "date_created" : datetime<br>
+                    }<br>
+                    <br>
+                    license{<br>
+                    "name" : str,<br>
+                    "url" : str<br>
+                    }<br>
+                    <br>
+                    question{<br>
+                    "question_id" : int,<br>
+                    "image_id" : int,<br>
+                    "question" : str<br>
+                    }<br></code></p>
+                <p style="font-size:15px; font-weight: 200; text-align:left;">The MultipleChoice format has the same data structure as the OpenEnded format above, except it has the following two extra fields:</p>
+                <p style="font-size:15px; font-weight: 200; border-style: solid;
+                border-width: 1px; text-align:justify; padding:20px;"><code>"num_choices": int<br>
+                    question{<br>
+                    "multiple_choices" : [str]<br>
+                    }</code></p>
+                <p style="font-size:15px; font-weight: 200; text-align:left;"><code>task_type</code>: type of annotations in the JSON file (OpenEnded/MultipleChoice).
+                    <br>
+                    <code>data_type</code>: source of the images (mscoco or abstract_v002).
+                    <br>
+                    <code>data_subtype</code>: type of data subtype (train2014/val2014/test2015/test-dev2015 for mscoco, train2015/val2015 for abstract_v002).
+                    <br>
+                    <code>num_choices</code>: (only in MultipleChoice format) number of choices for each question (=18). For details on how the 18 choices are created, please see the <a href="http://arxiv.org/pdf/1505.00468v6.pdf" onClick="ga('send', 'event', { eventCategory: 'ICCV2015 Paper Download', eventAction: 'Paper', eventLabel: 'ICCV2015_Paper'});">VQA paper</a>.
+                    <br>
+                </p>
+            </div>
+            <hr>
+        </div>
+        <div class="row">
+            <h1 style="font-size:30px; color:grey; font-weight: 200">Annotation Format</h1>
+            <div class="large-12 columns" style="text-align:center;">
+                <p style="font-size:15px; font-weight: 200; text-align:left;"> There is a common annotation file for the Open-Ended and Multiple-Choice tasks. The annotations are stored using the JSON file format.
+                    <br>
+                    <br> The annotations format has the following data structure:
+                    <br>
+                </p>
+                <p style="font-size:15px; font-weight: 200; border-style: solid;
+                border-width: 1px; text-align:left; padding:5px;"><code>{<br>
+                    "info" : info,<br>
+                    "data_type": str,<br>
+                    "data_subtype": str,<br>
+                    "annotations" : [annotation],<br>
+                    "license" : license<br>
+                    }<br>
+                    <br>
+                    info {<br>
+                    "year" : int,<br>
+                    "version" : str,<br>
+                    "description" : str,<br>
+                    "contributor" : str,<br>
+                    "url" : str,<br>
+                    "date_created" : datetime<br>
+                    }<br>
+                    <br>
+                    license{<br>
+                    "name" : str,<br>
+                    "url" : str<br>
+                    }<br>
+                    <br>
+                    annotation{<br>
+                    "question_id" : int,<br>
+                    "image_id" : int,<br>
+                    "question_type" : str,<br>
+                    "answer_type" : str,<br>
+                    "answers" : [answer],<br>
+                    "multiple_choice_answer" : str<br>
+                    }<br>
+                    <br>
+                    answer{<br>
+                    "answer_id" : int,<br>
+                    "answer" : str,<br>
+                    "answer_confidence": str<br>
+                    }</code></p>
+                <p style="font-size:15px; font-weight: 200; text-align:left;">
+                    <code>data_type</code>: source of the images (mscoco or abstract_v002).
+                    <br>
+                    <code>data_subtype</code>: type of data subtype (train2014/val2014 for mscoco, train2015/val2015 for abstract_v002).
+                    <br>
+                    <code>question_type</code>: type of the question determined by the first few words of the question. For details, please see <a href="https://github.com/VT-vision-lab/VQA/blob/master/README.md" target="_blank">README</a>.
+                    <br>
+                    <code>answer_type</code>: type of the answer. Currently, "yes/no", "number", and "other".
+                    <br>
+                    <code>multiple_choice_answer</code>: correct multiple choice answer.
+                    <br>
+                    <code>answer_confidence</code>: subject's confidence in answering the question. For details, please see the <a href="http://arxiv.org/pdf/1505.00468v6.pdf">VQA paper</a>.
+                    <br>
+                </p>
+            </div>
+            <hr>
+        </div>
+        <div class="row">
+            <h1 style="font-size:30px; color:grey; font-weight: 200">Abstract Scenes and Captions</h1>
+            <div class="large-12 columns" style="text-align:center;">
+                <p style="font-size:15px; font-weight: 200; text-align:left;"> This section provides more information regarding abstract scenes' composition (e.g., the (x,y) pixel coordinates of each clipart object, left/right facing) files and abstract captions. If you are using any data (images, questions, answers, or captions) associated with abstract scenes, please cite the <a href="http://arxiv.org/pdf/1505.00468v6.pdf">VQA paper</a>. An example BibTeX is:
+                    <p style="font-size:15px; font-weight: 200; border-style: solid;
+                            border-width: 1px; text-align:left; padding:5px;"><code>
+                                @InProceedings{VQA,<br>
+                                    author = {Stanislaw Antol and Aishwarya Agrawal and Jiasen Lu and Margaret Mitchell and Dhruv Batra and C. Lawrence Zitnick and Devi Parikh},<br>
+                                    title = {VQA: Visual Question Answering},<br>
+                                    booktitle = {International Conference on Computer Vision (ICCV)},<br>
+                                    year = {2015},<br>
+                                    }
+                                </code>
+                    </p>
+                    <div style="display: none;" id="hiddenText">
+                        <p style="font-size:12px; font-weight: 200; width:150%; margin-left:-40px;">
+                            }</p>
+                    </div>
+                </p>
+                <p style="font-size:15px; font-weight: 200; text-align:left;">The following links contain the abstract scenes' composition files:
+                </p>
+                <div class="large-12 columns">
+                    <ul style="font-size:15px; font-weight: 200; text-align:left;">
+                        <li><a href="http://visualqa.org/data/abstract_v002/scene_json/scene_json_abstract_v002_train2015.zip" onClick="ga('send', 'event', { eventCategory: 'Training Set Download', eventAction: 'Training Compositions', eventLabel: 'Train_Compositions_Abstract'});">train2015 Composition Files</a></li>
+                        <li><a href="http://visualqa.org/data/abstract_v002/scene_json/scene_json_abstract_v002_val2015.zip" onClick="ga('send', 'event', { eventCategory: 'Validation Set Download', eventAction: 'Validation Compositions', eventLabel: 'Val_Compositions_Abstract'});">val2015 Composition Files</a></li>
+                        <li><a href="http://visualqa.org/data/abstract_v002/scene_json/scene_json_abstract_v002_test2015.zip" onClick="ga('send', 'event', { eventCategory: 'Test Set Download', eventAction: 'Test Compositions', eventLabel: 'Test_Compositions_Abstract'});">test2015 Composition Files</a></li>
+                    </ul>
+                    <br>
+                </div>
+                <p style="font-size:15px; font-weight: 200; text-align:left;">
+                    Each of the links above contains the following:
+                </p>
+                <div class="large-12 columns">
+                    <ul style="font-size:15px; font-weight: 200; display: inline; text-align:left;">
+                        <li>A file of the type "abstract_v002_[datasubset]_scene_information.json" where [datasubset] is either "train2015" or "val2015" or "test2015". This file has the following data structure:</li>
+                        <p style="font-size:15px; font-weight: 200; border-style: solid;
+                            border-width: 1px; text-align:left; padding:5px;"><code>{<br>
+                                "info" : info,<br>
+                                "data_type": str,<br>
+                                "data_subtype": str,<br>
+                                "compositions" : [composition],<br>
+                                "images" : [image],<br>
+                                "license" : license<br>
+                                }<br>
+                                <br>
+                                info {<br>
+                                "year" : int,<br>
+                                "version" : str,<br>
+                                "description" : str,<br>
+                                "contributor" : str,<br>
+                                "url" : str,<br>
+                                "date_created" : datetime<br>
+                                }<br>
+                                <br>
+                                license{<br>
+                                "name" : str,<br>
+                                "url" : str<br>
+                                }<br>
+                                <br>
+                                image{<br>
+                                "image_id" : int,<br>
+                                "file_name" : str,<br>
+                                "url" : str,<br>
+                                "height" : int,<br>
+                                "width" : int<br>
+                                }<br>
+                                <br>
+                                composition{<br>
+                                "image_id" : int,<br>
+                                "file_name" : str<br>
+                                }<br>
+                                <br>
+                                </code></p>
+                        <p style="font-size:15px; font-weight: 200; text-align:left;">
+                            <code>data_type</code>: source of the images (abstract_v002).
+                            <br>
+                            <code>data_subtype</code>: type of data subtype (train2015/val2015/test2015).
+                            <br> The <code>file_name</code> in <code>images</code> list contains the name of the image file for the corresponding abstract scene. These image files can be downloaded from the links provided in the "Download" section in this page.
+                            <br> The <code>file_name</code> in <code>compositions</code> list contains the name of the scene composition file for the corresponding abstract scene (see the bullet below).
+                        </p>
+                        <li>A folder of the type "scene_composition_abstract_v002_[datasubset]" where [datasubset] is either "train2015" or "val2015" or "test2015". This folder contains the scene composition files for the corresponding [datasubset].</li>
+                        <ul>
+                            <p style="font-size:15px; font-weight: 200; text-align:left;">For more information on how to render the scenes from annotation files and to obtain API support for abstract scenes, please visit the <a href="https://github.com/VT-vision-lab/abstract_scenes_v002">GitHub repository</a>.
+                                <br>
+                            </p>
+                            <p style="font-size:15px; font-weight: 200; text-align:left;">
+                                The JSON files containing the <b>captions</b> for training and validation sets of the abstract scenes can be downloaded from the link provided in the "Download" section in this page. These files have the following data structure:
+                                <br>
+                            </p>
+                            <p style="font-size:15px; font-weight: 200; border-style: solid;
+                    border-width: 1px; text-align:left; padding:5px;"><code>{<br>
+                    "info" : info,<br>
+                    "task_type": str,<br>
+                    "data_type": str,<br>
+                    "data_subtype": str,<br>
+                    "annotations" : [annotation],<br>
+                    "images" : [image],<br>
+                    "license" : license<br>
+                    }<br>
+                    <br>
+                    info {<br>
+                    "year" : int,<br>
+                    "version" : str,<br>
+                    "description" : str,<br>
+                    "contributor" : str,<br>
+                    "url" : str,<br>
+                    "date_created" : datetime<br>
+                    }<br>
+                    <br>
+                    license{<br>
+                    "name" : str,<br>
+                    "url" : str<br>
+                    }<br>
+                    <br>
+                    image{<br>
+                    "image_id" : int,<br>
+                    "file_name" : str,<br>
+                    "url" : str,<br>
+                    "height" : int,<br>
+                    "width" : int<br>
+                    }<br>
+                    <br>
+                    annotation{<br>
+                    "id" : int,<br>
+                    "image_id" : int,<br>
+                    "caption" : str<br>
+                    }<br>
+                    <br>
+                    </code></p>
+                            <p style="font-size:15px; font-weight: 200; text-align:left;">
+                                <code>task_type</code>: Captioning.
+                                <br>
+                                <code>data_type</code>: dataset source of the images (abstract_v002).
+                                <br>
+                                <code>data_subtype</code>: type of datasubset (train2015/val2015).
+                                <br>
+                            </p>
+                </div>
+                <hr>
+                <script>
+                (function(i, s, o, g, r, a, m) {
+                    i['GoogleAnalyticsObject'] = r;
+                    i[r] = i[r] || function() {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+                    a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                    a.async = 1;
+                    a.src = g;
+                    m.parentNode.insertBefore(a, m)
+                })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+                ga('create', 'UA-63638588-1', 'auto');
+                ga('send', 'pageview');
+                </script>
+                <!-- jquery smooth scroll to id's -->
+                <script>
+                $(function() {
+                    $('a[href*=#]:not([href=#])').click(function() {
+                        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                            var target = $(this.hash);
+                            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                            if (target.length) {
+                                $('html,body').animate({
+                                    scrollTop: target.offset().top
+                                }, 1000);
+                                return false;
+                            }
+                        }
+                    });
+                });
+                </script>
+</body>
+
+</html>
