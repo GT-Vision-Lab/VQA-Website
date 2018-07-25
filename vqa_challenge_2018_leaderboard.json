@@ -1,1 +1,1369 @@
-[{"team_members": "N/A", "challenge": {"overall": 65.79, "perAnswerType": {"other": 56.7, "number": 43.07, "yes/no": 82.28}}, "dev": {"overall": 65.66, "perAnswerType": {"other": 56.41, "number": 43.64, "yes/no": 82.39}}, "standard": {"overall": 65.71, "perAnswerType": {"other": 56.38, "number": 42.39, "yes/no": 82.56}}, "team_name_order": 1, "team_name": "AE-VQA", "ref": "", "method": "Autoencoder use in multimodel features fusion"}, {"team_members": "Damien Teney (University of Adelaide), Anton van den Hengel (University of Adelaide)", "challenge": {"overall": 70.08, "perAnswerType": {"other": 60.59, "number": 51.08, "yes/no": 86.03}}, "dev": {"overall": 69.98, "perAnswerType": {"other": 60.41, "number": 51.62, "yes/no": 86.05}}, "standard": {"overall": 70.34, "perAnswerType": {"other": 60.57, "number": 51.48, "yes/no": 86.53}}, "team_name_order": 2, "team_name": "Adelaide-Teney", "ref": "https://arxiv.org/abs/1711.08105", "method": "Visual Question Answering as a Meta Learning Task"}, {"team_members": "N/A", "challenge": {"overall": 69.6, "perAnswerType": {"other": 60.72, "number": 48.01, "yes/no": 85.56}}, "dev": {"overall": 69.59, "perAnswerType": {"other": 60.79, "number": 48.88, "yes/no": 85.44}}, "standard": {"overall": 69.69, "perAnswerType": {"other": 60.72, "number": 47.96, "yes/no": 85.71}}, "team_name_order": 3, "team_name": "CFM-UESTC", "ref": "", "method": "ensemble"}, {"team_members": "N/A", "challenge": {"overall": 69.01, "perAnswerType": {"other": 59.4, "number": 48.57, "yes/no": 85.49}}, "dev": {"overall": 68.62, "perAnswerType": {"other": 59.15, "number": 47.95, "yes/no": 85.22}}, "standard": {"overall": 69.14, "perAnswerType": {"other": 59.43, "number": 48.4, "yes/no": 85.76}}, "team_name_order": 4, "team_name": "CIST-VQA", "ref": "", "method": "CoR"}, {"team_members": "Zhangyang Pang (Zhejiang University), Yuetan Lin (Zhejiang University), Donghui Wang (Zhejiang University)", "challenge": {"overall": 70.44, "perAnswerType": {"other": 61.73, "number": 49.21, "yes/no": 86.09}}, "dev": {"overall": 70.04, "perAnswerType": {"other": 61.36, "number": 49.43, "yes/no": 85.71}}, "standard": {"overall": 70.4, "perAnswerType": {"other": 61.58, "number": 48.82, "yes/no": 86.21}}, "team_name_order": 5, "team_name": "DCD_ZJU", "ref": "", "method": "We use mainly Feature Enhancement mechanism with some tricks such as MFH feature fusion, soft sigmoid loss, extra Visual Genome training data and 8 ensembles. Please refer to 'Feature Enhancement in Attention for Visual Question Answering' for Feature Enhancement mechanism."}, {"team_members": "Yu Jiang* (Facebook AI Research), Vivek Natarajan* (Facebook AI Research), Xinlei Chen* (Facebook AI Research), Marcus Rohrbach (Facebook AI Research), Dhruv Batra (Facebook AI Research & Georgia Tech), and Devi Parikh (Facebook AI Research & Georgia Tech)\n(* denotes equal contribution)", "challenge": {"overall": 72.41, "perAnswerType": {"other": 63.95, "number": 51.51, "yes/no": 87.7}}, "dev": {"overall": 72.12, "perAnswerType": {"other": 63.41, "number": 51.54, "yes/no": 87.82}}, "standard": {"overall": 72.25, "perAnswerType": {"other": 63.43, "number": 51.59, "yes/no": 87.82}}, "team_name_order": 6, "team_name": "FAIR-A*", "ref": "", "method": "Our long-term goal is to create a VQA library where novel models can be easily composed from existing (or new) modules \u2013 visual encoders, question encoders, question-based attention mechanisms, and answer predictors. For our entry, we used Bottom-Up Town-Down attention over bounding-box proposes from the faster-RCNN object detector, attention to the question encoding, used Hadamard product instead of concatenation to combine question and image features. Moreover, we adopted a warm-up based learning schedule, fine-tuned the image features, and augmented our training data using Visual Genome and Visual Dialog datasets as well as image mirroring. Finally, we averaged the predictions from a diverse ensemble of models. These models used image features from Faster R-CNN models with feature pyramid networks with different parameter settings and/or initial seeds."}, {"team_members": "N/A", "challenge": {"overall": 64.24, "perAnswerType": {"other": 54.02, "number": 44.18, "yes/no": 81.3}}, "dev": {"overall": 64.08, "perAnswerType": {"other": 54.04, "number": 43.48, "yes/no": 81.34}}, "standard": {"overall": 64.46, "perAnswerType": {"other": 54.21, "number": 43.93, "yes/no": 81.64}}, "team_name_order": 7, "team_name": "HAIBIN", "ref": "", "method": "dualCrossGuidedAttention130_results"}, {"team_members": "Zhou Yu (Hangzhou Dianzi University), Jun Yu (Hangzhou Dianzi University), Chenchao Xiang (Hangzhou Dianzi University), Liang Wang (Hangzhou Dianzi University), Dalu Guo (The University of Sydney)\uff0cQingming Huang (University of Chinese Academy of Sciences), Jianping Fan (Hangzhou Dianzi University), Dacheng Tao (The University of Sydney)", "challenge": {"overall": 71.91, "perAnswerType": {"other": 63.23, "number": 51.22, "yes/no": 87.39}}, "dev": {"overall": 71.75, "perAnswerType": {"other": 62.93, "number": 52.15, "yes/no": 87.32}}, "standard": {"overall": 72.09, "perAnswerType": {"other": 63.19, "number": 51.92, "yes/no": 87.61}}, "team_name_order": 8, "team_name": "HDU-UCAS-USYD", "ref": "https://ieeexplore.ieee.org/document/8334194/", "method": "An ensemble of the 12 MFH-CoAtt models. For visual features, a more powerful Mixture of Dectectors (MoD) features are adopted based on the fusion of different bottom-up attention models. Project: https://github.com/yuzcccc/vqa-mfb"}, {"team_members": "Mikihiro Tanaka (The University of Tokyo), Atsuhiro Noguchi (The University of Tokyo), Kohei Uehara (The University of Tokyo), Lisa Kawai (The University of Tokyo), Yoshitaka Ushiku (The University of Tokyo), Tatsuya Harada (The University of Tokyo/RIKEN)", "challenge": {"overall": 71.1, "perAnswerType": {"other": 61.58, "number": 52.92, "yes/no": 86.87}}, "dev": {"overall": 70.68, "perAnswerType": {"other": 61.32, "number": 52.49, "yes/no": 86.49}}, "standard": {"overall": 71.16, "perAnswerType": {"other": 61.62, "number": 52.6, "yes/no": 87.0}}, "team_name_order": 9, "team_name": "MIL-UT", "ref": "", "method": "We applied 'MFH model + memory' using bottom-up features to non-counting questions. For counting questions, we utilized two different models based on the methods proposed by Trott et al. and Zhang et al. . At test time, we used GloVe as word embedding for the words not included in training data, and applied rule-based post-processing for 'A or B' questions."}, {"team_members": "N/A", "challenge": {"overall": 67.23, "perAnswerType": {"other": 58.13, "number": 45.64, "yes/no": 83.42}}, "dev": {"overall": 67.04, "perAnswerType": {"other": 57.85, "number": 45.95, "yes/no": 83.45}}, "standard": {"overall": 67.22, "perAnswerType": {"other": 57.95, "number": 45.16, "yes/no": 83.66}}, "team_name_order": 10, "team_name": "NTU_ROSE_USTC", "ref": "", "method": "bua_mcb8000"}, {"team_members": "N/A", "challenge": {"overall": 67.76, "perAnswerType": {"other": 58.96, "number": 46.2, "yes/no": 83.61}}, "dev": {"overall": 67.58, "perAnswerType": {"other": 58.51, "number": 47.33, "yes/no": 83.6}}, "standard": {"overall": 67.92, "perAnswerType": {"other": 58.79, "number": 46.77, "yes/no": 83.98}}, "team_name_order": 11, "team_name": "RelVQA", "ref": "", "method": "undefined"}, {"team_members": "Jin-Hwa Kim (Seoul National University), Jaehyun Jun (Seoul National University), Byoung-Tak Zhang (Seoul National University & Surromind Robotics)", "challenge": {"overall": 71.69, "perAnswerType": {"other": 62.36, "number": 54.92, "yes/no": 86.86}}, "dev": {"overall": 71.4, "perAnswerType": {"other": 62.08, "number": 54.94, "yes/no": 86.68}}, "standard": {"overall": 71.84, "perAnswerType": {"other": 62.45, "number": 54.37, "yes/no": 87.22}}, "team_name_order": 12, "team_name": "SNU-BI", "ref": "https://arxiv.org/abs/1805.07932", "method": "An ensemble of fifteen eight-glimpse bilinear attention networks, which consider every interaction between question tokens and visual features, integrated with counting module from Zhang et al. (2018). Image features are extracted by Bottom-up attention (Anderson et al., 2018). A part of Visual genome dataset (Krishna et al., 2017) is augmented. Code: https://github.com/jnhwkim/ban-vqa"}, {"team_members": "Duy-Kien Nguyen (Tohoku University, Computer Vision Lab), Takayuki Okatani (Tohoku University, Computer Vision Lab)", "challenge": {"overall": 71.1, "perAnswerType": {"other": 61.36, "number": 53.4, "yes/no": 87.0}}, "dev": {"overall": 70.66, "perAnswerType": {"other": 60.88, "number": 53.22, "yes/no": 86.74}}, "standard": {"overall": 71.12, "perAnswerType": {"other": 61.13, "number": 53.25, "yes/no": 87.29}}, "team_name_order": 13, "team_name": "Tohoku CV Lab", "ref": "https://github.com/cvlab-tohoku/Dense-CoAttention-Network", "method": "Dense Co-Attention Network - The core of the network is the dense co-attention layer, which is designed to enable improved fusion of visual and language representations by considering dense symmetric interactions between the input image and question. The layer can be stacked to perform multi-step image-question interactions."}, {"team_members": "Zeng Ziyu (Tsinghua University), Wang Shengjin (Tsinghua University)", "challenge": {"overall": 69.04, "perAnswerType": {"other": 59.7, "number": 49.0, "yes/no": 85.09}}, "dev": {"overall": 68.8, "perAnswerType": {"other": 59.44, "number": 49.28, "yes/no": 84.95}}, "standard": {"overall": 69.16, "perAnswerType": {"other": 59.65, "number": 48.92, "yes/no": 85.42}}, "team_name_order": 14, "team_name": "TsinghuaCVLab", "ref": "", "method": "Our method is based on MFH (https://github.com/yuzcccc/vqa-mfb), which held state-of-the-art accuracy last year. Our contribution is adding Channel Attention to the image attention based on image feature and question feature. All of our models were trained without additional dataset such as Visual Genome."}, {"team_members": "N/A", "challenge": {"overall": 69.88, "perAnswerType": {"other": 61.22, "number": 48.86, "yes/no": 85.44}}, "dev": {"overall": 69.77, "perAnswerType": {"other": 60.86, "number": 49.8, "yes/no": 85.53}}, "standard": {"overall": 69.88, "perAnswerType": {"other": 61.05, "number": 48.25, "yes/no": 85.71}}, "team_name_order": 15, "team_name": "UPMC-LIP6", "ref": "", "method": "undefined"}, {"team_members": "N/A", "challenge": {"overall": 70.19, "perAnswerType": {"other": 60.82, "number": 50.94, "yes/no": 86.07}}, "dev": {"overall": 70.01, "perAnswerType": {"other": 60.69, "number": 51.06, "yes/no": 85.96}}, "standard": {"overall": 70.23, "perAnswerType": {"other": 60.64, "number": 51.1, "yes/no": 86.28}}, "team_name_order": 16, "team_name": "UTS_YZZD", "ref": "", "method": "final"}, {"team_members": "N/A", "challenge": {"overall": 67.72, "perAnswerType": {"other": 57.93, "number": 47.94, "yes/no": 84.23}}, "dev": {"overall": 67.7, "perAnswerType": {"other": 57.87, "number": 47.7, "yes/no": 84.54}}, "standard": {"overall": 67.95, "perAnswerType": {"other": 58.07, "number": 47.65, "yes/no": 84.64}}, "team_name_order": 17, "team_name": "University of Guelph MLRG", "ref": "", "method": "Fusion operator search"}, {"team_members": "Yan Zhang (University of Southampton), Jonathon Hare (University of Southampton), Adam Pr\u00fcgel-Bennett (University of Southampton)", "challenge": {"overall": 68.28, "perAnswerType": {"other": 59.24, "number": 51.2, "yes/no": 83.2}}, "dev": {"overall": 68.09, "perAnswerType": {"other": 58.97, "number": 51.62, "yes/no": 83.14}}, "standard": {"overall": 68.41, "perAnswerType": {"other": 59.11, "number": 51.39, "yes/no": 83.56}}, "team_name_order": 18, "team_name": "VLC Southampton", "ref": "https://openreview.net/forum?id=B12Js_yRb", "method": "We design a counting component to tackle counting questions in VQA. The component uses a graph-based deduplication method to handle overlapping bounding boxes in a fully differentiable way. This allows it to be used in any model that uses soft attention over object proposals. Project: https://github.com/Cyanogenoid/vqa-counting"}, {"team_members": "N/A", "challenge": {"overall": 64.96, "perAnswerType": {"other": 55.37, "number": 43.47, "yes/no": 81.69}}, "dev": {"overall": 64.87, "perAnswerType": {"other": 55.15, "number": 43.22, "yes/no": 82.04}}, "standard": {"overall": 65.07, "perAnswerType": {"other": 55.29, "number": 42.36, "yes/no": 82.28}}, "team_name_order": 19, "team_name": "VQA-Learning", "ref": "", "method": "VQA with attention"}, {"team_members": "N/A", "challenge": {"overall": 66.75, "perAnswerType": {"other": 57.4, "number": 48.67, "yes/no": 82.3}}, "dev": {"overall": 66.58, "perAnswerType": {"other": 57.21, "number": 48.79, "yes/no": 82.27}}, "standard": {"overall": 66.86, "perAnswerType": {"other": 57.48, "number": 48.66, "yes/no": 82.42}}, "team_name_order": 20, "team_name": "VQA-Machine+", "ref": "", "method": "counting4"}, {"team_members": "N/A", "challenge": {"overall": 70.01, "perAnswerType": {"other": 60.79, "number": 48.94, "yes/no": 86.22}}, "dev": {"overall": 69.81, "perAnswerType": {"other": 60.59, "number": 49.39, "yes/no": 86.06}}, "standard": {"overall": 70.17, "perAnswerType": {"other": 60.76, "number": 49.17, "yes/no": 86.51}}, "team_name_order": 21, "team_name": "VQA-ReasonTensor", "ref": "", "method": "a novel deep attention neural tensor network (DA-NTN) for visual question answering, which can discover the joint correlations over images, questions and answers by tensor-based representations."}, {"team_members": "Qing Li (University of Science and Technology of China), Jiuxiang Gu (Nanyang Technological University), Terry Jianxiong Yin (NVIDIA AI Tech Centre), Joty Shafiq Rayhan (Nanyang Technological University), Cai Jianfei (Nanyang Technological University), Simon See (NVIDIA AI Tech Centre), Aik Beng Ng (NVIDIA AI Tech Centre)", "challenge": {"overall": 69.58, "perAnswerType": {"other": 60.4, "number": 48.97, "yes/no": 85.62}}, "dev": {"overall": 69.2, "perAnswerType": {"other": 59.95, "number": 48.65, "yes/no": 85.52}}, "standard": {"overall": 69.74, "perAnswerType": {"other": 60.4, "number": 48.65, "yes/no": 86.03}}, "team_name_order": 22, "team_name": "VQA_NTU", "ref": "", "method": "In this work, we first improve the soft-attention based VQA model with multi-level attention (bottom-up features, attributes, etc.). After that, instead of simply combining the multi-modal feature representations, we fuse the features with compact bilinear pooling. The final results are achieved by model ensembling."}, {"team_members": "N/A", "challenge": {"overall": 63.5, "perAnswerType": {"other": 53.71, "number": 39.46, "yes/no": 81.16}}, "dev": {"overall": 63.4, "perAnswerType": {"other": 53.7, "number": 39.43, "yes/no": 81.18}}, "standard": {"overall": 63.66, "perAnswerType": {"other": 53.75, "number": 39.43, "yes/no": 81.41}}, "team_name_order": 23, "team_name": "VQA_San", "ref": "", "method": "none"}, {"team_members": "N/A", "challenge": {"overall": 66.11, "perAnswerType": {"other": 56.8, "number": 48.37, "yes/no": 81.52}}, "dev": {"overall": 65.8, "perAnswerType": {"other": 56.69, "number": 48.0, "yes/no": 81.2}}, "standard": {"overall": 66.1, "perAnswerType": {"other": 56.87, "number": 47.38, "yes/no": 81.62}}, "team_name_order": 24, "team_name": "Vardaan", "ref": "", "method": "LSTM instead of GRU"}, {"team_members": "N/A", "challenge": {"overall": 62.23, "perAnswerType": {"other": 53.31, "number": 35.58, "yes/no": 79.6}}, "dev": {"overall": 61.72, "perAnswerType": {"other": 52.68, "number": 35.25, "yes/no": 79.42}}, "standard": {"overall": 62.11, "perAnswerType": {"other": 52.97, "number": 34.73, "yes/no": 79.82}}, "team_name_order": 25, "team_name": "akshay_isical", "ref": "", "method": "nmn with count constraint"}, {"team_members": "N/A", "challenge": {"overall": 70.36, "perAnswerType": {"other": 60.94, "number": 49.68, "yes/no": 86.68}}, "dev": {"overall": 70.19, "perAnswerType": {"other": 60.69, "number": 50.29, "yes/no": 86.62}}, "standard": {"overall": 70.6, "perAnswerType": {"other": 61.11, "number": 49.93, "yes/no": 86.93}}, "team_name_order": 26, "team_name": "bytedance", "ref": "", "method": "mfh sigatt glu"}, {"team_members": "Jialin Wu (University of Texas at Austin), Zeyuan Hu (University of Texas at Austin), Raymond J. Mooney (University of Texas at Austin)", "challenge": {"overall": 69.75, "perAnswerType": {"other": 60.79, "number": 47.32, "yes/no": 86.01}}, "dev": {"overall": 69.52, "perAnswerType": {"other": 60.44, "number": 47.56, "yes/no": 86.04}}, "standard": {"overall": 69.67, "perAnswerType": {"other": 60.41, "number": 47.26, "yes/no": 86.2}}, "team_name_order": 27, "team_name": "caption_vqa", "ref": "", "method": "Our method jointly perform image captioning task and VQA task. We found that these two tasks can be good complements to each other."}, {"team_members": "Zhiwei Fang (Institute of Automation, Chinese Academy of Sciences), Jing Liu (Institute of Automation, Chinese Academy of Sciences), Qu Tang (Southeast University-Monash University Joint Graduate School), Yanyuan Qiao (University of Chinese Academy of Sciences), Fei Liu (Institute of Automation, Chinese Academy of Sciences), Yong Li (Institute of Automation, Chinese Academy of Sciences), Hanqing Lu (Institute of Automation, Chinese Academy of Sciences)", "challenge": {"overall": 71.27, "perAnswerType": {"other": 62.43, "number": 51.11, "yes/no": 86.78}}, "dev": {"overall": 71.05, "perAnswerType": {"other": 62.15, "number": 50.99, "yes/no": 86.83}}, "standard": {"overall": 71.31, "perAnswerType": {"other": 62.31, "number": 51.05, "yes/no": 86.98}}, "team_name_order": 28, "team_name": "casia_iva", "ref": "", "method": "We use the proposed Coherent Dropout and Siamese Dropout Mechanism to solve the problems of overfitting and explosion of output variance. Besides, we develop an deeper and wider and more powerful question encoder based on the proposed techniques of dropout, which can improve the performance a lot."}, {"team_members": "N/A", "challenge": {"overall": 65.29, "perAnswerType": {"other": 56.08, "number": 41.97, "yes/no": 82.08}}, "dev": {"overall": 65.0, "perAnswerType": {"other": 55.71, "number": 41.87, "yes/no": 82.06}}, "standard": {"overall": 65.31, "perAnswerType": {"other": 56.11, "number": 41.5, "yes/no": 82.14}}, "team_name_order": 29, "team_name": "dandelin", "ref": "", "method": "image features generated with salient region detection"}, {"team_members": "N/A", "challenge": {"overall": 70.33, "perAnswerType": {"other": 61.37, "number": 50.46, "yes/no": 85.9}}, "dev": {"overall": 70.18, "perAnswerType": {"other": 61.14, "number": 50.93, "yes/no": 85.9}}, "standard": {"overall": 70.46, "perAnswerType": {"other": 61.37, "number": 50.36, "yes/no": 86.18}}, "team_name_order": 30, "team_name": "fs", "ref": "", "method": "ensemble"}, {"team_members": "N/A", "challenge": {"overall": 65.23, "perAnswerType": {"other": 55.57, "number": 44.79, "yes/no": 81.77}}, "dev": {"overall": 64.99, "perAnswerType": {"other": 55.25, "number": 44.22, "yes/no": 81.93}}, "standard": {"overall": 65.06, "perAnswerType": {"other": 55.43, "number": 42.92, "yes/no": 81.94}}, "team_name_order": 31, "team_name": "ghost", "ref": "", "method": "VQA with attention"}, {"team_members": "N/A", "challenge": {"overall": 70.62, "perAnswerType": {"other": 61.37, "number": 51.65, "yes/no": 86.3}}, "dev": {"overall": 70.49, "perAnswerType": {"other": 61.25, "number": 52.08, "yes/no": 86.22}}, "standard": {"overall": 70.77, "perAnswerType": {"other": 61.42, "number": 51.65, "yes/no": 86.54}}, "team_name_order": 32, "team_name": "graph-attention-network", "ref": "", "method": "graph-attention-network"}, {"team_members": "Ke Su (Tsinghua University), Yinpeng Dong (Tsinghua University), Jianguo Li (Intel Labs China), Hang Su (Tsinghua University)", "challenge": {"overall": 69.66, "perAnswerType": {"other": 60.57, "number": 48.78, "yes/no": 85.66}}, "dev": {"overall": 69.51, "perAnswerType": {"other": 60.31, "number": 49.01, "yes/no": 85.76}}, "standard": {"overall": 69.7, "perAnswerType": {"other": 60.45, "number": 48.54, "yes/no": 85.89}}, "team_name_order": 33, "team_name": "nagizero", "ref": "", "method": "We make use of complementary pairs by defining a pairwise loss on each complementary pair, which is added to the training objective function to guide the model."}, {"team_members": "N/A", "challenge": {"overall": 69.09, "perAnswerType": {"other": 59.87, "number": 47.9, "yes/no": 85.34}}, "dev": {"overall": 68.81, "perAnswerType": {"other": 59.56, "number": 47.98, "yes/no": 85.21}}, "standard": {"overall": 69.21, "perAnswerType": {"other": 59.85, "number": 47.74, "yes/no": 85.61}}, "team_name_order": 34, "team_name": "nmlab612", "ref": "", "method": "N/A"}, {"team_members": "Seung Wook Kim (University of Toronto), Makarand Tapaswi (University of Toronto), Sanja Fidler (University of Toronto & Vector Institute)", "challenge": {"overall": 70.64, "perAnswerType": {"other": 61.16, "number": 54.26, "yes/no": 85.87}}, "dev": {"overall": 70.25, "perAnswerType": {"other": 60.6, "number": 54.39, "yes/no": 85.74}}, "standard": {"overall": 70.68, "perAnswerType": {"other": 60.8, "number": 54.26, "yes/no": 86.34}}, "team_name_order": 35, "team_name": "ut-swk", "ref": "", "method": "Progressive Module Networks consist of solvers for each task where a solver is defined as a neural module that calls existing modules (solvers for simpler tasks) in a program-like manner. Lower modules are a black box to the calling module, and communicate only via a query and an output. Thus, a module for a new task learns to query existing modules and composes their outputs in order to produce its own output. PMN effectively combines previous skill-sets, does not suffer from forgetting, and is fully differentiable."}, {"team_members": "N/A", "challenge": {"overall": 64.45, "perAnswerType": {"other": 54.14, "number": 44.65, "yes/no": 81.55}}, "dev": {"overall": 64.42, "perAnswerType": {"other": 54.34, "number": 44.14, "yes/no": 81.63}}, "standard": {"overall": 64.72, "perAnswerType": {"other": 54.4, "number": 44.38, "yes/no": 81.92}}, "team_name_order": 36, "team_name": "vqa-suchow", "ref": "", "method": "dualCrossGuidedAttention50_results"}, {"team_members": "VQA Team", "challenge": {"overall": 54.08, "perAnswerType": {"other": 41.91, "number": 35.52, "yes/no": 72.99}}, "dev": {"overall": 54.02, "perAnswerType": {"other": 41.93, "number": 35.43, "yes/no": 73.08}}, "standard": {"overall": 54.22, "perAnswerType": {"other": 41.83, "number": 35.18, "yes/no": 73.46}}, "team_name_order": 37, "team_name": "vqateam_deeper_LSTM_Q_norm_I", "ref": "https://github.com/GT-Vision-Lab/VQA_LSTM_CNN", "method": "Baseline VQA model from Antol et al., ICCV 2015. 2-channel (image and question) model. Question channel (LSTM with 2 hidden layers) provides question representation and the image channel (activations from last hidden layer of VGGNet) provides image representation. The image features thus obtained are l2 normalized. Question and image features are pointwise multiplied and fed to fully connected layer to obtain softmax distribution over 1000 answers."}, {"team_members": "VQA Team", "challenge": {"overall": 44.34, "perAnswerType": {"other": 27.64, "number": 31.75, "yes/no": 66.79}}, "dev": {"overall": 44.22, "perAnswerType": {"other": 27.36, "number": 31.41, "yes/no": 67.17}}, "standard": {"overall": 44.26, "perAnswerType": {"other": 27.37, "number": 31.55, "yes/no": 67.01}}, "team_name_order": 38, "team_name": "vqateam_language_only", "ref": "", "method": "Similar model architecture as Deeper LSTM Question + Normalized Image model from Antol et al., ICCV 2015 but without the image channel. Question is passed through an LSTM with 2 hidden layers to provide question representation, which is fed to fully connected layer to obtain softmax distribution over 1000 answers."}, {"team_members": "VQA Team", "challenge": {"overall": 62.33, "perAnswerType": {"other": 53.47, "number": 38.52, "yes/no": 78.85}}, "dev": {"overall": 61.96, "perAnswerType": {"other": 53.23, "number": 38.81, "yes/no": 78.41}}, "standard": {"overall": 62.27, "perAnswerType": {"other": 53.36, "number": 38.28, "yes/no": 78.82}}, "team_name_order": 39, "team_name": "vqateam_mcb_benchmark", "ref": "https://arxiv.org/abs/1606.01847", "method": "'MCB + Att.' model (row 3, Table 4) from Fukui et al., EMNLP 2016. This model is trained only on VQA v2.0 train+val set (without using Visual Genome data) and without using pretrained Glove embeddings."}, {"team_members": "VQA Team", "challenge": {"overall": 25.98, "perAnswerType": {"other": 1.13, "number": 0.34, "yes/no": 61.26}}, "dev": {"overall": 25.7, "perAnswerType": {"other": 1.11, "number": 0.33, "yes/no": 61.03}}, "standard": {"overall": 25.98, "perAnswerType": {"other": 1.17, "number": 0.36, "yes/no": 61.2}}, "team_name_order": 40, "team_name": "vqateam_prior", "ref": "", "method": "'yes' (prior) is predicted as the answer for all questions"}, {"team_members": "N/A", "challenge": {"overall": 64.22, "perAnswerType": {"other": 53.4, "number": 46.82, "yes/no": 81.27}}, "dev": {"overall": 64.07, "perAnswerType": {"other": 53.22, "number": 46.36, "yes/no": 81.44}}, "standard": {"overall": 64.26, "perAnswerType": {"other": 53.27, "number": 46.44, "yes/no": 81.57}}, "team_name_order": 41, "team_name": "windLBL", "ref": "", "method": "capsBU22"}, {"team_members": "N/A", "challenge": {"overall": 66.2, "perAnswerType": {"other": 58.71, "number": 39.28, "yes/no": 82.0}}, "dev": {"overall": 65.93, "perAnswerType": {"other": 58.5, "number": 39.55, "yes/no": 81.77}}, "standard": {"overall": 66.34, "perAnswerType": {"other": 58.77, "number": 39.56, "yes/no": 82.07}}, "team_name_order": 42, "team_name": "xie", "ref": "", "method": "others-12"}, {"team_members": "N/A", "challenge": {"overall": 69.19, "perAnswerType": {"other": 59.55, "number": 50.37, "yes/no": 85.25}}, "dev": {"overall": 69.06, "perAnswerType": {"other": 59.46, "number": 50.62, "yes/no": 85.21}}, "standard": {"overall": 69.31, "perAnswerType": {"other": 59.66, "number": 50.24, "yes/no": 85.42}}, "team_name_order": 43, "team_name": "yudf2010", "ref": "", "method": "ensemble-11 + counting-200"}, {"team_members": "N/A", "challenge": {"overall": 67.12, "perAnswerType": {"other": 57.7, "number": 50.12, "yes/no": 82.45}}, "dev": {"overall": 66.81, "perAnswerType": {"other": 57.5, "number": 50.26, "yes/no": 82.11}}, "standard": {"overall": 67.26, "perAnswerType": {"other": 57.86, "number": 50.28, "yes/no": 82.52}}, "team_name_order": 44, "team_name": "zhi-smile", "ref": "", "method": "Counting"}, {"date": "2018-06-29"}]
+[
+  {
+    "team_members": "N/A",
+    "challenge": {
+      "overall": 65.79,
+      "perAnswerType": {
+        "other": 56.7,
+        "number": 43.07,
+        "yes/no": 82.28
+      }
+    },
+    "dev": {
+      "overall": 65.66,
+      "perAnswerType": {
+        "other": 56.41,
+        "number": 43.64,
+        "yes/no": 82.39
+      }
+    },
+    "standard": {
+      "overall": 65.71,
+      "perAnswerType": {
+        "other": 56.38,
+        "number": 42.39,
+        "yes/no": 82.56
+      }
+    },
+    "team_name_order": 1,
+    "team_name": "AE-VQA",
+    "ref": "",
+    "method": "Autoencoder use in multimodel features fusion"
+  },
+  {
+    "team_members": "Damien Teney (University of Adelaide), Anton van den Hengel (University of Adelaide)",
+    "challenge": {
+      "overall": 70.08,
+      "perAnswerType": {
+        "other": 60.59,
+        "number": 51.08,
+        "yes/no": 86.03
+      }
+    },
+    "dev": {
+      "overall": 69.98,
+      "perAnswerType": {
+        "other": 60.41,
+        "number": 51.62,
+        "yes/no": 86.05
+      }
+    },
+    "standard": {
+      "overall": 70.34,
+      "perAnswerType": {
+        "other": 60.57,
+        "number": 51.48,
+        "yes/no": 86.53
+      }
+    },
+    "team_name_order": 2,
+    "team_name": "Adelaide-Teney",
+    "ref": "https://arxiv.org/abs/1711.08105",
+    "method": "Visual Question Answering as a Meta Learning Task"
+  },
+  {
+    "team_members": "N/A",
+    "challenge": {
+      "overall": 69.6,
+      "perAnswerType": {
+        "other": 60.72,
+        "number": 48.01,
+        "yes/no": 85.56
+      }
+    },
+    "dev": {
+      "overall": 69.59,
+      "perAnswerType": {
+        "other": 60.79,
+        "number": 48.88,
+        "yes/no": 85.44
+      }
+    },
+    "standard": {
+      "overall": 69.69,
+      "perAnswerType": {
+        "other": 60.72,
+        "number": 47.96,
+        "yes/no": 85.71
+      }
+    },
+    "team_name_order": 3,
+    "team_name": "CFM-UESTC",
+    "ref": "",
+    "method": "ensemble"
+  },
+  {
+    "team_members": "N/A",
+    "challenge": {
+      "overall": 69.01,
+      "perAnswerType": {
+        "other": 59.4,
+        "number": 48.57,
+        "yes/no": 85.49
+      }
+    },
+    "dev": {
+      "overall": 68.62,
+      "perAnswerType": {
+        "other": 59.15,
+        "number": 47.95,
+        "yes/no": 85.22
+      }
+    },
+    "standard": {
+      "overall": 69.14,
+      "perAnswerType": {
+        "other": 59.43,
+        "number": 48.4,
+        "yes/no": 85.76
+      }
+    },
+    "team_name_order": 4,
+    "team_name": "CIST-VQA",
+    "ref": "",
+    "method": "CoR"
+  },
+  {
+    "team_members": "Zhangyang Pang (Zhejiang University), Yuetan Lin (Zhejiang University), Donghui Wang (Zhejiang University)",
+    "challenge": {
+      "overall": 70.44,
+      "perAnswerType": {
+        "other": 61.73,
+        "number": 49.21,
+        "yes/no": 86.09
+      }
+    },
+    "dev": {
+      "overall": 70.04,
+      "perAnswerType": {
+        "other": 61.36,
+        "number": 49.43,
+        "yes/no": 85.71
+      }
+    },
+    "standard": {
+      "overall": 70.4,
+      "perAnswerType": {
+        "other": 61.58,
+        "number": 48.82,
+        "yes/no": 86.21
+      }
+    },
+    "team_name_order": 5,
+    "team_name": "DCD_ZJU",
+    "ref": "",
+    "method": "We use mainly Feature Enhancement mechanism with some tricks such as MFH feature fusion, soft sigmoid loss, extra Visual Genome training data and 8 ensembles. Please refer to 'Feature Enhancement in Attention for Visual Question Answering' for Feature Enhancement mechanism."
+  },
+  {
+    "team_members": "Yu Jiang* (Facebook AI Research), Vivek Natarajan* (Facebook AI Research), Xinlei Chen* (Facebook AI Research), Marcus Rohrbach (Facebook AI Research), Dhruv Batra (Facebook AI Research & Georgia Tech), and Devi Parikh (Facebook AI Research & Georgia Tech)\n(* denotes equal contribution)",
+    "challenge": {
+      "overall": 72.41,
+      "perAnswerType": {
+        "other": 63.95,
+        "number": 51.51,
+        "yes/no": 87.7
+      }
+    },
+    "dev": {
+      "overall": 72.12,
+      "perAnswerType": {
+        "other": 63.41,
+        "number": 51.54,
+        "yes/no": 87.82
+      }
+    },
+    "standard": {
+      "overall": 72.25,
+      "perAnswerType": {
+        "other": 63.43,
+        "number": 51.59,
+        "yes/no": 87.82
+      }
+    },
+    "team_name_order": 6,
+    "team_name": "FAIR A-STAR",
+    "ref": "",
+    "method": "Our long-term goal is to create a VQA library where novel models can be easily composed from existing (or new) modules – visual encoders, question encoders, question-based attention mechanisms, and answer predictors. For our entry, we used Bottom-Up Town-Down attention over bounding-box proposes from the faster-RCNN object detector, attention to the question encoding, used Hadamard product instead of concatenation to combine question and image features. Moreover, we adopted a warm-up based learning schedule, fine-tuned the image features, and augmented our training data using Visual Genome and Visual Dialog datasets as well as image mirroring. Finally, we averaged the predictions from a diverse ensemble of models. These models used image features from Faster R-CNN models with feature pyramid networks with different parameter settings and/or initial seeds."
+  },
+  {
+    "team_members": "N/A",
+    "challenge": {
+      "overall": 64.24,
+      "perAnswerType": {
+        "other": 54.02,
+        "number": 44.18,
+        "yes/no": 81.3
+      }
+    },
+    "dev": {
+      "overall": 64.08,
+      "perAnswerType": {
+        "other": 54.04,
+        "number": 43.48,
+        "yes/no": 81.34
+      }
+    },
+    "standard": {
+      "overall": 64.46,
+      "perAnswerType": {
+        "other": 54.21,
+        "number": 43.93,
+        "yes/no": 81.64
+      }
+    },
+    "team_name_order": 7,
+    "team_name": "HAIBIN",
+    "ref": "",
+    "method": "dualCrossGuidedAttention130_results"
+  },
+  {
+    "team_members": "Zhou Yu (Hangzhou Dianzi University), Jun Yu (Hangzhou Dianzi University), Chenchao Xiang (Hangzhou Dianzi University), Liang Wang (Hangzhou Dianzi University), Dalu Guo (The University of Sydney)，Qingming Huang (University of Chinese Academy of Sciences), Jianping Fan (Hangzhou Dianzi University), Dacheng Tao (The University of Sydney)",
+    "challenge": {
+      "overall": 71.91,
+      "perAnswerType": {
+        "other": 63.23,
+        "number": 51.22,
+        "yes/no": 87.39
+      }
+    },
+    "dev": {
+      "overall": 71.75,
+      "perAnswerType": {
+        "other": 62.93,
+        "number": 52.15,
+        "yes/no": 87.32
+      }
+    },
+    "standard": {
+      "overall": 72.09,
+      "perAnswerType": {
+        "other": 63.19,
+        "number": 51.92,
+        "yes/no": 87.61
+      }
+    },
+    "team_name_order": 8,
+    "team_name": "HDU-UCAS-USYD",
+    "ref": "https://ieeexplore.ieee.org/document/8334194/",
+    "method": "An ensemble of the 12 MFH-CoAtt models. For visual features, a more powerful Mixture of Dectectors (MoD) features are adopted based on the fusion of different bottom-up attention models. Project: https://github.com/yuzcccc/vqa-mfb"
+  },
+  {
+    "team_members": "Mikihiro Tanaka (The University of Tokyo), Atsuhiro Noguchi (The University of Tokyo), Kohei Uehara (The University of Tokyo), Lisa Kawai (The University of Tokyo), Yoshitaka Ushiku (The University of Tokyo), Tatsuya Harada (The University of Tokyo/RIKEN)",
+    "challenge": {
+      "overall": 71.1,
+      "perAnswerType": {
+        "other": 61.58,
+        "number": 52.92,
+        "yes/no": 86.87
+      }
+    },
+    "dev": {
+      "overall": 70.68,
+      "perAnswerType": {
+        "other": 61.32,
+        "number": 52.49,
+        "yes/no": 86.49
+      }
+    },
+    "standard": {
+      "overall": 71.16,
+      "perAnswerType": {
+        "other": 61.62,
+        "number": 52.6,
+        "yes/no": 87
+      }
+    },
+    "team_name_order": 9,
+    "team_name": "MIL-UT",
+    "ref": "",
+    "method": "We applied 'MFH model + memory' using bottom-up features to non-counting questions. For counting questions, we utilized two different models based on the methods proposed by Trott et al. and Zhang et al. . At test time, we used GloVe as word embedding for the words not included in training data, and applied rule-based post-processing for 'A or B' questions."
+  },
+  {
+    "team_members": "N/A",
+    "challenge": {
+      "overall": 67.23,
+      "perAnswerType": {
+        "other": 58.13,
+        "number": 45.64,
+        "yes/no": 83.42
+      }
+    },
+    "dev": {
+      "overall": 67.04,
+      "perAnswerType": {
+        "other": 57.85,
+        "number": 45.95,
+        "yes/no": 83.45
+      }
+    },
+    "standard": {
+      "overall": 67.22,
+      "perAnswerType": {
+        "other": 57.95,
+        "number": 45.16,
+        "yes/no": 83.66
+      }
+    },
+    "team_name_order": 10,
+    "team_name": "NTU_ROSE_USTC",
+    "ref": "",
+    "method": "bua_mcb8000"
+  },
+  {
+    "team_members": "N/A",
+    "challenge": {
+      "overall": 67.76,
+      "perAnswerType": {
+        "other": 58.96,
+        "number": 46.2,
+        "yes/no": 83.61
+      }
+    },
+    "dev": {
+      "overall": 67.58,
+      "perAnswerType": {
+        "other": 58.51,
+        "number": 47.33,
+        "yes/no": 83.6
+      }
+    },
+    "standard": {
+      "overall": 67.92,
+      "perAnswerType": {
+        "other": 58.79,
+        "number": 46.77,
+        "yes/no": 83.98
+      }
+    },
+    "team_name_order": 11,
+    "team_name": "RelVQA",
+    "ref": "",
+    "method": "undefined"
+  },
+  {
+    "team_members": "Jin-Hwa Kim (Seoul National University), Jaehyun Jun (Seoul National University), Byoung-Tak Zhang (Seoul National University & Surromind Robotics)",
+    "challenge": {
+      "overall": 71.69,
+      "perAnswerType": {
+        "other": 62.36,
+        "number": 54.92,
+        "yes/no": 86.86
+      }
+    },
+    "dev": {
+      "overall": 71.4,
+      "perAnswerType": {
+        "other": 62.08,
+        "number": 54.94,
+        "yes/no": 86.68
+      }
+    },
+    "standard": {
+      "overall": 71.84,
+      "perAnswerType": {
+        "other": 62.45,
+        "number": 54.37,
+        "yes/no": 87.22
+      }
+    },
+    "team_name_order": 12,
+    "team_name": "SNU-BI",
+    "ref": "https://arxiv.org/abs/1805.07932",
+    "method": "An ensemble of fifteen eight-glimpse bilinear attention networks, which consider every interaction between question tokens and visual features, integrated with counting module from Zhang et al. (2018). Image features are extracted by Bottom-up attention (Anderson et al., 2018). A part of Visual genome dataset (Krishna et al., 2017) is augmented. Code: https://github.com/jnhwkim/ban-vqa"
+  },
+  {
+    "team_members": "Duy-Kien Nguyen (Tohoku University, Computer Vision Lab), Takayuki Okatani (Tohoku University, Computer Vision Lab)",
+    "challenge": {
+      "overall": 71.1,
+      "perAnswerType": {
+        "other": 61.36,
+        "number": 53.4,
+        "yes/no": 87
+      }
+    },
+    "dev": {
+      "overall": 70.66,
+      "perAnswerType": {
+        "other": 60.88,
+        "number": 53.22,
+        "yes/no": 86.74
+      }
+    },
+    "standard": {
+      "overall": 71.12,
+      "perAnswerType": {
+        "other": 61.13,
+        "number": 53.25,
+        "yes/no": 87.29
+      }
+    },
+    "team_name_order": 13,
+    "team_name": "Tohoku CV Lab",
+    "ref": "https://github.com/cvlab-tohoku/Dense-CoAttention-Network",
+    "method": "Dense Co-Attention Network - The core of the network is the dense co-attention layer, which is designed to enable improved fusion of visual and language representations by considering dense symmetric interactions between the input image and question. The layer can be stacked to perform multi-step image-question interactions."
+  },
+  {
+    "team_members": "Zeng Ziyu (Tsinghua University), Wang Shengjin (Tsinghua University)",
+    "challenge": {
+      "overall": 69.04,
+      "perAnswerType": {
+        "other": 59.7,
+        "number": 49,
+        "yes/no": 85.09
+      }
+    },
+    "dev": {
+      "overall": 68.8,
+      "perAnswerType": {
+        "other": 59.44,
+        "number": 49.28,
+        "yes/no": 84.95
+      }
+    },
+    "standard": {
+      "overall": 69.16,
+      "perAnswerType": {
+        "other": 59.65,
+        "number": 48.92,
+        "yes/no": 85.42
+      }
+    },
+    "team_name_order": 14,
+    "team_name": "TsinghuaCVLab",
+    "ref": "",
+    "method": "Our method is based on MFH (https://github.com/yuzcccc/vqa-mfb), which held state-of-the-art accuracy last year. Our contribution is adding Channel Attention to the image attention based on image feature and question feature. All of our models were trained without additional dataset such as Visual Genome."
+  },
+  {
+    "team_members": "N/A",
+    "challenge": {
+      "overall": 69.88,
+      "perAnswerType": {
+        "other": 61.22,
+        "number": 48.86,
+        "yes/no": 85.44
+      }
+    },
+    "dev": {
+      "overall": 69.77,
+      "perAnswerType": {
+        "other": 60.86,
+        "number": 49.8,
+        "yes/no": 85.53
+      }
+    },
+    "standard": {
+      "overall": 69.88,
+      "perAnswerType": {
+        "other": 61.05,
+        "number": 48.25,
+        "yes/no": 85.71
+      }
+    },
+    "team_name_order": 15,
+    "team_name": "UPMC-LIP6",
+    "ref": "",
+    "method": "undefined"
+  },
+  {
+    "team_members": "N/A",
+    "challenge": {
+      "overall": 70.19,
+      "perAnswerType": {
+        "other": 60.82,
+        "number": 50.94,
+        "yes/no": 86.07
+      }
+    },
+    "dev": {
+      "overall": 70.01,
+      "perAnswerType": {
+        "other": 60.69,
+        "number": 51.06,
+        "yes/no": 85.96
+      }
+    },
+    "standard": {
+      "overall": 70.23,
+      "perAnswerType": {
+        "other": 60.64,
+        "number": 51.1,
+        "yes/no": 86.28
+      }
+    },
+    "team_name_order": 16,
+    "team_name": "UTS_YZZD",
+    "ref": "",
+    "method": "final"
+  },
+  {
+    "team_members": "N/A",
+    "challenge": {
+      "overall": 67.72,
+      "perAnswerType": {
+        "other": 57.93,
+        "number": 47.94,
+        "yes/no": 84.23
+      }
+    },
+    "dev": {
+      "overall": 67.7,
+      "perAnswerType": {
+        "other": 57.87,
+        "number": 47.7,
+        "yes/no": 84.54
+      }
+    },
+    "standard": {
+      "overall": 67.95,
+      "perAnswerType": {
+        "other": 58.07,
+        "number": 47.65,
+        "yes/no": 84.64
+      }
+    },
+    "team_name_order": 17,
+    "team_name": "University of Guelph MLRG",
+    "ref": "",
+    "method": "Fusion operator search"
+  },
+  {
+    "team_members": "Yan Zhang (University of Southampton), Jonathon Hare (University of Southampton), Adam Prügel-Bennett (University of Southampton)",
+    "challenge": {
+      "overall": 68.28,
+      "perAnswerType": {
+        "other": 59.24,
+        "number": 51.2,
+        "yes/no": 83.2
+      }
+    },
+    "dev": {
+      "overall": 68.09,
+      "perAnswerType": {
+        "other": 58.97,
+        "number": 51.62,
+        "yes/no": 83.14
+      }
+    },
+    "standard": {
+      "overall": 68.41,
+      "perAnswerType": {
+        "other": 59.11,
+        "number": 51.39,
+        "yes/no": 83.56
+      }
+    },
+    "team_name_order": 18,
+    "team_name": "VLC Southampton",
+    "ref": "https://openreview.net/forum?id=B12Js_yRb",
+    "method": "We design a counting component to tackle counting questions in VQA. The component uses a graph-based deduplication method to handle overlapping bounding boxes in a fully differentiable way. This allows it to be used in any model that uses soft attention over object proposals. Project: https://github.com/Cyanogenoid/vqa-counting"
+  },
+  {
+    "team_members": "N/A",
+    "challenge": {
+      "overall": 64.96,
+      "perAnswerType": {
+        "other": 55.37,
+        "number": 43.47,
+        "yes/no": 81.69
+      }
+    },
+    "dev": {
+      "overall": 64.87,
+      "perAnswerType": {
+        "other": 55.15,
+        "number": 43.22,
+        "yes/no": 82.04
+      }
+    },
+    "standard": {
+      "overall": 65.07,
+      "perAnswerType": {
+        "other": 55.29,
+        "number": 42.36,
+        "yes/no": 82.28
+      }
+    },
+    "team_name_order": 19,
+    "team_name": "VQA-Learning",
+    "ref": "",
+    "method": "VQA with attention"
+  },
+  {
+    "team_members": "N/A",
+    "challenge": {
+      "overall": 66.75,
+      "perAnswerType": {
+        "other": 57.4,
+        "number": 48.67,
+        "yes/no": 82.3
+      }
+    },
+    "dev": {
+      "overall": 66.58,
+      "perAnswerType": {
+        "other": 57.21,
+        "number": 48.79,
+        "yes/no": 82.27
+      }
+    },
+    "standard": {
+      "overall": 66.86,
+      "perAnswerType": {
+        "other": 57.48,
+        "number": 48.66,
+        "yes/no": 82.42
+      }
+    },
+    "team_name_order": 20,
+    "team_name": "VQA-Machine+",
+    "ref": "",
+    "method": "counting4"
+  },
+  {
+    "team_members": "N/A",
+    "challenge": {
+      "overall": 70.01,
+      "perAnswerType": {
+        "other": 60.79,
+        "number": 48.94,
+        "yes/no": 86.22
+      }
+    },
+    "dev": {
+      "overall": 69.81,
+      "perAnswerType": {
+        "other": 60.59,
+        "number": 49.39,
+        "yes/no": 86.06
+      }
+    },
+    "standard": {
+      "overall": 70.17,
+      "perAnswerType": {
+        "other": 60.76,
+        "number": 49.17,
+        "yes/no": 86.51
+      }
+    },
+    "team_name_order": 21,
+    "team_name": "VQA-ReasonTensor",
+    "ref": "",
+    "method": "a novel deep attention neural tensor network (DA-NTN) for visual question answering, which can discover the joint correlations over images, questions and answers by tensor-based representations."
+  },
+  {
+    "team_members": "Qing Li (University of Science and Technology of China), Jiuxiang Gu (Nanyang Technological University), Terry Jianxiong Yin (NVIDIA AI Tech Centre), Joty Shafiq Rayhan (Nanyang Technological University), Cai Jianfei (Nanyang Technological University), Simon See (NVIDIA AI Tech Centre), Aik Beng Ng (NVIDIA AI Tech Centre)",
+    "challenge": {
+      "overall": 69.58,
+      "perAnswerType": {
+        "other": 60.4,
+        "number": 48.97,
+        "yes/no": 85.62
+      }
+    },
+    "dev": {
+      "overall": 69.2,
+      "perAnswerType": {
+        "other": 59.95,
+        "number": 48.65,
+        "yes/no": 85.52
+      }
+    },
+    "standard": {
+      "overall": 69.74,
+      "perAnswerType": {
+        "other": 60.4,
+        "number": 48.65,
+        "yes/no": 86.03
+      }
+    },
+    "team_name_order": 22,
+    "team_name": "VQA_NTU",
+    "ref": "",
+    "method": "In this work, we first improve the soft-attention based VQA model with multi-level attention (bottom-up features, attributes, etc.). After that, instead of simply combining the multi-modal feature representations, we fuse the features with compact bilinear pooling. The final results are achieved by model ensembling."
+  },
+  {
+    "team_members": "N/A",
+    "challenge": {
+      "overall": 63.5,
+      "perAnswerType": {
+        "other": 53.71,
+        "number": 39.46,
+        "yes/no": 81.16
+      }
+    },
+    "dev": {
+      "overall": 63.4,
+      "perAnswerType": {
+        "other": 53.7,
+        "number": 39.43,
+        "yes/no": 81.18
+      }
+    },
+    "standard": {
+      "overall": 63.66,
+      "perAnswerType": {
+        "other": 53.75,
+        "number": 39.43,
+        "yes/no": 81.41
+      }
+    },
+    "team_name_order": 23,
+    "team_name": "VQA_San",
+    "ref": "",
+    "method": "none"
+  },
+  {
+    "team_members": "N/A",
+    "challenge": {
+      "overall": 66.11,
+      "perAnswerType": {
+        "other": 56.8,
+        "number": 48.37,
+        "yes/no": 81.52
+      }
+    },
+    "dev": {
+      "overall": 65.8,
+      "perAnswerType": {
+        "other": 56.69,
+        "number": 48,
+        "yes/no": 81.2
+      }
+    },
+    "standard": {
+      "overall": 66.1,
+      "perAnswerType": {
+        "other": 56.87,
+        "number": 47.38,
+        "yes/no": 81.62
+      }
+    },
+    "team_name_order": 24,
+    "team_name": "Vardaan",
+    "ref": "",
+    "method": "LSTM instead of GRU"
+  },
+  {
+    "team_members": "N/A",
+    "challenge": {
+      "overall": 62.23,
+      "perAnswerType": {
+        "other": 53.31,
+        "number": 35.58,
+        "yes/no": 79.6
+      }
+    },
+    "dev": {
+      "overall": 61.72,
+      "perAnswerType": {
+        "other": 52.68,
+        "number": 35.25,
+        "yes/no": 79.42
+      }
+    },
+    "standard": {
+      "overall": 62.11,
+      "perAnswerType": {
+        "other": 52.97,
+        "number": 34.73,
+        "yes/no": 79.82
+      }
+    },
+    "team_name_order": 25,
+    "team_name": "akshay_isical",
+    "ref": "",
+    "method": "nmn with count constraint"
+  },
+  {
+    "team_members": "N/A",
+    "challenge": {
+      "overall": 70.36,
+      "perAnswerType": {
+        "other": 60.94,
+        "number": 49.68,
+        "yes/no": 86.68
+      }
+    },
+    "dev": {
+      "overall": 70.19,
+      "perAnswerType": {
+        "other": 60.69,
+        "number": 50.29,
+        "yes/no": 86.62
+      }
+    },
+    "standard": {
+      "overall": 70.6,
+      "perAnswerType": {
+        "other": 61.11,
+        "number": 49.93,
+        "yes/no": 86.93
+      }
+    },
+    "team_name_order": 26,
+    "team_name": "bytedance",
+    "ref": "",
+    "method": "mfh sigatt glu"
+  },
+  {
+    "team_members": "Jialin Wu (University of Texas at Austin), Zeyuan Hu (University of Texas at Austin), Raymond J. Mooney (University of Texas at Austin)",
+    "challenge": {
+      "overall": 69.75,
+      "perAnswerType": {
+        "other": 60.79,
+        "number": 47.32,
+        "yes/no": 86.01
+      }
+    },
+    "dev": {
+      "overall": 69.52,
+      "perAnswerType": {
+        "other": 60.44,
+        "number": 47.56,
+        "yes/no": 86.04
+      }
+    },
+    "standard": {
+      "overall": 69.67,
+      "perAnswerType": {
+        "other": 60.41,
+        "number": 47.26,
+        "yes/no": 86.2
+      }
+    },
+    "team_name_order": 27,
+    "team_name": "caption_vqa",
+    "ref": "",
+    "method": "Our method jointly perform image captioning task and VQA task. We found that these two tasks can be good complements to each other."
+  },
+  {
+    "team_members": "Zhiwei Fang (Institute of Automation, Chinese Academy of Sciences), Jing Liu (Institute of Automation, Chinese Academy of Sciences), Qu Tang (Southeast University-Monash University Joint Graduate School), Yanyuan Qiao (University of Chinese Academy of Sciences), Fei Liu (Institute of Automation, Chinese Academy of Sciences), Yong Li (Institute of Automation, Chinese Academy of Sciences), Hanqing Lu (Institute of Automation, Chinese Academy of Sciences)",
+    "challenge": {
+      "overall": 71.27,
+      "perAnswerType": {
+        "other": 62.43,
+        "number": 51.11,
+        "yes/no": 86.78
+      }
+    },
+    "dev": {
+      "overall": 71.05,
+      "perAnswerType": {
+        "other": 62.15,
+        "number": 50.99,
+        "yes/no": 86.83
+      }
+    },
+    "standard": {
+      "overall": 71.31,
+      "perAnswerType": {
+        "other": 62.31,
+        "number": 51.05,
+        "yes/no": 86.98
+      }
+    },
+    "team_name_order": 28,
+    "team_name": "casia_iva",
+    "ref": "",
+    "method": "We use the proposed Coherent Dropout and Siamese Dropout Mechanism to solve the problems of overfitting and explosion of output variance. Besides, we develop an deeper and wider and more powerful question encoder based on the proposed techniques of dropout, which can improve the performance a lot."
+  },
+  {
+    "team_members": "N/A",
+    "challenge": {
+      "overall": 65.29,
+      "perAnswerType": {
+        "other": 56.08,
+        "number": 41.97,
+        "yes/no": 82.08
+      }
+    },
+    "dev": {
+      "overall": 65,
+      "perAnswerType": {
+        "other": 55.71,
+        "number": 41.87,
+        "yes/no": 82.06
+      }
+    },
+    "standard": {
+      "overall": 65.31,
+      "perAnswerType": {
+        "other": 56.11,
+        "number": 41.5,
+        "yes/no": 82.14
+      }
+    },
+    "team_name_order": 29,
+    "team_name": "dandelin",
+    "ref": "",
+    "method": "image features generated with salient region detection"
+  },
+  {
+    "team_members": "N/A",
+    "challenge": {
+      "overall": 70.33,
+      "perAnswerType": {
+        "other": 61.37,
+        "number": 50.46,
+        "yes/no": 85.9
+      }
+    },
+    "dev": {
+      "overall": 70.18,
+      "perAnswerType": {
+        "other": 61.14,
+        "number": 50.93,
+        "yes/no": 85.9
+      }
+    },
+    "standard": {
+      "overall": 70.46,
+      "perAnswerType": {
+        "other": 61.37,
+        "number": 50.36,
+        "yes/no": 86.18
+      }
+    },
+    "team_name_order": 30,
+    "team_name": "fs",
+    "ref": "",
+    "method": "ensemble"
+  },
+  {
+    "team_members": "N/A",
+    "challenge": {
+      "overall": 65.23,
+      "perAnswerType": {
+        "other": 55.57,
+        "number": 44.79,
+        "yes/no": 81.77
+      }
+    },
+    "dev": {
+      "overall": 64.99,
+      "perAnswerType": {
+        "other": 55.25,
+        "number": 44.22,
+        "yes/no": 81.93
+      }
+    },
+    "standard": {
+      "overall": 65.06,
+      "perAnswerType": {
+        "other": 55.43,
+        "number": 42.92,
+        "yes/no": 81.94
+      }
+    },
+    "team_name_order": 31,
+    "team_name": "ghost",
+    "ref": "",
+    "method": "VQA with attention"
+  },
+  {
+    "team_members": "N/A",
+    "challenge": {
+      "overall": 70.62,
+      "perAnswerType": {
+        "other": 61.37,
+        "number": 51.65,
+        "yes/no": 86.3
+      }
+    },
+    "dev": {
+      "overall": 70.49,
+      "perAnswerType": {
+        "other": 61.25,
+        "number": 52.08,
+        "yes/no": 86.22
+      }
+    },
+    "standard": {
+      "overall": 70.77,
+      "perAnswerType": {
+        "other": 61.42,
+        "number": 51.65,
+        "yes/no": 86.54
+      }
+    },
+    "team_name_order": 32,
+    "team_name": "graph-attention-network",
+    "ref": "",
+    "method": "graph-attention-network"
+  },
+  {
+    "team_members": "Ke Su (Tsinghua University), Yinpeng Dong (Tsinghua University), Jianguo Li (Intel Labs China), Hang Su (Tsinghua University)",
+    "challenge": {
+      "overall": 69.66,
+      "perAnswerType": {
+        "other": 60.57,
+        "number": 48.78,
+        "yes/no": 85.66
+      }
+    },
+    "dev": {
+      "overall": 69.51,
+      "perAnswerType": {
+        "other": 60.31,
+        "number": 49.01,
+        "yes/no": 85.76
+      }
+    },
+    "standard": {
+      "overall": 69.7,
+      "perAnswerType": {
+        "other": 60.45,
+        "number": 48.54,
+        "yes/no": 85.89
+      }
+    },
+    "team_name_order": 33,
+    "team_name": "nagizero",
+    "ref": "",
+    "method": "We make use of complementary pairs by defining a pairwise loss on each complementary pair, which is added to the training objective function to guide the model."
+  },
+  {
+    "team_members": "N/A",
+    "challenge": {
+      "overall": 69.09,
+      "perAnswerType": {
+        "other": 59.87,
+        "number": 47.9,
+        "yes/no": 85.34
+      }
+    },
+    "dev": {
+      "overall": 68.81,
+      "perAnswerType": {
+        "other": 59.56,
+        "number": 47.98,
+        "yes/no": 85.21
+      }
+    },
+    "standard": {
+      "overall": 69.21,
+      "perAnswerType": {
+        "other": 59.85,
+        "number": 47.74,
+        "yes/no": 85.61
+      }
+    },
+    "team_name_order": 34,
+    "team_name": "nmlab612",
+    "ref": "",
+    "method": "N/A"
+  },
+  {
+    "team_members": "Seung Wook Kim (University of Toronto), Makarand Tapaswi (University of Toronto), Sanja Fidler (University of Toronto & Vector Institute)",
+    "challenge": {
+      "overall": 70.64,
+      "perAnswerType": {
+        "other": 61.16,
+        "number": 54.26,
+        "yes/no": 85.87
+      }
+    },
+    "dev": {
+      "overall": 70.25,
+      "perAnswerType": {
+        "other": 60.6,
+        "number": 54.39,
+        "yes/no": 85.74
+      }
+    },
+    "standard": {
+      "overall": 70.68,
+      "perAnswerType": {
+        "other": 60.8,
+        "number": 54.26,
+        "yes/no": 86.34
+      }
+    },
+    "team_name_order": 35,
+    "team_name": "ut-swk",
+    "ref": "",
+    "method": "Progressive Module Networks consist of solvers for each task where a solver is defined as a neural module that calls existing modules (solvers for simpler tasks) in a program-like manner. Lower modules are a black box to the calling module, and communicate only via a query and an output. Thus, a module for a new task learns to query existing modules and composes their outputs in order to produce its own output. PMN effectively combines previous skill-sets, does not suffer from forgetting, and is fully differentiable."
+  },
+  {
+    "team_members": "N/A",
+    "challenge": {
+      "overall": 64.45,
+      "perAnswerType": {
+        "other": 54.14,
+        "number": 44.65,
+        "yes/no": 81.55
+      }
+    },
+    "dev": {
+      "overall": 64.42,
+      "perAnswerType": {
+        "other": 54.34,
+        "number": 44.14,
+        "yes/no": 81.63
+      }
+    },
+    "standard": {
+      "overall": 64.72,
+      "perAnswerType": {
+        "other": 54.4,
+        "number": 44.38,
+        "yes/no": 81.92
+      }
+    },
+    "team_name_order": 36,
+    "team_name": "vqa-suchow",
+    "ref": "",
+    "method": "dualCrossGuidedAttention50_results"
+  },
+  {
+    "team_members": "VQA Team",
+    "challenge": {
+      "overall": 54.08,
+      "perAnswerType": {
+        "other": 41.91,
+        "number": 35.52,
+        "yes/no": 72.99
+      }
+    },
+    "dev": {
+      "overall": 54.02,
+      "perAnswerType": {
+        "other": 41.93,
+        "number": 35.43,
+        "yes/no": 73.08
+      }
+    },
+    "standard": {
+      "overall": 54.22,
+      "perAnswerType": {
+        "other": 41.83,
+        "number": 35.18,
+        "yes/no": 73.46
+      }
+    },
+    "team_name_order": 37,
+    "team_name": "vqateam_deeper_LSTM_Q_norm_I",
+    "ref": "https://github.com/GT-Vision-Lab/VQA_LSTM_CNN",
+    "method": "Baseline VQA model from Antol et al., ICCV 2015. 2-channel (image and question) model. Question channel (LSTM with 2 hidden layers) provides question representation and the image channel (activations from last hidden layer of VGGNet) provides image representation. The image features thus obtained are l2 normalized. Question and image features are pointwise multiplied and fed to fully connected layer to obtain softmax distribution over 1000 answers."
+  },
+  {
+    "team_members": "VQA Team",
+    "challenge": {
+      "overall": 44.34,
+      "perAnswerType": {
+        "other": 27.64,
+        "number": 31.75,
+        "yes/no": 66.79
+      }
+    },
+    "dev": {
+      "overall": 44.22,
+      "perAnswerType": {
+        "other": 27.36,
+        "number": 31.41,
+        "yes/no": 67.17
+      }
+    },
+    "standard": {
+      "overall": 44.26,
+      "perAnswerType": {
+        "other": 27.37,
+        "number": 31.55,
+        "yes/no": 67.01
+      }
+    },
+    "team_name_order": 38,
+    "team_name": "vqateam_language_only",
+    "ref": "",
+    "method": "Similar model architecture as Deeper LSTM Question + Normalized Image model from Antol et al., ICCV 2015 but without the image channel. Question is passed through an LSTM with 2 hidden layers to provide question representation, which is fed to fully connected layer to obtain softmax distribution over 1000 answers."
+  },
+  {
+    "team_members": "VQA Team",
+    "challenge": {
+      "overall": 62.33,
+      "perAnswerType": {
+        "other": 53.47,
+        "number": 38.52,
+        "yes/no": 78.85
+      }
+    },
+    "dev": {
+      "overall": 61.96,
+      "perAnswerType": {
+        "other": 53.23,
+        "number": 38.81,
+        "yes/no": 78.41
+      }
+    },
+    "standard": {
+      "overall": 62.27,
+      "perAnswerType": {
+        "other": 53.36,
+        "number": 38.28,
+        "yes/no": 78.82
+      }
+    },
+    "team_name_order": 39,
+    "team_name": "vqateam_mcb_benchmark",
+    "ref": "https://arxiv.org/abs/1606.01847",
+    "method": "'MCB + Att.' model (row 3, Table 4) from Fukui et al., EMNLP 2016. This model is trained only on VQA v2.0 train+val set (without using Visual Genome data) and without using pretrained Glove embeddings."
+  },
+  {
+    "team_members": "VQA Team",
+    "challenge": {
+      "overall": 25.98,
+      "perAnswerType": {
+        "other": 1.13,
+        "number": 0.34,
+        "yes/no": 61.26
+      }
+    },
+    "dev": {
+      "overall": 25.7,
+      "perAnswerType": {
+        "other": 1.11,
+        "number": 0.33,
+        "yes/no": 61.03
+      }
+    },
+    "standard": {
+      "overall": 25.98,
+      "perAnswerType": {
+        "other": 1.17,
+        "number": 0.36,
+        "yes/no": 61.2
+      }
+    },
+    "team_name_order": 40,
+    "team_name": "vqateam_prior",
+    "ref": "",
+    "method": "'yes' (prior) is predicted as the answer for all questions"
+  },
+  {
+    "team_members": "N/A",
+    "challenge": {
+      "overall": 64.22,
+      "perAnswerType": {
+        "other": 53.4,
+        "number": 46.82,
+        "yes/no": 81.27
+      }
+    },
+    "dev": {
+      "overall": 64.07,
+      "perAnswerType": {
+        "other": 53.22,
+        "number": 46.36,
+        "yes/no": 81.44
+      }
+    },
+    "standard": {
+      "overall": 64.26,
+      "perAnswerType": {
+        "other": 53.27,
+        "number": 46.44,
+        "yes/no": 81.57
+      }
+    },
+    "team_name_order": 41,
+    "team_name": "windLBL",
+    "ref": "",
+    "method": "capsBU22"
+  },
+  {
+    "team_members": "N/A",
+    "challenge": {
+      "overall": 66.2,
+      "perAnswerType": {
+        "other": 58.71,
+        "number": 39.28,
+        "yes/no": 82
+      }
+    },
+    "dev": {
+      "overall": 65.93,
+      "perAnswerType": {
+        "other": 58.5,
+        "number": 39.55,
+        "yes/no": 81.77
+      }
+    },
+    "standard": {
+      "overall": 66.34,
+      "perAnswerType": {
+        "other": 58.77,
+        "number": 39.56,
+        "yes/no": 82.07
+      }
+    },
+    "team_name_order": 42,
+    "team_name": "xie",
+    "ref": "",
+    "method": "others-12"
+  },
+  {
+    "team_members": "N/A",
+    "challenge": {
+      "overall": 69.19,
+      "perAnswerType": {
+        "other": 59.55,
+        "number": 50.37,
+        "yes/no": 85.25
+      }
+    },
+    "dev": {
+      "overall": 69.06,
+      "perAnswerType": {
+        "other": 59.46,
+        "number": 50.62,
+        "yes/no": 85.21
+      }
+    },
+    "standard": {
+      "overall": 69.31,
+      "perAnswerType": {
+        "other": 59.66,
+        "number": 50.24,
+        "yes/no": 85.42
+      }
+    },
+    "team_name_order": 43,
+    "team_name": "yudf2010",
+    "ref": "",
+    "method": "ensemble-11 + counting-200"
+  },
+  {
+    "team_members": "N/A",
+    "challenge": {
+      "overall": 67.12,
+      "perAnswerType": {
+        "other": 57.7,
+        "number": 50.12,
+        "yes/no": 82.45
+      }
+    },
+    "dev": {
+      "overall": 66.81,
+      "perAnswerType": {
+        "other": 57.5,
+        "number": 50.26,
+        "yes/no": 82.11
+      }
+    },
+    "standard": {
+      "overall": 67.26,
+      "perAnswerType": {
+        "other": 57.86,
+        "number": 50.28,
+        "yes/no": 82.52
+      }
+    },
+    "team_name_order": 44,
+    "team_name": "zhi-smile",
+    "ref": "",
+    "method": "Counting"
+  },
+  {
+    "date": "2018-06-29"
+  }
+]
