@@ -44,7 +44,7 @@
                     <li class="has-dropdown"><a href="http://visualqa.org/vqa_v2_teaser.html">Browse</a>
                         <ul class="dropdown">
                             <li><a href="http://visualqa.org/vqa_v2_teaser.html">VQA v2</a></li>
-                            
+
                         </ul>
                     </li>
                     <li><a href="http://visualqa.org/visualize/">Visualize</a></li>
@@ -56,7 +56,8 @@
                     </li> -->
                     <li class="has-dropdown"><a href="workshop.html">Workshop</a>
                         <ul class="dropdown">
-                            <li><a href="workshop.html">2018</a></li>
+                            <li><a href="workshop.html">2019</a></li>
+                            <li><a href="workshop_2018.html">2018</a></li>
                             <li><a href="workshop_2017.html">2017</a></li>
                             <li><a href="workshop_2016.html">2016</a></li>
                         </ul>
@@ -84,7 +85,7 @@
                     <li><a href="amc.html">Abstract Multiple-Choice</a></li>
                 </ul>  -->
             </p>
-            
+
             <hr>
             <div class="large-12 columns">
                 <img src="./static/img/challenge.png" height="900" width="500" style="display:block; margin:auto;" frameBorder="0">
@@ -103,7 +104,7 @@
                             </p><br>
                         <p align=left style="margin-top:-10px;">1) Report test-standard accuracies, which can be calculated using either of the non-test-dev phases, i.e., "test2017" or "Challenge test2017" at <a href="https://evalai.cloudcv.org/featured-challenges/1/overview">oe-real-2017</a>.
                             <br>
-                            <br> 2) Compare their test-standard accuracies with those on the test2017 leaderboard [<a href="https://evalai.cloudcv.org/featured-challenges/1/leaderboard/3">oe-real-leaderboard-2017</a>]. 
+                            <br> 2) Compare their test-standard accuracies with those on the test2017 leaderboard [<a href="https://evalai.cloudcv.org/featured-challenges/1/leaderboard/3">oe-real-leaderboard-2017</a>].
                         </p>
             </div>
         </div>
@@ -111,7 +112,7 @@
             <h1 style="font-size:30px; color:grey; font-weight: 200">Overview</h1>
             <div class="large-12 columns" style="text-align:left;">
                 <p style="font-size:15px; font-weight: 200; text-align:left">
-                    We are pleased to announce the Visual Question Answering (VQA) Challenge 2017. Given an image and a natural language question about the image, the task is to provide an accurate natural language answer. Visual questions selectively target different areas of an image, including background details and underlying context. 
+                    We are pleased to announce the Visual Question Answering (VQA) Challenge 2017. Given an image and a natural language question about the image, the task is to provide an accurate natural language answer. Visual questions selectively target different areas of an image, including background details and underlying context.
                     <br>
                     Teams are encouraged to compete in the following VQA challenge:
                 </p>
@@ -134,15 +135,15 @@
                 <p style="font-size:15px; font-weight: 200; text-align:left">
                     VQA Challenge 2017 is the second edition of the VQA Challenge. VQA Challenge 2016 was organized last year, and the results were announced at VQA Challenge Workshop, CVPR 2016. More details about VQA Challenge 2016 can be found <a href="vqa_v1_challenge.html">here</a>.
                 </p>
-                
+
                 <p style="font-size:15px; font-weight: 200; text-align:left">
                     Answers to some common questions about the challenge can be found in <a href="#faq">the FAQ section</a>.
                 </p>
-                
+
             </div>
             <hr>
         </div>
-        
+
         <div class="row">
             <h1 style="font-size:30px; color:grey; font-weight: 200">Dates</h1>
             <div class="large-12 columns" style="text-align:left;">
@@ -151,18 +152,18 @@
                     <code>
                     <span style="width:20%; margin:5px; display:inline-block;">March 9, 2017</span> <span style="display:inline-block; margin:0px;">Version 2.0 of the VQA train and val data released</span><br>
                     <span style="width:20%; margin:5px; display:inline-block;">April 26, 2017</span> <span style="display:inline-block; margin:0px;">Version 2.0 of the VQA test data released and test evaluation servers running</span><br>
-                    <span style="width:20%; margin:5px; display:inline-block;">June 30, 2017 <span style="background-color:red; color:white;">Extended</span></span> <span style="display:inline-block; margin:0px;">Submission deadline at 23:59:59 UTC</span> 
+                    <span style="width:20%; margin:5px; display:inline-block;">June 30, 2017 <span style="background-color:red; color:white;">Extended</span></span> <span style="display:inline-block; margin:0px;">Submission deadline at 23:59:59 UTC</span>
                    <!--  <span style="background-color:red; color:white;">Extended</span> -->
                 </code></p>
             </div>
             <div class="large-12 columns" style="text-align:left;">
                  <p style="font-size:15px; font-weight: 200; text-align:justify; padding:5px; width:99%">
                     After the challenge deadline, all challenge participant results on test-standard split will be made public on a test-standard leaderboard.
-                </p> 
+                </p>
             </div>
             <hr>
         </div>
-        
+
            <!--  <div class="row">
             <h1 style="font-size:30px; color:grey; font-weight: 200">Organizers</h1>
             <div class="large-12 columns">
@@ -183,8 +184,8 @@
             <div class="large-12 columns" style="text-align:left;">
                 <p style="font-size:15px; font-weight: 200; text-align:left">
                     Following <a href="http://mscoco.org/dataset/#detections-upload">COCO</a>, we have divided the test set for balanced real images into a number of splits, including test-dev, test-standard, test-challenge, and test-reserve, to limit overfitting while giving researchers more flexibility to test their system. Test-dev is used for debugging and validation experiments and allows for maximum 10 submissions per day.
-                
-                    Test-standard is the default test data for the VQA competition. When comparing to the state of the art (e.g., in papers), results should be reported on test-standard. Test-standard is also used to maintain a public leaderboard that is updated upon submission. Test-reserve is used to protect against possible overfitting. If there are substantial differences between a method's scores on test-standard and test-reserve, this will raise a red-flag and prompt further investigation. Results on test-reserve will not be publicly revealed. Finally, test-challenge is used to determine the winners of the challenge. 
+
+                    Test-standard is the default test data for the VQA competition. When comparing to the state of the art (e.g., in papers), results should be reported on test-standard. Test-standard is also used to maintain a public leaderboard that is updated upon submission. Test-reserve is used to protect against possible overfitting. If there are substantial differences between a method's scores on test-standard and test-reserve, this will raise a red-flag and prompt further investigation. Results on test-reserve will not be publicly revealed. Finally, test-challenge is used to determine the winners of the challenge.
                 </p>
                 <p style="font-size:15px; font-weight: 200; text-align:left">
                     The <a href="evaluation.html">evaluation</a> page lists detailed information regarding how submissions will be scored. The evaluation servers are open. This year we are hosting the evaluation servers on a new Evaluation Platform called <a href="https://evalai.cloudcv.org">EvalAI</a>, developed by the <a href="https://cloudcv.org">CloudCV</a> team. EvalAI is an <a href="https://github.com/Cloud-CV/EvalAI">open-source</a> web platform designed for organizing and participating in challenges to push the state of the art on AI tasks. Click <a href="#evalai">here</a> to know more about EvalAI. We encourage people to first submit to "Real test-dev2017 (oe)" phase to make sure that you understand the submission procedure, as it is identical to the full test set submission procedure. <b>Note that the "Real test-dev2017 (oe)" and "Real Challenge test2017 (oe)" evaluation servers do not have a public leaderboard.</b>.
@@ -195,7 +196,7 @@
                     <br> Before uploading your results to EvalAI, you will need to create a JSON file containing your results in the correct format as described on the <a href="evaluation.html">evaluation</a> page.
                 </p>
                 <p style="font-size:15px; font-weight: 200; text-align:left">
-                    To <b>submit</b> your JSON file to the VQA evaluation servers, click on the “Submit” tab on the <a href="https://evalai.cloudcv.org/web/challenges/challenge-page/1/overview">VQA Real Image Challenge (Open-Ended) 2017</a> page on EvalAI. Select the phase ("Real test-dev2017 (oe)" or "Real test2017 (oe)" or "Real Challenge test2017 (oe)"). <b>Please select the JSON file to upload and fill in the required fields such as "method name" and "method description" and click “Submit”</b>. After the file is uploaded the evaluation server will begin processing. To view the status of your submission please go to <a href="https://evalai.cloudcv.org/web/challenges/challenge-page/1/my-submission">“My Submissions”</a> tab and choose the phase to the results file was uploaded. Please be patient, the evaluation may take quite some time to complete (~1min on test-dev and ~3min on the full test set). If the status of your submission is “Failed” please check your "Stderr File" for the corresponding submission. 
+                    To <b>submit</b> your JSON file to the VQA evaluation servers, click on the “Submit” tab on the <a href="https://evalai.cloudcv.org/web/challenges/challenge-page/1/overview">VQA Real Image Challenge (Open-Ended) 2017</a> page on EvalAI. Select the phase ("Real test-dev2017 (oe)" or "Real test2017 (oe)" or "Real Challenge test2017 (oe)"). <b>Please select the JSON file to upload and fill in the required fields such as "method name" and "method description" and click “Submit”</b>. After the file is uploaded the evaluation server will begin processing. To view the status of your submission please go to <a href="https://evalai.cloudcv.org/web/challenges/challenge-page/1/my-submission">“My Submissions”</a> tab and choose the phase to the results file was uploaded. Please be patient, the evaluation may take quite some time to complete (~1min on test-dev and ~3min on the full test set). If the status of your submission is “Failed” please check your "Stderr File" for the corresponding submission.
                 </p>
                 <p style="font-size:15px; font-weight: 200; text-align:left">
                     After evaluation is complete and the server shows a status of “Finished”, you will have the option to download your evaluation results by selecting “Result File” for the corresponding submission. The "Result File" will contain the aggregated accuracy on the corresponding test-split (test-dev split for "Real test-dev2017 (oe)" phase, test-standard and test-dev splits for both "Real test2017 (oe)" and "Real Challenge test2017 (oe)" phases). If you want your submission to appear on the public leaderboard, check the box under "Show on Leaderboard" for the corresponding submission.
@@ -227,7 +228,7 @@
             </div>
             <hr>
         </div>
-        
+
         <div class="row">
             <a name="faq"></a>
             <h1 style="font-size:30px; color:grey; font-weight: 200">Frequently Asked Questions (FAQ)</h1>
@@ -413,7 +414,7 @@
             </div>
         </div>
 
-        
+
         <script>
         (function(i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
