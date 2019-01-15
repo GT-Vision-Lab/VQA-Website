@@ -6,13 +6,13 @@
     <!--Open Graph Related Stuff-->
     <meta property="og:title" content="VQA Workshop 2019" />
     <meta property="og:url" content="http://visualqa.org/workshop.html" />
-    <meta property="og:description" content="June XXth at CVPR 2019" /> <!-- > TODO Change the date <-->
+    <meta property="og:description" content="June at CVPR 2019" /> <!-- > TODO Change the date <-->
     <meta property="og:site_name" content="Visual Question Answering and Dialog" />
     <meta property="og:image" content="http://visualqa.org/static/img/vqa_facebook_teaser_v4_jpg_100.jpg" />
     <meta property="og:image:url" content="http://visualqa.org/static/img/vqa_facebook_teaser_v4_jpg_100.jpg" />
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="VQA and Dialog Workshop 2019">
-    <meta name="twitter:description" content="June XXth at CVPR 2019"> <!-- > TODO Change the date <-->
+    <meta name="twitter:description" content="June at CVPR 2019"> <!-- > TODO Change the date <-->
     <meta name="twitter:image" content="http://visualqa.org/static/img/vqa_facebook_teaser_v4_jpg_100.jpg">
     <title>VQA: Visual Question Answering</title>
     <link rel="stylesheet" href="./static/css/foundation.css">
@@ -127,13 +127,32 @@
             <h1 style="font-size:30px; color:grey; font-weight: 200">Introduction</h1>
             <div class="large-12 columns" style="text-align:left;">
                 <p style="font-size:15px; font-weight: 400; text-align:left">
-                    The primary purpose of this workshop is two-fold. First is to benchmark progress in Visual Question Answering by hosting the 3rd edition of the Visual Question Answering Challenge on the <a href="http://visualqa.org/download.html">VQA v2.0 dataset</a> introduced in <a href="https://arxiv.org/abs/1612.00837"> Goyal et al., CVPR 2017</a>. The <a href="http://visualqa.org/challenge.html">2nd edition of the VQA Challenge</a> was organized at CVPR 2017 on VQA v2.0 dataset. The <a href="http://visualqa.org/vqa_v1_challenge.html">1st edition of the VQA Challenge</a> was organized at CVPR 2016 on the <a href="http://visualqa.org/vqa_v1_download.html"> 1st edition (v1.0) of the VQA dataset</a> introduced in <a href="http://arxiv.org/abs/1505.00468">Antol et al., ICCV 2015</a>. VQA v2.0 is more balanced and reduces language biases over VQA v1.0, and is about twice the size of VQA v1.0.
+                  The primary goal of this workshop is two-fold. First is to benchmark progress in Visual Question Answering and Visual Dialog by hosting three challenges:
+
+                  <ul>
+                    <li>
+                      VQA Challenge: The 4th edition of VQA Challenge will be hosted on the <a target="_blank" href="http://visualqa.org/download.html">VQA v2.0 dataset</a> introduced in <a target="_blank" href="https://arxiv.org/abs/1612.00837">Goyal et al., CVPR 2017</a>. The <a target="_blank" href="http://visualqa.org/challenge_2017.html">2nd</a> and <a target="_blank" href="http://visualqa.org/challenge_2018.html">3rd</a> edition of the VQA Challenge were organised at CVPR 2017 and CVPR 2018 on the VQA v2.0 dataset, and the <a target="_blank" href="http://visualqa.org/challenge_2016.html">1st edition</a> was organised at CVPR 2016 on the <a target="_blank" href="http://visualqa.org/vqa_v1_download.html">VQA v1.0 dataset</a> introduced in <a target="_blank" href="http://arxiv.org/abs/1505.00468">Antol et al., ICCV 2015</a>. VQA v2.0 is more balanced and reduces language biases over VQA v1.0, and is about twice the size of VQA v1.0.
+                      <br>
+                              <span style="margin-left:30px">Challenge Link: <a target="_blank" href="https://visualqa.org/challenge">https://visualqa.org/challenge</a></span>
+                    </li>
                     <br>
-                    <br>Our idea in creating this new "balanced" VQA dataset is the following: For every (image, question, answer) triplet (I,Q,A) in the VQA v1.0 dataset, we identify an image I' that has an answer A' to Q such that A and A' are different. Both the old (I,Q,A) and the new (I',Q,A') triplets are present in the VQA v2.0 dataset balancing the VQA v1.0 dataset on a per question basis. Since I and I' are semantically similar, a VQA model will have to understand the subtle differences between I and I' to provide the right answer to both images. It cannot succeed as easily by making "guesses" based on the language alone. This workshop will provide an opportunity to benchmark algorithms on VQA v2.0 and to identify state-of-the-art algorithms that need to truly understand the image content in order to perform well on this balanced VQA dataset.
+
+                    <li>
+                      TextVQA Challenge: The 1st edition of TextVQA Challenge will be hosted on the TextVQA dataset. TextVQA requires algorithms to look at an image, read text in the image, reason about it, and answer a given question.
+                      <br>
+                              <span style="margin-left:30px">Challenge Link:  Coming soon!</span>
+                    </li>
                     <br>
-                    <br>The second goal of this workshop is to continue to bring together researchers interested in visually grounded question answering and dialog systems to share state-of-the-art approaches, best practices, and future directions in multi-modal AI. In particular, this year, the workshop committee will extend the scope of invited talks, submitted papers, and poster presentations to include work on the related topic of <a href="http://visualdialog.org/">Visual Dialog</a> introduced by <a href="https://arxiv.org/abs/1611.08669">Das et al., CVPR 2017</a>. The concrete task in Visual Dialog is the following -- given an image I, a history of a dialog consisting of a sequence of question-answer pairs (Q1: `How many people are in wheelchairs?', A1: `Two', Q2: `What are their genders?', A2: `One male and one female'), and a natural language follow-up question (Q3: `Which one is holding a racket?'), the task for the machine is to answer the question in free-form natural language (A3: `The woman'). In addition to VQA style reasoning, Visual Dialog requires rich language understanding including co-reference resolution and memory.
+
+                    <li>
+                      Visual Dialog Challenge: The 2nd edition of Visual Dialog Challenge will be hosted on the VisDial v1.0 dataset introduced in  <a target="_blank" href="https://arxiv.org/abs/1611.08669">Das et al., CVPR 2017</a>. The <a target="_blank" href="https://visualdialog.org/challenge/2018">1st edition</a> of Visual Dialog Challenge was organised on the <a target="_blank" href=-"https://visualdialog.org/data">VisDial v1.0 dataset</a> at ECCV 2018. Visual Dialog is a novel task that requires an AI agent to hold a meaningful dialog with humans in natural, conversational language about visual content. Specifically, given an image, a dialog history (consisting of the image caption and a sequence of previous questions and answers), the agent has to answer a follow-up question in the dialog.
+                      <br>
+                               <span style="margin-left:30px">Challenge Link: <a target="_blank" href="https://visualdialog.org/challenge">https://visualdialog.org/challenge</a> </span>
+                    </li>
+
                     <br>
-                    <br>We invite submissions of extended abstracts of >= 2 pages describing work in relevant areas including: Visual Question Answering, Visual Dialog, (Textual) Question Answering, (Textual) Dialog Systems, Commonsense knowledge, Video Question Answering, Video Dialog, Vision + Language, and Vision + Language + Action (Embodied Agents). All accepted abstracts will be presented as posters at the workshop. The workshop is on June 18th, 2018 at the <a href="http://cvpr2018.thecvf.com/">IEEE Conference on Computer Vision and Pattern Recognition, 2018</a>.
+                    The second goal of this workshop is to continue to bring together researchers interested in visually-grounded question answering, dialog systems, and language in general to share state-of-the-art approaches, best practices, and future directions in multi-modal AI. In addition to invited talks from established researchers, we invite submissions of extended abstracts of at most 2 pages describing work in the relevant areas including: Visual Question Answering, Visual Dialog, (Textual) Question Answering, (Textual) Dialog Systems, Commonsense knowledge, Vision + Language, etc. All accepted abstracts will be presented as posters at the workshop to disseminate ideas. The workshop will held at the <a target="_blank" href="http://cvpr2019.thecvf.com/">IEEE Conference on Computer Vision and Pattern Recognition, 2019</a>.
+
                 </p>
             </div>
             <hr>
@@ -146,55 +165,57 @@
                         <p></p>
                     </div>
                     <div class="large-2 columns">
-                        <a href="http://www.alexander-schwing.de/"><img src="./static/invited/speakers_2019/alex.png" class="home_team_picture style=" width="150" height="150" ;>
+                        <a target="_blank" href="http://www.alexander-schwing.de/"><img src="./static/invited/speakers_2019/alex.png" class="home_team_picture style=" width="150" height="150" ;>
                             <br>
                             <p style="font-weight: 200;">Alex Schwing</a>
                         <br>University of Illinois at Urbana-Champaign</p>
                     </div>
                     <div class="large-2 columns">
-                        <a href="https://hhexiy.github.io/"><img src="./static/invited/speakers_2019/hehe.jpg" class="home_team_picture style=" width="150" height="150" ;>
+                        <a target="_blank" href="https://hhexiy.github.io/"><img src="./static/invited/speakers_2019/hehe.jpg" class="home_team_picture style=" width="150" height="150" ;>
                             <br>
                             <p style="font-weight: 200;">He He</a>
                         <br>Amazon Web Services  &nbsp--> New York University</p>
                     </div>
                     <div class="large-2 columns">
-                        <a href="https://people.eecs.berkeley.edu/~lisa_anne/"><img src="./static/invited/speakers_2019/lisa.jpg" class="home_team_picture style=" width="150" height="150" ;>
+                        <a target="_blank" href="https://people.eecs.berkeley.edu/~lisa_anne/"><img src="./static/invited/speakers_2019/lisa.jpg" class="home_team_picture style=" width="150" height="150" ;>
                             <br>
                             <p style="font-weight: 200;">Lisa Hendricks</a>
                         <br>University of California, Berkeley</p>
                     </div>
                     <div class="large-2 columns"></div>
                 </div>
+                <br>
+                <span style="margin-left:500px">More speakers to be added.</span>
                 <!-- <div class="row">
                     <div class="large-1 columns" style="padding-left:0px">
                         <p></p>
                     </div>
                     <div class="large-2 columns">
-                        <a href="http://www.cs.berkeley.edu/~malik/"><img src="./static/invited/jitendra.jpg" class="home_team_picture style=" width="150" height="150" ;>
+                        <a target="_blank" href="http://www.cs.berkeley.edu/~malik/"><img src="./static/invited/jitendra.jpg" class="home_team_picture style=" width="150" height="150" ;>
                             <br>
                             <p style="font-weight: 200;">Jitendra Malik</a>
                         <br>University of California, Berkeley & Facebook AI Research</p>
                     </div>
                     <div class="large-2 columns">
-                        <a href="http://www.cs.rochester.edu/~nasrinm/"><img src="./static/invited/nasrin.jpeg" class="home_team_picture style=" width="150" height="150" ;>
+                        <a target="_blank" href="http://www.cs.rochester.edu/~nasrinm/"><img src="./static/invited/nasrin.jpeg" class="home_team_picture style=" width="150" height="150" ;>
                             <br>
                             <p style="font-weight: 200;">Nasrin Mostafazadeh</a>
                         <br>Elemental Cognition</p>
                     </div>
                     <div class="large-2 columns">
-                        <a href="http://www.panderson.me/"><img src="./static/invited/peter.jpg" class="home_team_picture style=" width="150" height="150" ;>
+                        <a target="_blank" href="http://www.panderson.me/"><img src="./static/invited/peter.jpg" class="home_team_picture style=" width="150" height="150" ;>
                             <br>
                             <p style="font-weight: 200;">Peter Anderson</a>
                         <br>Australian National University</p>
                     </div>
                     <div class="large-2 columns">
-                        <a href="http://www.rossgirshick.info/"><img src="./static/invited/ross.jpeg" class="home_team_picture style=" width="150" height="150" ;>
+                        <a target="_blank" href="http://www.rossgirshick.info/"><img src="./static/invited/ross.jpeg" class="home_team_picture style=" width="150" height="150" ;>
                             <br>
                             <p style="font-weight: 200;">Ross Girshick</a>
                         <br>Facebook AI Research</p>
                     </div>
                     <div class="large-2 columns">
-                        <a href="https://homes.cs.washington.edu/~yejin"><img src="./static/invited/yejin.jpg" class="home_team_picture style=" width="150" height="150" ;>
+                        <a target="_blank" href="https://homes.cs.washington.edu/~yejin"><img src="./static/invited/yejin.jpg" class="home_team_picture style=" width="150" height="150" ;>
                             <br>
                             <p style="font-weight: 200;">Yejin Choi</a>
                         <br>University of Washington & AI2</p>
@@ -228,7 +249,10 @@
 
                                 <!-- <span style="display:inline-block; margin-left:100px;">Decision to Authors</span> -->
                                 <span style="width:40%; margin:5px; display:inline-block;">Apr 10, 2019</span>
-                                <span style="display:inline-block; margin-left:100px;">Camera Ready Submission</span>
+                                <span style="display:inline-block; margin-left:100px;">Camera Ready Submission</span><br>
+
+                                <span style="width:40%; margin:5px; display:inline-block;">Jun 2019</span>
+                                <span style="display:inline-block; margin-left:100px;">Workshop</span>
                             </code></p>
                     <!-- <p style="font-size:15px; font-weight: 400;">If you missed the deadline and are interested in presenting at the workshop, please shoot us an email.</p> -->
                 </div>
@@ -250,35 +274,35 @@
                         <p></p>
                     </div>
                     <div class="large-2 columns">
-                        <a href="https://abhishekdas.com/"><img src="./static/img/abhishek.jpg" class="home_team_picture" style="width: 100px; height:100px;">
+                        <a target="_blank" href="https://abhishekdas.com/"><img src="./static/img/abhishek.jpg" class="home_team_picture" style="width: 100px; height:100px;">
                             <br>
                         </a>
                         <p style="font-weight: 200;">Abhishek Das
                             <br>Georgia Tech</p>
                     </div>
                     <div class="large-2 columns">
-                        <a href="https://kdexd.github.io/"><img src="./static/img/karan.jpg" class="home_team_picture" style="width: 100px; height:100px;">
+                        <a target="_blank" href="https://kdexd.github.io/"><img src="./static/img/karan.jpg" class="home_team_picture" style="width: 100px; height:100px;">
                             <br>
                         </a>
                         <p style="font-weight: 200;">Karan Desai
                             <br>Georgia Tech</p>
                     </div>
                     <div class="large-2 columns">
-                        <a href="https://ayshrv.github.io/"><img src="./static/img/ayush.jpg" class="home_team_picture" style="width: 100px; height:100px;">
+                        <a target="_blank" href="https://ayshrv.github.io/"><img src="./static/img/ayush.jpg" class="home_team_picture" style="width: 100px; height:100px;">
                             <br>
                         </a>
                         <p style="font-weight: 200;">Ayush Shrivastava
                             <br>Georgia Tech</p>
                     </div>
                     <div class="large-2 columns">
-                        <a href="https://www.cc.gatech.edu/~ygoyal3/"><img src="./static/img/yash.jpg" class="home_team_picture" style="width: 100px; height:100px;">
+                        <a target="_blank" href="https://www.cc.gatech.edu/~ygoyal3/"><img src="./static/img/yash.jpg" class="home_team_picture" style="width: 100px; height:100px;">
                             <br>
                         </a>
                         <p style="font-weight: 200;">Yash Goyal
                             <br>Georgia Tech</p>
                     </div>
                     <div class="large-2 columns">
-                        <a href="https://www.cc.gatech.edu/~aagrawal307/"><img src="./static/img/aishwarya.jpg" class="home_team_picture" style="width: 100px; height:100px;">
+                        <a target="_blank" href="https://www.cc.gatech.edu/~aagrawal307/"><img src="./static/img/aishwarya.jpg" class="home_team_picture" style="width: 100px; height:100px;">
                             <br>
                         </a>
                         <p style="font-weight: 200; margin-left:-20px;">Aishwarya Agrawal
@@ -286,7 +310,7 @@
                     </div>
 
                     <!-- <div class="large-2 columns">
-                        <a href="https://satwikkottur.github.io/"><img src="./static/img/satwik.jpg" class="home_team_picture" style="width: 100px; height:100px;">
+                        <a target="_blank" href="https://satwikkottur.github.io/"><img src="./static/img/satwik.jpg" class="home_team_picture" style="width: 100px; height:100px;">
                             <br>
                         </a>
                         <p style="font-weight: 200;">Satwik Kottur
@@ -294,21 +318,21 @@
                     </div> -->
 
                     <!-- <div class="large-2 columns">
-                        <a href="https://tejaskhot.github.io/"><img src="./static/img/tejas.jpg" class="home_team_picture" style="width: 100px; height:100px;">
+                        <a target="_blank" href="https://tejaskhot.github.io/"><img src="./static/img/tejas.jpg" class="home_team_picture" style="width: 100px; height:100px;">
                             <br>
                         </a>
                         <p style="font-weight: 200;">Tejas Khot
                             <br>Virginia Tech</p>
                     </div>
                     <div class="large-2 columns">
-                        <a href="https://filebox.ece.vt.edu/~penghuiwin/"><img src="./static/img/peng.jpg" class="home_team_picture" style="width: 100px; height:100px;">
+                        <a target="_blank" href="https://filebox.ece.vt.edu/~penghuiwin/"><img src="./static/img/peng.jpg" class="home_team_picture" style="width: 100px; height:100px;">
                             <br>
                         </a>
                         <p style="font-weight: 200;">Peng Zhang
                             <br>Virginia Tech</p>
                     </div>
                     <div class="large-2 columns">
-                        <a href="https://computing.ece.vt.edu/~jiasenlu/"><img src="./static/img/jiasen.jpg" class="home_team_picture" style="width: 100px; height:100px;">
+                        <a target="_blank" href="https://computing.ece.vt.edu/~jiasenlu/"><img src="./static/img/jiasen.jpg" class="home_team_picture" style="width: 100px; height:100px;">
                             <br>
                         </a>
                         <p style="font-weight: 200; align: center;">Jiasen Lu
@@ -322,28 +346,28 @@
                         <p></p>
                     </div>
                     <div class="large-2 columns">
-                        <a href="https://research.fb.com/people/natarajan-vivek/"><img src="./static/img/vivek.jpg" class="home_team_picture" style="width: 100px; height:100px;">
+                        <img src="./static/img/vivek.jpg" class="home_team_picture" style="width: 100px; height:100px;">
                             <br>
                         </a>
-                        <p style="font-weight: 200;">Vivek Natarajan
-                            <br>Facebook AI Research</p>
+                        <p style="font-weight: 200;">Vivek <br>Natarajan
+                          </p>
                     </div>
                     <div class="large-2 columns">
-                        <a href="https://www.cc.gatech.edu/~slee3191/"><img src="./static/img/stefan.jpg" class="home_team_picture" style="width: 100px; height:100px;">
+                        <a target="_blank" href="https://www.cc.gatech.edu/~slee3191/"><img src="./static/img/stefan.jpg" class="home_team_picture" style="width: 100px; height:100px;">
                             <br>
                         </a>
                         <p style="font-weight: 200;">Stefan Lee
                             <br>Georgia Tech</p>
                     </div>
                     <div class="large-2 columns">
-                        <a href="https://panderson.me/"><img src="./static/img/peter.jpg" class="home_team_picture" style="width: 100px; height:100px;">
+                        <a target="_blank" href="https://panderson.me/"><img src="./static/img/peter.jpg" class="home_team_picture" style="width: 100px; height:100px;">
                             <br>
                         </a>
                         <p style="font-weight: 200;">Peter Anderson
                             <br>Georgia Tech</p>
                     </div>
                     <div class="large-2 columns">
-                        <a href="https://xinleic.xyz/"><img src="./static/img/xinlei.jpg" class="home_team_picture" style="width: 100px; height:100px;">
+                        <a target="_blank" href="https://xinleic.xyz/"><img src="./static/img/xinlei.jpg" class="home_team_picture" style="width: 100px; height:100px;">
                             <br>
                         </a>
                         <p style="font-weight: 200;">Xinlei Chen
@@ -357,21 +381,21 @@
                       <p></p>
                     </div>
                     <div class="large-2 columns">
-                        <a href="http://rohrbach.vision/"><img src="./static/img/marcus.jpg" class="home_team_picture" style="width: 100px; height:100px;">
+                        <a target="_blank" href="http://rohrbach.vision/"><img src="./static/img/marcus.jpg" class="home_team_picture" style="width: 100px; height:100px;">
                             <br>
                         </a>
                         <p style="font-weight: 200;">Marcus Rohrbach
                             <br>Facebook AI Research</p>
                     </div>
                     <div class="large-2 columns">
-                        <a href="https://www.cc.gatech.edu/~dbatra/"><img src="./static/img/dhruv.jpg" class="home_team_picture" style="width: 100px; height:100px;">
+                        <a target="_blank" href="https://www.cc.gatech.edu/~dbatra/"><img src="./static/img/dhruv.jpg" class="home_team_picture" style="width: 100px; height:100px;">
                             <br>
                         </a>
                         <p style="font-weight: 200;">Dhruv Batra
                             <br>Georgia Tech / Facebook AI Research</p>
                     </div>
                     <div class="large-2 columns">
-                        <a href="https://www.cc.gatech.edu/~parikh/"><img src="./static/img/devi.jpg" class="home_team_picture" style="width: 100px; height:100px;">
+                        <a target="_blank" href="https://www.cc.gatech.edu/~parikh/"><img src="./static/img/devi.jpg" class="home_team_picture" style="width: 100px; height:100px;">
                             <br>
                         </a>
                         <p style="font-weight: 200;">Devi Parikh
@@ -385,7 +409,7 @@
             <h1 style="font-size:30px; color:grey; font-weight: 200; text-align: left">Webmaster</h1>
             <div class="team">
                 <div class="large-12 columns" style="text-align:center; margin-top:20px">
-                    <a href="https://computing.ece.vt.edu/~akrit/"><img src="./static/img/akrit.jpg" class="home_team_picture" style="width: 100px; height:100px;">
+                    <a target="_blank" href="https://computing.ece.vt.edu/~akrit/"><img src="./static/img/akrit.jpg" class="home_team_picture" style="width: 100px; height:100px;">
                         <br>
                     </a>
                     <p style="font-weight: 200;">Akrit Mohapatra
