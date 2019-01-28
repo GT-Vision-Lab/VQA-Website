@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="./static/css/main.css">
     <script src="./static/js/vendor/jquery.js"></script>
     <script src="./static/js/jquery-2.1.3.min.js"></script>
+
+    <script type="text/javascript" src="./static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./static/js/jquery.countdown.min.js"></script>
+    <script type="text/javascript" src="./static/js/moment.min.js"></script>
+    <script type="text/javascript" src="./static/js/moment-timezone-with-data.min.js"></script>
+
+    <script type="text/javascript" src="./static/js/main-vqa.js"></script>
+    <script type="text/javascript" src="./static/js/main-visdial.js"></script>
+
 </head>
 
 <body class="off-canvas hide-extras" style="min-width:1200px; min-height:750px;">
@@ -72,6 +81,7 @@
     <section role="main" style="padding: 1em;">
         <div class="row">
             <p style="font-size:30px; color:black; font-weight: 50" align=center>Welcome to the VQA Challenge 2019!</p>
+            <p style="margin-top:-30px; font-size:20px; color:black; font-weight: 50;" align=center>Deadline: <span id="countdown-vqa"></span></p>
             <!-- <p style="font-size:20px; color:black; font-weight: 50" align=center>
                 <a href="#overview" style="padding:13px">Overview</a>
                 <a href="#guidelines" style="padding:13px">Challenge Guidelines</a>
@@ -107,8 +117,8 @@
                         leaderboard</a>.
                 </p>
             </div>
+            <hr>
         </div>
-
         <div class="row" id="overview">
             <h1 style="font-size:30px; color:grey; font-weight: 200">Overview</h1>
             <div class="large-12 columns" style="text-align:left;">
@@ -161,6 +171,17 @@
             <div class="large-12 columns" style="text-align:left;">
                  <p style="font-size:15px; font-weight: 400; text-align:justify; padding:5px; width:99%">
                     After the challenge deadline, all challenge participant results on test-standard split will be made public on a test-standard leaderboard.
+                </p>
+            </div>
+            <hr>
+        </div>
+
+        <div class="row">
+            <h1 style="font-size:30px; color:grey; font-weight: 200">Prize</h1>
+            <div class="large-12 columns" style="text-align:left;">
+                <p style="font-size:15px; font-weight: 400; text-align:left">
+                    The winning team will receive <a target="_blank" href="https://cloud.google.com/">Google Cloud Platform</a> credits worth $10k!
+                    <br>
                 </p>
             </div>
             <hr>
