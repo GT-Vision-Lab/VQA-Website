@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="./static/css/main.css">
     <script src="./static/js/vendor/jquery.js"></script>
     <script src="./static/js/jquery-2.1.3.min.js"></script>
+
+    <script type="text/javascript" src="./static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./static/js/jquery.countdown.min.js"></script>
+    <script type="text/javascript" src="./static/js/moment.min.js"></script>
+    <script type="text/javascript" src="./static/js/moment-timezone-with-data.min.js"></script>
+
+    <script type="text/javascript" src="./static/js/main-vqa.js"></script>
+    <script type="text/javascript" src="./static/js/main-visdial.js"></script>
+
 </head>
 
 <body class="off-canvas hide-extras" style="min-width:1200px; min-height:750px;">
@@ -72,11 +81,12 @@
     <section role="main" style="padding: 1em;">
         <div class="row">
             <p style="font-size:30px; color:black; font-weight: 50" align=center>Welcome to the VQA Challenge 2019!</p>
-            <!-- <p style="font-size:20px; color:black; font-weight: 50" align=center>
+            <p style="margin-top:-30px; font-size:20px; color:black; font-weight: 50;" align=center>Deadline: May 10, 2019  23:59:59 UTC<br> Countdown: <span id="countdown-vqa"></span></p>
+            <p style="font-size:20px; color:black; font-weight: 50" align=center>
                 <a href="#overview" style="padding:13px">Overview</a>
                 <a href="#guidelines" style="padding:13px">Challenge Guidelines</a>
-                <a href="#evalai" style="padding:13px">EvalAI: A New Evaluation Platform!</a>
-                <a href="roe.html">Leaderboard</a> -->
+                <a href="https://evalai.cloudcv.org/web/challenges/challenge-page/163/overview" style="padding:13px">Evaluation Server</a>
+                <!-- <a href="roe.html">Leaderboard</a> -->
                   <!-- <a href="#" data-dropdown="hover1" data-options="is_hover:true; hover_timeout:5000">Leaderboards &darr;</a>
                 <ul id="hover1" class="f-dropdown" data-dropdown-content>
                     <li><a href="roe.html">Real Open-Ended</a></li>
@@ -84,7 +94,7 @@
                     <li><a href="rmc.html">Real Multiple-Choice</a></li>
                     <li><a href="amc.html">Abstract Multiple-Choice</a></li>
                 </ul>  -->
-            <!-- </p> -->
+            </p>
 
             <hr>
             <div class="large-12 columns">
@@ -94,12 +104,27 @@
         <br>
         <br>
 
+        <div class="row">
+            <div class="large-12 columns">
+                <br>Papers reporting results on the VQA v2.0 dataset should --
+                </p><br>
+                <p align=left style="margin-top:-10px;">1) Report test-standard accuracies, which can be calculated using
+                    either of the non-test-dev phases, i.e., <a href="https://evalai.cloudcv.org/web/challenges/challenge-page/163/phases">"Test-Standard"
+                        or "Test-Challenge"</a>.
+                    <br>
+                    <br> 2) Compare their test-standard accuracies with those on the <a href="https://evalai.cloudcv.org/featured-challenges/80/leaderboard/124">test2018
+                        leaderboard</a> and <a href="https://evalai.cloudcv.org/featured-challenges/1/leaderboard/3">test2017
+                        leaderboard</a>.
+                </p>
+            </div>
+            <hr>
+        </div>
         <div class="row" id="overview">
             <h1 style="font-size:30px; color:grey; font-weight: 200">Overview</h1>
             <div class="large-12 columns" style="text-align:left;">
                 <p style="font-size:15px; font-weight: 400; text-align:left">
                     We are pleased to announce the Visual Question Answering (VQA) Challenge 2019. Given an image and a natural language question about the image, the task is to provide an accurate natural language answer. <!--Visual questions selectively target different areas of an image, including background details and underlying context.-->
-                    The challenge will be hosted on <a target="_blank" href="http://evalai.cloudcv.org/">EvalAI</a> and links to Submission and Leaderboard pages will be posted soon.
+                    The challenge is hosted on <a target="_blank" href="http://evalai.cloudcv.org/">EvalAI</a>. Challenge link: <a href="https://evalai.cloudcv.org/web/challenges/challenge-page/163/overview">https://evalai.cloudcv.org/web/challenges/challenge-page/163/overview</a>
                     <br>
                     <!-- Teams are encouraged to compete in the following VQA challenge: -->
                 </p>
@@ -137,50 +162,180 @@
                 <p style="font-size:15px; font-weight: 200; border-style: solid;
                 border-width: 1px; text-align:justify; padding:5px; width:99%">
                     <code>
-                    <!-- <span style="width:20%; margin:5px; display:inline-block;">March 9, 2017</span> <span style="display:inline-block; margin:0px;">Version 2.0 of the VQA train and val data released</span><br>
-                    <span style="width:20%; margin:5px; display:inline-block;">April 26, 2017</span> <span style="display:inline-block; margin:0px;">Version 2.0 of the VQA test data released and test evaluation servers running</span><br> -->
-                    <!-- <span style="width:20%; margin:5px; display:inline-block;">May 20, 2018 </span> <span style="display:inline-block; margin:0px;">Submission deadline at 23:59:59 UTC</span> -->
-                    <span style="width:20%; margin:5px; display:inline-block;">Jan 28, 2019 </span> <span style="display:inline-block; margin:0px;">VQA Challenge 2019 will be launched!</span><br>
-                    <span style="width:20%; margin:5px; display:inline-block;">Jun, 2019 </span> <span style="display:inline-block; margin:0px;">Winners' announcement at the <a href="workshop.html">VQA and Dialog Workshop, CVPR 2019</a>. </span>
+                        <span style="width:20%; margin:5px; display:inline-block;">Jan 28, 2019 </span> <span style="display:inline-block; margin:0px;"><a target="_blank" href="https://evalai.cloudcv.org/web/challenges/challenge-page/163/overview">VQA Challenge 2019 launched!</a></span><br>  <!-- #TODO: add evalai link -->
+                        <span style="width:20%; margin:5px; display:inline-block;">May 10, 2019 </span> <span style="display:inline-block; margin:0px;">Submission deadline at 23:59:59 UTC</span><br>
+                    <span style="width:20%; margin:5px; display:inline-block;">Jun, 2019 </span> <span style="display:inline-block; margin:0px;">Winners' announcement at the <a href="workshop.html">VQA and Dialog Workshop, CVPR 2019</a> </span>
                    <!--  <span style="background-color:red; color:white;">Extended</span> -->
                 </code></p>
             </div>
-            <!-- <div class="large-12 columns" style="text-align:left;">
+            <div class="large-12 columns" style="text-align:left;">
                  <p style="font-size:15px; font-weight: 400; text-align:justify; padding:5px; width:99%">
                     After the challenge deadline, all challenge participant results on test-standard split will be made public on a test-standard leaderboard.
                 </p>
-            </div> -->
+            </div>
             <hr>
         </div>
 
-           <!--  <div class="row">
-            <h1 style="font-size:30px; color:grey; font-weight: 200">Organizers</h1>
-            <div class="large-12 columns">
-                <ul style="font-size:15px; font-weight: 200; display: inline; list-style-type: none;" align=left>
-                    <li>Aishwarya Agrawal (Virginia Tech)</li>
-                    <li>Yash Goyal (Virginia Tech)</li>
-                    <li>Larry Zitnick (Facebook AI Research)</li>
-                    <li>Dhruv Batra (Georgia Institue of Technology)</li>
-                    <li>Devi Parikh (Georgia Institute of Technology)</li>
-                </ul>
-                <br>
+        <div class="row">
+            <h1 style="font-size:30px; color:grey; font-weight: 200">Prize</h1>
+            <div class="large-12 columns" style="text-align:left;">
+                <p style="font-size:15px; font-weight: 400; text-align:left">
+                    The winning team will receive <a target="_blank" href="https://cloud.google.com/">Google Cloud Platform</a> credits worth $10k!
+                    <br>
+                </p>
             </div>
             <hr>
-        </div> -->
+        </div>
+
+        <div class="row" id="guidelines">
+            <h1 style="font-size:30px; color:grey; font-weight: 200">Challenge Guidelines</h1>
+            <div class="large-12 columns" style="text-align:left;">
+                <p style="font-size:15px; font-weight: 400; text-align:left">
+                    Following <a href="http://mscoco.org/dataset/">COCO</a>, we have divided the test set for VQA v2.0 into a
+                    number of splits, including test-dev, test-standard, test-challenge, and test-reserve, to limit overfitting
+                    while giving researchers more flexibility to test their system. Test-dev is used for debugging and
+                    validation experiments and allows for maximum 10 submissions per day (according to UTC timezone).
+        
+                    Test-standard is the default test data for the VQA competition. When comparing to the state of the art
+                    (e.g., in papers), results should be reported on test-standard. Test-standard is also used to maintain a
+                    public leaderboard that is updated upon submission. Test-reserve is used to protect against possible
+                    overfitting. If there are substantial differences between a method's scores on test-standard and
+                    test-reserve, this will raise a red-flag and prompt further investigation. Results on test-reserve will not
+                    be publicly revealed. Finally, test-challenge is used to determine the winners of the challenge.
+                </p>
+                <p style="font-size:15px; font-weight: 400; text-align:left">
+                    The <a href="evaluation.html">evaluation</a> page lists detailed information regarding how submissions will
+                    be scored. The evaluation servers are open. Following last few years, we are hosting the evaluation servers on        <a href="https://evalai.cloudcv.org">EvalAI</a>, developed by the <a href="https://cloudcv.org">CloudCV</a>
+                    team. EvalAI is an <a href="https://github.com/Cloud-CV/EvalAI">open-source</a> web platform designed for
+                    organizing and participating in challenges to push the state of the art on AI tasks. We encourage people to first submit to "Test-Dev" phase to make sure that
+                    you understand the submission procedure, as it is identical to the full test set submission procedure. <b>Note
+                        that the "Test-Dev" and "Test-Challenge" evaluation servers do not have public leaderboards.</b>
+                </p>
+                <p style="font-size:15px; font-weight: 400; text-align:left">
+                    To <b>enter the competition</b>, first you need to create an account on <a href="https://evalai.cloudcv.org/auth/signup">EvalAI</a>.
+                    <!-- From your account you will be able to participate in all VQA challenges. --> We allow people to enter
+                    our challenge either privately or publicly. Any submissions to the "Test-Challenge" phase will be
+                    considered to be participating in the challenge. For submissions to the "Test-Standard" phase, only ones that
+                    were submitted before the challenge deadline and posted to the public leaderboard will be considered to be
+                    participating in the challenge.
+                    <br>
+                    <br> Before uploading your results to EvalAI, you will need to create a JSON file containing your results
+                    in the correct format as described on the <a href="evaluation.html">evaluation</a> page.
+                </p>
+                <p style="font-size:15px; font-weight: 400; text-align:left">
+                    To <b>submit</b> your JSON file to the VQA evaluation servers, click on the “Submit” tab on the <a href="https://evalai.cloudcv.org/web/challenges/challenge-page/163/overview">VQA
+                        Challenge 2019</a> page on EvalAI. Select the phase ("Test-Dev" or "Test-Standard" or "Test-Challenge
+                    "). <b>Please select the JSON file to upload and fill in the required fields such as "method name"
+                        and "method description" and click “Submit”</b>. After the file is uploaded, the evaluation server will
+                    begin processing. To view the status of your submission please go to <a href="https://evalai.cloudcv.org/web/challenges/challenge-page/163/my-submission">“My
+                        Submissions”</a> tab and choose the phase to which the results file was uploaded. Please be patient,
+                    the evaluation may take quite some time to complete
+                    <!--(~1min on test-dev and ~3min on the full test set)--> (~4 min). If the status of your submission is
+                    “Failed” please check your "Stderr File" for the corresponding submission.
+                </p>
+                <p style="font-size:15px; font-weight: 400; text-align:left">
+                    After evaluation is complete and the server shows a status of “Finished”, you will have the option to
+                    download your evaluation results by selecting “Result File” for the corresponding submission. The "Result
+                    File" will contain the aggregated accuracy on the corresponding test-split (test-dev split for
+                    "Test-Dev" phase, test-standard and test-dev splits for both "Test-Standard" and "Test-Challenge"
+                    phases). If you want your submission to appear on the public leaderboard, please submit to "Test-Standard" phase
+                    and check the box under "Show on Leaderboard" for the corresponding submission.
+                </p>
+                <p style="font-size:15px; font-weight: 400; text-align:left">
+                    Please limit the number of entries to the challenge evaluation server to a reasonable number, e.g., one
+                    entry per paper. To avoid overfitting, the number of submissions per user is limited to 1 upload per day
+                    (according to UTC timezone) and a maximum of 5 submissions per user. It is not acceptable to create
+                    multiple accounts for a single project to circumvent this limit. The exception to this is if a group
+                    publishes two papers describing unrelated methods, in this case both sets of results can be submitted for
+                    evaluation. However, Test-Dev allows for 10 submissions per day.
+                    <!--Please refer to the section on "Test-Dev Best Practices" in the <a href="http://mscoco.org/dataset/#detections-upload">MSCOCO detection challenge</a> page for more information about the test-dev set. -->
+                </p>
+                <p style="font-size:15px; font-weight: 400; text-align:left">
+                    <!-- Competitors are recommended but not restricted to train their algorithms on VQA train and val sets.  -->
+                    The <a href="download.html">download</a> page contains links to all VQA v2.0 train/val/test images,
+                    questions, and associated annotations (for train/val only). Please specify any and all external data used
+                    for training in the "method description" when uploading results to the evaluation server.
+                </p>
+                <p style="font-size:15px; font-weight: 400; text-align:left">
+                    Results must be submitted to the evaluation server by the challenge deadline. Competitors' algorithms will
+                    be evaluated according to the rules described on the <a href="evaluation.html">evaluation</a> page.
+                    Challenge participants with the most successful and innovative methods will be invited to present.
+                </p>
+            </div>
+            <hr>
+        </div>
 
         <div class="row">
             <h1 style="font-size:30px; color:grey; font-weight: 200">Tools and Instructions</h1>
             <div class="large-12 columns" style="text-align:left;">
                 <p style="font-size:15px; font-weight: 400; text-align:left">
-                    We provide API support for the VQA annotations and evaluation code. To download the VQA API, please visit our <a href="https://github.com/VT-vision-lab/VQA">GitHub repository</a>. For an overview of how to use the API, please visit the <a href="download.html">download</a> page and consult the section entitled VQA API. To obtain API support for COCO images, please visit the <a href="http://mscoco.org/dataset/#download">COCO download</a> page. To obtain API support for abstract scenes, please visit the <a href="https://github.com/VT-vision-lab/abstract_scenes_v002">GitHub repository</a>.
+                    We provide API support for the VQA annotations and evaluation code. To download the VQA API, please visit our <a href="https://github.com/GT-vision-lab/VQA">GitHub repository</a>. For an overview of how to use the API, please visit the <a href="download.html">download</a> page and consult the section entitled VQA API. To obtain API support for COCO images, please visit the <a href="http://mscoco.org/dataset/#download">COCO download</a> page. To obtain API support for abstract scenes, please visit the <a href="https://github.com/VT-vision-lab/abstract_scenes_v002">GitHub repository</a>.
                 </p>
                 <p>
          <!--                Due to the large size of the VQA dataset and the complexity of this challenge, the process of competing in this challenge may not seem simple.
                  To help guide competitors to victory, we provide explanations and instructions for each step of the process on the download, evaluation pages.  -->
-                    For challenge related questions, please contact <a href="mailto:visualqa@gmail.com" target="_top">visualqa@gmail.com</a>. In case of technical questions related to <a href="https://evalai.cloudcv.org">EvalAI</a>, please post on <a href="https://groups.google.com/forum/#!forum/evalai">EvalAI's mailing list</a>.
+                    For challenge related questions, please contact <a href="mailto:visualqa@gmail.com" target="_top">visualqa@gmail.com</a>. In case of technical questions related to <a href="https://evalai.cloudcv.org">EvalAI</a>, please post on the <a href="https://evalai-forum.cloudcv.org/c/vqa-2019">VQA Challenge forum</a>.
                 </p>
             </div>
             <hr>
+        </div>
+
+        <div class="row">
+            <a name="faq"></a>
+            <h1 style="font-size:30px; color:grey; font-weight: 200">Frequently Asked Questions (FAQ)</h1>
+            <div class="large-12 columns" style="text-align:left;">
+                <p style="font-size:15px; font-weight: 400; text-align:left">
+                    As a reminder, any submissions before the challenge deadline whose results are made publicly visible on the
+                    "Test-Standard" leaderboard <em><b>OR</b></em> are submitted to the "Test-Challenge" phase will be enrolled
+                    in the challenge. For further clarity, we answer some common questions below:
+                    <div class="large-12 columns">
+                        <ul style="font-size:15px; font-weight: 400; display: inline;" align=left>
+                            <li>
+                                <b>Q:</b> What do I do if I want to make my test-standard results public <em><b>and</b></em>
+                                participate in the challenge?
+                                </br>
+                                <b>A:</b> Making your results public (<i>i.e.</i>, visible on the leaderboard) on the
+                                "Test-Standard" phase implies that you are participating in the challenge.
+                            </li>
+                            <li>
+                                <b>Q:</b> What do I do if I want to make my test-standard results public, but I do not want to
+                                participate in the challenge?
+                                </br>
+                                <b>A:</b> We do not allow for this option.
+                            </li>
+                            <li>
+                                <b>Q:</b> What do I do if I want to participate in the challenge, but I do not want to make my
+                                test-standard results public yet?
+                                </br>
+                                <b>A:</b> Submit to the "Test-Challenge" phase. This phase was created for this scenario.
+                            </li>
+                            <li>
+                                <b>Q:</b> When will I find out my test-challenge accuracies?
+                                </br>
+                                <b>A:</b> We will reveal challenge results some time after the deadline. Results will first be
+                                announced at our <a href="http://www.visualqa.org/workshop.html">Visual Question Answering and 
+                                    Dialog Workshop at CVPR 2019</a>.
+                            </li>
+                            <li>
+                                <b>Q:</b> Can I participate from more than one EvalAI team in the VQA challenge?
+                                </br>
+                                <b>A:</b> No, you are allowed to participate from one team only.
+                            </li>
+                            <li>
+                                <b>Q:</b> Can I add other members to my EvalAI team?
+                                </br>
+                                <b>A:</b> Yes.
+                            </li>
+                            <li>
+                                <b>Q:</b> Is the daily/overall submission limit for a user or for a team?
+                                </br>
+                                <b>A:</b> It is for a team.
+                            </li>
+                        </ul>
+                </p>
+            </div>
+        </div>
+        <hr>
         </div>
 
          <div class="row">
