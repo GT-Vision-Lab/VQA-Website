@@ -1,0 +1,12 @@
+To further progress towards the grand goal of building agents that can see and talk, we are organizing the Visual Question Answering and Dialog Workshop. Its primary purposes are two-fold.
+
+First is to benchmark progress in these areas by hosting the Visual Question Answering (VQA) and Visual Dialog challenges.
+
+The VQA Challenge will have three tracks this year:
+1) VQA 2.0 (https://visualqa.org/challenge): This track is the 4th challenge on the VQA v2.0 dataset introduced in Goyal et al., CVPR 2017.
+2) TextVQA (https://textvqa.org/challenge): This track is the 1st challenge on the TextVQA dataset. TextVQA requires algorithms to read and reason about text in the image to answer a given question.
+3) GQA (https://cs.stanford.edu/people/dorarad/gqa/challenge.html): This track is the 1st challenge on the GQA dataset. GQA is a new dataset that focuses on real-world compositional reasoning.
+
+In addition, we will also be organizing the 2nd Visual Dialog Challenge (https://visualdialog.org/challenge). Visual Dialog requires an AI agent to hold a meaningful dialog with humans in natural, conversational language about visual content.
+
+The second goal of this workshop is to continue to bring together researchers interested in visually-grounded question answering, dialog systems, and language in general to share state-of-the-art approaches, best practices, and future directions in multi-modal AI. In addition to an exciting lineup of invited talks, we invite submissions of extended abstracts describing work in vision + language + action.
