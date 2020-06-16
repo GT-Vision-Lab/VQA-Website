@@ -1,0 +1,935 @@
+[
+	{
+		"challenge": {
+			"overall": 69.91,
+			"perAnswerType": {
+				"number": 52.28,
+				"other": 60.21,
+				"yes/no": 85.74
+			}
+		},
+		"dev": {
+			"overall": 69.51,
+			"perAnswerType": {
+				"number": 51.74,
+				"other": 59.81,
+				"yes/no": 85.56
+			}
+		},
+		"standard": {
+			"overall": 69.97,
+			"perAnswerType": {
+				"number": 52.16,
+				"other": 60.2,
+				"yes/no": 85.87
+			}
+		},
+		"team_name": "BIT-VQA",
+		"team_members": "CaoJianjian (Beijing Institute of Technology), QingXiameng (Baidu)",
+		"ref": "",
+		"method": "Our method inspired by graph learning first constructs two graph to represent the image and the question. Then we design a Graph Match Attention module(GMA) to learn the inter- and intra- modal relationships, which can effective align and fuse the features between visual and language modalities. Though the stack of several GMA modules, the gap between two modalities are getting more shorter and the VQA model can learn deeper semantic relations.",
+		"team_name_order": 1
+	},
+	{
+		"challenge": {
+			"overall": 63.89,
+			"perAnswerType": {
+				"number": 44.9,
+				"other": 54.64,
+				"yes/no": 79.56
+			}
+		},
+		"dev": {
+			"overall": 63.89,
+			"perAnswerType": {
+				"number": 45.99,
+				"other": 54.48,
+				"yes/no": 79.66
+			}
+		},
+		"standard": {
+			"overall": 64.09,
+			"perAnswerType": {
+				"number": 44.92,
+				"other": 54.65,
+				"yes/no": 79.99
+			}
+		},
+		"team_name": "Benedict Aaron Tjandra",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 2
+	},
+	{
+		"challenge": {
+			"overall": 76.08,
+			"perAnswerType": {
+				"number": 61.65,
+				"other": 66.41,
+				"yes/no": 91.01
+			}
+		},
+		"dev": {
+			"overall": 75.91,
+			"perAnswerType": {
+				"number": 61.88,
+				"other": 66.08,
+				"yes/no": 91.1
+			}
+		},
+		"standard": {
+			"overall": 75.92,
+			"perAnswerType": {
+				"number": 61.13,
+				"other": 66.28,
+				"yes/no": 90.89
+			}
+		},
+		"team_name": "DL-61",
+		"team_members": "Dalu Guo (University of Sydney), Chang Xu (University of Sydney), Dacheng Tao (University of Sydney)",
+		"ref": "https://arxiv.org/abs/1907.09815",
+		"method": "We build the bilinear graph network (BGN) to consider the relationship between words and objects as well as the relationship between words and words ",
+		"team_name_order": 3
+	},
+	{
+		"challenge": {
+			"overall": 72.65,
+			"perAnswerType": {
+				"number": 54.8,
+				"other": 63.34,
+				"yes/no": 88.08
+			}
+		},
+		"dev": {
+			"overall": 72.47,
+			"perAnswerType": {
+				"number": 54.54,
+				"other": 63.02,
+				"yes/no": 88.29
+			}
+		},
+		"standard": {
+			"overall": 72.63,
+			"perAnswerType": {
+				"number": 54.9,
+				"other": 63.13,
+				"yes/no": 88.21
+			}
+		},
+		"team_name": "Katya",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "initial baseline",
+		"team_name_order": 4
+	},
+	{
+		"challenge": {
+			"overall": 73.84,
+			"perAnswerType": {
+				"number": 58.49,
+				"other": 63.96,
+				"yes/no": 89.26
+			}
+		},
+		"dev": {
+			"overall": 73.58,
+			"perAnswerType": {
+				"number": 58.83,
+				"other": 63.46,
+				"yes/no": 89.3
+			}
+		},
+		"standard": {
+			"overall": 73.86,
+			"perAnswerType": {
+				"number": 58.62,
+				"other": 63.78,
+				"yes/no": 89.46
+			}
+		},
+		"team_name": "MMnasNet",
+		"team_members": "Zhou Yu (Hangzhou Dianzi University), Zhenwei Shao (Hangzhou Dianzi University), Yuhao Cui (Hangzhou Dianzi University), Jun Yu (Hangzhou Dianzi University)",
+		"ref": "https://arxiv.org/abs/2004.12070",
+		"method": "We use NAS-based method to search the optimal architecture on VQA-v2. The submitted result is delivered by a *single* MMnasNet model equipped with multi-view bottom-up-attention visual features, training from scratch without using any vision-language pre-training strategy.",
+		"team_name_order": 5
+	},
+	{
+		"challenge": {
+			"overall": 75.9,
+			"perAnswerType": {
+				"number": 59.73,
+				"other": 66.37,
+				"yes/no": 91.14
+			}
+		},
+		"dev": {
+			"overall": 75.68,
+			"perAnswerType": {
+				"number": 59.73,
+				"other": 65.98,
+				"yes/no": 91.24
+			}
+		},
+		"standard": {
+			"overall": 75.85,
+			"perAnswerType": {
+				"number": 59.23,
+				"other": 66.2,
+				"yes/no": 91.3
+			}
+		},
+		"team_name": "MS D365 AI",
+		"team_members": "Linjie Li (Microsoft), Zhe Gan (Microsoft), Yen-Chun Chen (Microsoft), Yu Cheng (Microsoft), Jingjing Liu (Microsoft)",
+		"ref": "https://arxiv.org/pdf/2006.06195.pdf",
+		"method": "We present VILLA, the first known effort on large-scale adversarial training for vision-and-language representation learning. When participating in the challenge, we apply VILLA to UNITER, and rely only on the standard bottom-up image features to obtain the results.",
+		"team_name_order": 6
+	},
+	{
+		"challenge": {
+			"overall": 76.36,
+			"perAnswerType": {
+				"number": 61.53,
+				"other": 67.26,
+				"yes/no": 90.74
+			}
+		},
+		"dev": {
+			"overall": 76.19,
+			"perAnswerType": {
+				"number": 61.84,
+				"other": 67.01,
+				"yes/no": 90.73
+			}
+		},
+		"standard": {
+			"overall": 76.29,
+			"perAnswerType": {
+				"number": 61.53,
+				"other": 67.04,
+				"yes/no": 90.81
+			}
+		},
+		"team_name": "GridFeat+MoVie",
+		"team_members": "Duy-Kien Nguyen (Facebook AI Research), Huaizu Jiang (Facebook AI Research), Vedanuij Goswami (Facebook AI Research), Licheng Yu (Facebook AI Research), Xinlei Chen (Facebook AI Research)",
+		"ref": "https://github.com/facebookresearch/grid-feats-vqa; https://github.com/facebookresearch/mmf/tree/vqa_winner",
+		"method": "We revisit grid features for VQA and use modulated convolutions for counting -- achieving state-of-the-art without vision-and-language pre-training.",
+		"team_name_order": 7
+	},
+	{
+		"challenge": {
+			"overall": 74.95,
+			"perAnswerType": {
+				"number": 57.83,
+				"other": 65.96,
+				"yes/no": 89.82
+			}
+		},
+		"dev": {
+			"overall": 74.67,
+			"perAnswerType": {
+				"number": 58.18,
+				"other": 65.47,
+				"yes/no": 89.81
+			}
+		},
+		"standard": {
+			"overall": 74.85,
+			"perAnswerType": {
+				"number": 57.56,
+				"other": 65.69,
+				"yes/no": 89.92
+			}
+		},
+		"team_name": "Prism3",
+		"team_members": "Ming Li (Alibaba), Shuai Chen (UESTC), Haitao Wen (UESTC)",
+		"ref": "",
+		"method": "Pre-training Visual-Linguistic BERT on millions image-caption data, then fine-tuning on VQA dataset.",
+		"team_name_order": 8
+	},
+	{
+		"challenge": {
+			"overall": 76.02,
+			"perAnswerType": {
+				"number": 60.17,
+				"other": 67.12,
+				"yes/no": 90.46
+			}
+		},
+		"dev": {
+			"overall": 75.81,
+			"perAnswerType": {
+				"number": 60.13,
+				"other": 66.74,
+				"yes/no": 90.59
+			}
+		},
+		"standard": {
+			"overall": 76.01,
+			"perAnswerType": {
+				"number": 59.8,
+				"other": 66.92,
+				"yes/no": 90.71
+			}
+		},
+		"team_name": "Renaissance",
+		"team_members": "Ming Yan (Alibaba DAMO Academy), Chenliang Li (Alibaba DAMO Academy), Wei Wang (Alibaba DAMO Academy), Bin Bi (Alibaba DAMO Academy), Zhongzhou Zhao (Alibaba DAMO Academy), Songfang Huang (Alibaba DAMO Academy)",
+		"ref": "",
+		"method": "Visual+Language Pre-training, StructBERT base, Progressive Pre-training",
+		"team_name_order": 9
+	},
+	{
+		"challenge": {
+			"overall": 72.29,
+			"perAnswerType": {
+				"number": 54.6,
+				"other": 62.84,
+				"yes/no": 87.83
+			}
+		},
+		"dev": {
+			"overall": 72.22,
+			"perAnswerType": {
+				"number": 54.86,
+				"other": 62.64,
+				"yes/no": 88.05
+			}
+		},
+		"standard": {
+			"overall": 72.32,
+			"perAnswerType": {
+				"number": 54.23,
+				"other": 62.75,
+				"yes/no": 88.07
+			}
+		},
+		"team_name": "THEQS",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "BAN_SAN_CMP_trainval_ens_9",
+		"team_name_order": 10
+	},
+	{
+		"challenge": {
+			"overall": 71.11,
+			"perAnswerType": {
+				"number": 53.13,
+				"other": 61.31,
+				"yes/no": 87.14
+			}
+		},
+		"dev": {
+			"overall": 70.8,
+			"perAnswerType": {
+				"number": 51.89,
+				"other": 61.02,
+				"yes/no": 87.27
+			}
+		},
+		"standard": {
+			"overall": 71.2,
+			"perAnswerType": {
+				"number": 52.5,
+				"other": 61.33,
+				"yes/no": 87.47
+			}
+		},
+		"team_name": "TRRNet",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 11
+	},
+	{
+		"challenge": {
+			"overall": 65.89,
+			"perAnswerType": {
+				"number": 45.15,
+				"other": 56.05,
+				"yes/no": 82.7
+			}
+		},
+		"dev": {
+			"overall": 65.72,
+			"perAnswerType": {
+				"number": 45.02,
+				"other": 56.08,
+				"yes/no": 82.53
+			}
+		},
+		"standard": {
+			"overall": 65.91,
+			"perAnswerType": {
+				"number": 44.52,
+				"other": 56.09,
+				"yes/no": 82.83
+			}
+		},
+		"team_name": "black",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "Objects Relation Reasoning with Importance Estimation",
+		"team_name_order": 12
+	},
+	{
+		"challenge": {
+			"overall": 73.31,
+			"perAnswerType": {
+				"number": 55.69,
+				"other": 64.05,
+				"yes/no": 88.63
+			}
+		},
+		"dev": {
+			"overall": 73.13,
+			"perAnswerType": {
+				"number": 55.36,
+				"other": 63.74,
+				"yes/no": 88.85
+			}
+		},
+		"standard": {
+			"overall": 73.3,
+			"perAnswerType": {
+				"number": 55.18,
+				"other": 63.93,
+				"yes/no": 88.83
+			}
+		},
+		"team_name": "chen-haha",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "0,1,2",
+		"team_name_order": 13
+	},
+	{
+		"challenge": {
+			"overall": 74.08,
+			"perAnswerType": {
+				"number": 58.08,
+				"other": 64.45,
+				"yes/no": 89.37
+			}
+		},
+		"dev": {
+			"overall": 73.73,
+			"perAnswerType": {
+				"number": 57.86,
+				"other": 64.06,
+				"yes/no": 89.23
+			}
+		},
+		"standard": {
+			"overall": 73.97,
+			"perAnswerType": {
+				"number": 57.69,
+				"other": 64.2,
+				"yes/no": 89.47
+			}
+		},
+		"team_name": "clay_xuan",
+		"team_members": "Yixuan Qiao (PingAn Tech), Ge Li (PingAn Tech), Chan Zeng (PingAn Tech),  Tingting Zhou (PingAn Tech), Jun Wang (PingAn Tech), Guanju Cheng (PingAn Tech)",
+		"ref": "",
+		"method": "An ensemble of ten multimodal transformer model. Image features are based on Bottom-up attention (Anderson et al., 2018). Text features are based on Bert-base from Hugging Face repository.",
+		"team_name_order": 14
+	},
+	{
+		"challenge": {
+			"overall": 63.85,
+			"perAnswerType": {
+				"number": 43.57,
+				"other": 53.84,
+				"yes/no": 80.75
+			}
+		},
+		"dev": {
+			"overall": 63.74,
+			"perAnswerType": {
+				"number": 43.76,
+				"other": 53.71,
+				"yes/no": 80.8
+			}
+		},
+		"standard": {
+			"overall": 63.89,
+			"perAnswerType": {
+				"number": 43.38,
+				"other": 53.79,
+				"yes/no": 80.89
+			}
+		},
+		"team_name": "dhj",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 15
+	},
+	{
+		"challenge": {
+			"overall": 0.25,
+			"perAnswerType": {
+				"number": 0.0,
+				"other": 0.53,
+				"yes/no": 0.01
+			}
+		},
+		"dev": {
+			"overall": 70.26,
+			"perAnswerType": {
+				"number": 52.48,
+				"other": 60.09,
+				"yes/no": 86.88
+			}
+		},
+		"standard": {
+			"overall": 0.27,
+			"perAnswerType": {
+				"number": 0.01,
+				"other": 0.56,
+				"yes/no": 0.0
+			}
+		},
+		"team_name": "flying_fish_",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 16
+	},
+	{
+		"challenge": {
+			"overall": 75.15,
+			"perAnswerType": {
+				"number": 61.07,
+				"other": 65.71,
+				"yes/no": 89.72
+			}
+		},
+		"dev": {
+			"overall": 75.05,
+			"perAnswerType": {
+				"number": 61.24,
+				"other": 65.5,
+				"yes/no": 89.86
+			}
+		},
+		"standard": {
+			"overall": 75.11,
+			"perAnswerType": {
+				"number": 60.68,
+				"other": 65.59,
+				"yes/no": 89.85
+			}
+		},
+		"team_name": "hsslab",
+		"team_members": "Xiaochuan Li (State Key Laboratory of High-end Server & Storage Technology, Inspur), Liang Jin (State Key Laboratory of High-end Server & Storage Technology, Inspur), Runze Zhang(State Key Laboratory of High-end Server & Storage Technology, Inspur), Baoyu Fan(State Key Laboratory of High-end Server & Storage Technology, Inspur), Zhenhua Guo(State Key Laboratory of High-end Server & Storage Technology, Inspur)",
+		"ref": "",
+		"method": "We use a ensemble model by merging LXMERT, VILBERT, VisualBert to generate answers.",
+		"team_name_order": 17
+	},
+	{
+		"challenge": {
+			"overall": 72.52,
+			"perAnswerType": {
+				"number": 54.65,
+				"other": 63.05,
+				"yes/no": 88.14
+			}
+		},
+		"dev": {
+			"overall": 72.37,
+			"perAnswerType": {
+				"number": 54.02,
+				"other": 62.82,
+				"yes/no": 88.42
+			}
+		},
+		"standard": {
+			"overall": 72.42,
+			"perAnswerType": {
+				"number": 53.95,
+				"other": 62.93,
+				"yes/no": 88.17
+			}
+		},
+		"team_name": "kenshyro2",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "BAN_SAN_CMP_trainval_g6_ens_11",
+		"team_name_order": 18
+	},
+	{
+		"challenge": {
+			"overall": 71.94,
+			"perAnswerType": {
+				"number": 54.17,
+				"other": 62.92,
+				"yes/no": 87.02
+			}
+		},
+		"dev": {
+			"overall": 71.73,
+			"perAnswerType": {
+				"number": 54.09,
+				"other": 62.53,
+				"yes/no": 87.2
+			}
+		},
+		"standard": {
+			"overall": 71.97,
+			"perAnswerType": {
+				"number": 53.8,
+				"other": 62.63,
+				"yes/no": 87.48
+			}
+		},
+		"team_name": "kl_divergence",
+		"team_members": "Prajjwal Bhargava",
+		"ref": "https://arxiv.org/abs/2005.07486",
+		"method": "LXMERT with Entmax (Adaptively Sparse Transformers)",
+		"team_name_order": 19
+	},
+	{
+		"challenge": {
+			"overall": 69.19,
+			"perAnswerType": {
+				"number": 50.88,
+				"other": 59.12,
+				"yes/no": 85.62
+			}
+		},
+		"dev": {
+			"overall": 68.84,
+			"perAnswerType": {
+				"number": 50.28,
+				"other": 59.0,
+				"yes/no": 85.29
+			}
+		},
+		"standard": {
+			"overall": 69.28,
+			"perAnswerType": {
+				"number": 50.56,
+				"other": 59.31,
+				"yes/no": 85.66
+			}
+		},
+		"team_name": "pham",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 20
+	},
+	{
+		"challenge": {
+			"overall": 66.24,
+			"perAnswerType": {
+				"number": 43.55,
+				"other": 56.27,
+				"yes/no": 83.72
+			}
+		},
+		"dev": {
+			"overall": 65.71,
+			"perAnswerType": {
+				"number": 43.54,
+				"other": 55.97,
+				"yes/no": 83.03
+			}
+		},
+		"standard": {
+			"overall": 65.95,
+			"perAnswerType": {
+				"number": 42.92,
+				"other": 56.08,
+				"yes/no": 83.36
+			}
+		},
+		"team_name": "phamartins",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 21
+	},
+	{
+		"challenge": {
+			"overall": 72.78,
+			"perAnswerType": {
+				"number": 56.77,
+				"other": 62.93,
+				"yes/no": 88.33
+			}
+		},
+		"dev": {
+			"overall": 72.4,
+			"perAnswerType": {
+				"number": 56.62,
+				"other": 62.47,
+				"yes/no": 88.19
+			}
+		},
+		"standard": {
+			"overall": 72.76,
+			"perAnswerType": {
+				"number": 56.02,
+				"other": 62.86,
+				"yes/no": 88.52
+			}
+		},
+		"team_name": "scu-vqa",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 22
+	},
+	{
+		"challenge": {
+			"overall": 74.7,
+			"perAnswerType": {
+				"number": 63.38,
+				"other": 64.45,
+				"yes/no": 89.46
+			}
+		},
+		"dev": {
+			"overall": 74.33,
+			"perAnswerType": {
+				"number": 63.06,
+				"other": 64.11,
+				"yes/no": 89.21
+			}
+		},
+		"standard": {
+			"overall": 74.59,
+			"perAnswerType": {
+				"number": 62.95,
+				"other": 64.26,
+				"yes/no": 89.52
+			}
+		},
+		"team_name": "sunlan",
+		"team_members": "Joe (SFE-NLP), Legal (SFE-CV), Kuo Cai (BUPT), Feng Xue (CUMT)",
+		"ref": "",
+		"method": "We introduce a different Talking to Heads attention into our self-attention module. We also extract more rich CV features from maskrnn, resnet152, panoptic model. Using a noval data augmentation strategy, double the training data. Meantime, we apply pseudo test label and soft train/val/test soft label further improving the performance.",
+		"team_name_order": 23
+	},
+	{
+		"challenge": {
+			"overall": 71.21,
+			"perAnswerType": {
+				"number": 52.84,
+				"other": 61.23,
+				"yes/no": 87.55
+			}
+		},
+		"dev": {
+			"overall": 70.81,
+			"perAnswerType": {
+				"number": 52.09,
+				"other": 60.96,
+				"yes/no": 87.32
+			}
+		},
+		"standard": {
+			"overall": 71.13,
+			"perAnswerType": {
+				"number": 52.09,
+				"other": 61.22,
+				"yes/no": 87.53
+			}
+		},
+		"team_name": "temp1",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "None",
+		"team_name_order": 24
+	},
+	{
+		"challenge": {
+			"overall": 68.65,
+			"perAnswerType": {
+				"number": 50.41,
+				"other": 58.89,
+				"yes/no": 84.7
+			}
+		},
+		"dev": {
+			"overall": 68.53,
+			"perAnswerType": {
+				"number": 50.21,
+				"other": 58.74,
+				"yes/no": 84.86
+			}
+		},
+		"standard": {
+			"overall": 68.76,
+			"perAnswerType": {
+				"number": 50.43,
+				"other": 58.79,
+				"yes/no": 85.03
+			}
+		},
+		"team_name": "test_result",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 25
+	},
+	{
+		"challenge": {
+			"overall": 73.8,
+			"perAnswerType": {
+				"number": 57.63,
+				"other": 64.03,
+				"yes/no": 89.3
+			}
+		},
+		"dev": {
+			"overall": 73.4,
+			"perAnswerType": {
+				"number": 57.34,
+				"other": 63.61,
+				"yes/no": 89.09
+			}
+		},
+		"standard": {
+			"overall": 73.6,
+			"perAnswerType": {
+				"number": 57.17,
+				"other": 63.67,
+				"yes/no": 89.33
+			}
+		},
+		"team_name": "tyj",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "56",
+		"team_name_order": 26
+	},
+	{
+		"challenge": {
+			"overall": 0.25,
+			"perAnswerType": {
+				"number": 0.0,
+				"other": 0.53,
+				"yes/no": 0.01
+			}
+		},
+		"dev": {
+			"overall": 69.8,
+			"perAnswerType": {
+				"number": 51.13,
+				"other": 59.95,
+				"yes/no": 86.29
+			}
+		},
+		"standard": {
+			"overall": 0.27,
+			"perAnswerType": {
+				"number": 0.01,
+				"other": 0.56,
+				"yes/no": 0.0
+			}
+		},
+		"team_name": "unnamed",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 27
+	},
+	{
+		"challenge": {
+			"overall": 71.29,
+			"perAnswerType": {
+				"number": 53.03,
+				"other": 61.5,
+				"yes/no": 87.4
+			}
+		},
+		"dev": {
+			"overall": 70.93,
+			"perAnswerType": {
+				"number": 52.78,
+				"other": 60.98,
+				"yes/no": 87.39
+			}
+		},
+		"standard": {
+			"overall": 71.21,
+			"perAnswerType": {
+				"number": 52.62,
+				"other": 61.24,
+				"yes/no": 87.56
+			}
+		},
+		"team_name": "vqaaaa",
+		"team_members": "Yusen Zhang (Emory University), Hejie Cui (Emory University)",
+		"ref": "",
+		"method": "For each image, extract a distribution showing the attention of different ROIs from model, in order to find the region with the highest probability to produce correct answer. Experiment shows that this attention weight can help to predict answer OCR.",
+		"team_name_order": 28
+	},
+	{
+		"challenge": {
+			"overall": 72.57,
+			"perAnswerType": {
+				"number": 55.02,
+				"other": 63.32,
+				"yes/no": 87.86
+			}
+		},
+		"dev": {
+			"overall": 72.47,
+			"perAnswerType": {
+				"number": 55.04,
+				"other": 62.88,
+				"yes/no": 88.31
+			}
+		},
+		"standard": {
+			"overall": 72.67,
+			"perAnswerType": {
+				"number": 54.93,
+				"other": 63.16,
+				"yes/no": 88.26
+			}
+		},
+		"team_name": "xixixixixixi",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 29
+	},
+	{
+		"challenge": {
+			"overall": 74.49,
+			"perAnswerType": {
+				"number": 62.6,
+				"other": 64.27,
+				"yes/no": 89.37
+			}
+		},
+		"dev": {
+			"overall": 74.15,
+			"perAnswerType": {
+				"number": 62.28,
+				"other": 63.97,
+				"yes/no": 89.15
+			}
+		},
+		"standard": {
+			"overall": 74.39,
+			"perAnswerType": {
+				"number": 62.11,
+				"other": 64.14,
+				"yes/no": 89.41
+			}
+		},
+		"team_name": "xuefeng",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 30
+	},
+	{
+		"date": "2020-06-16"
+	}
+]

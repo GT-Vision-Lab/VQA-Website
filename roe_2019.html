@@ -217,7 +217,7 @@
     var roe_std;
     $.ajax({
         dataType: "json",
-        url: "vqa_challenge_2020_leaderboard.json",
+        url: "vqa_challenge_2019_leaderboard_updated.json",
         mimeType: "application/json",
         async: false,
         success: function(result) {
@@ -227,7 +227,7 @@
 
     $.ajax({
         dataType: "json",
-        url: "vqa_challenge_2020_leaderboard.json",
+        url: "vqa_challenge_2019_leaderboard_updated.json",
         mimeType: "application/json",
         async: false,
         success: function(result) {
@@ -235,7 +235,7 @@
         }
     });
 
-    var $str = "Results as of 05/15/2020 (deadline for VQA Challenge 2020). <br>For information about each test split, please see the <a href=" + "http://visualqa.org/challenge.html" + ">challenge</a> page.";
+    var $str = "Results as of 05/10/2019 (deadline for VQA Challenge 2019). <br>For information about each test split, please see the <a href=" + "http://visualqa.org/challenge.html" + ">challenge</a> page.";
     $("#date").html($str);
 
     for (var i = 0; i < roe_std.length - 1; i++) {
@@ -284,7 +284,7 @@
     <script>
     function std() {
         // var $str = "Updated: " + roe_std[roe_std.length - 1]['date'] + " (results migrated weekly from <a href=" + "https://competitions.codalab.org/competitions/6961#results" + ">CodaLab</a>). <br>For information about each test split please see the <a href=" + "http://visualqa.org/challenge.html" + ">challenge</a> page.";
-        var $str = "Results as of 05/15/2020 (deadline for VQA Challenge 2020). <br>For information about each test split, please see the <a href=" + "http://visualqa.org/challenge.html" + ">challenge</a> page.";
+        var $str = "Results as of 05/10/2019 (deadline for VQA Challenge 2019). <br>For information about each test split, please see the <a href=" + "http://visualqa.org/challenge.html" + ">challenge</a> page.";
         $("#date").html($str);
         $("#dev").hide();
         $("#chall").hide();
@@ -297,7 +297,7 @@
     }
 
     function dev() {
-        var $str = "Results as of 05/15/2020 (deadline for VQA Challenge 2020). <br>For information about each test split, please see the <a href=" + "http://visualqa.org/challenge.html" + ">challenge</a> page.";
+        var $str = "Results as of 05/10/2019 (deadline for VQA Challenge 2019). <br>For information about each test split, please see the <a href=" + "http://visualqa.org/challenge.html" + ">challenge</a> page.";
         $("#date").html($str);
         $("#std").hide();
         $("#chall").hide();
@@ -312,7 +312,7 @@
     function chall() {
         $("#ref_std").hide();
         $("#ref").show();
-        var $str = "Results as of 05/15/2020 (deadline for VQA Challenge 2020). <br>For information about each test split, please see the <a href=" + "http://visualqa.org/challenge.html" + ">challenge</a> page.";
+        var $str = "Results as of 05/10/2019 (deadline for VQA Challenge 2019). <br>For information about each test split, please see the <a href=" + "http://visualqa.org/challenge.html" + ">challenge</a> page.";
         $("#date").html($str);
         $("#std").hide();
         $("#dev").hide();
