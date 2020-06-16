@@ -212,7 +212,7 @@
 		},
 		"team_name": "GridFeat+MoVie",
 		"team_members": "Duy-Kien Nguyen (Facebook AI Research), Huaizu Jiang (Facebook AI Research), Vedanuij Goswami (Facebook AI Research), Licheng Yu (Facebook AI Research), Xinlei Chen (Facebook AI Research)",
-		"ref": "https://github.com/facebookresearch/grid-feats-vqa; https://github.com/facebookresearch/mmf/tree/vqa_winner",
+		"ref": "https://github.com/facebookresearch/grid-feats-vqa",
 		"method": "We revisit grid features for VQA and use modulated convolutions for counting -- achieving state-of-the-art without vision-and-language pre-training.",
 		"team_name_order": 7
 	},
