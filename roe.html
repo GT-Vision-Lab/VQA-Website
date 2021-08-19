@@ -203,12 +203,12 @@
                 </tbody>
             </table>
             <p style="font-size:15px; color:black; font-weight: 50" align=center>Please see the <a href="http://visualqa.org/evaluation.html">evaluation</a> page for information about the metrics.</p>
-            <div style="margin-left:240px;"><span style="font-size:20px; color:black; font-weight: 50">References</span></div>
+            <!-- <div style="margin-left:240px;"><span style="font-size:20px; color:black; font-weight: 50">References</span></div> -->
             <br>
-            <table id="ref_std" align="center" cellpadding="1" width="60%" style="display:none">
+            <!-- <table id="ref_std" align="center" cellpadding="1" width="60%" style="display:none">
                 <tbody>
                 </tbody>
-            </table>
+            </table> -->
             <table id="ref" align="center" cellpadding="1" width="60%">
                 <tbody>
                 </tbody>
@@ -242,7 +242,7 @@
     $("#date").html($str);
 
     for (var i = 0; i < roe_std.length - 1; i++) {
-        var $row = $('<tr>' + '<th>' + '<p class="sub0" style="height: 2px; padding:0px;">' + roe_std[i]['team_name'] + '<sup>[' + roe_std[i]['team_name_order'] + ']</sup>' + '</p></th>' + '<th>' + '<p class="dataCell" style="height: 2px; padding:0px;">' + roe_std[i]['standard']['perAnswerType']['yes/no'] + '</p></th>' + '<th>' + '<p class="dataCell" style="height: 2px; padding:0px;">' + roe_std[i]['standard']['perAnswerType']['number'] + '</p></th>' + '<th>' + '<p class="dataCell" style="height: 2px; padding:0px;">' + roe_std[i]['standard']['perAnswerType']['other'] + '</p></th>' + '<th>' + '<p class="dataCell" style="height: 2px; padding:0px;">' + roe_std[i]['standard']['overall'] + '</p></th>' +
+        var $row = $('<tr>' + '<th>' + '<p class="sub0" style="height: 2px; padding:0px;">' + roe_std[i]['team_name'] + '</p></th>' + '<th>' + '<p class="dataCell" style="height: 2px; padding:0px;">' + roe_std[i]['standard']['perAnswerType']['yes/no'] + '</p></th>' + '<th>' + '<p class="dataCell" style="height: 2px; padding:0px;">' + roe_std[i]['standard']['perAnswerType']['number'] + '</p></th>' + '<th>' + '<p class="dataCell" style="height: 2px; padding:0px;">' + roe_std[i]['standard']['perAnswerType']['other'] + '</p></th>' + '<th>' + '<p class="dataCell" style="height: 2px; padding:0px;">' + roe_std[i]['standard']['overall'] + '</p></th>' +
             '</tr>');
 
         if (roe_std[i]['ref'] == "") {
@@ -281,7 +281,7 @@
         $('#std').append($row);
         $('#dev').append($row2);
         $('#chall').append($row3);
-        $('#ref').append($ref);
+        // $('#ref').append($ref);
     }
     </script>
     <script>
