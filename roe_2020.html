@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>VQA: Visual Question Answering</title>
+    <link rel="stylesheet" href="./static/css/foundation.css">
+    <link rel="stylesheet" href="./static/css/main.css">
+    <script src="./static/js/vendor/jquery.js"></script>
+    <script src="./static/js/jquery-2.1.3.min.js"></script>
+    <!-- load jQuery and tablesorter scripts -->
+    <script type="text/javascript" src="./static/tablesorter-master/js/jquery.tablesorter.js"></script>
+    <!-- tablesorter widgets (optional) -->
+    <script type="text/javascript" src="./static/tablesorter-master/js/jquery.tablesorter.widgets.js"></script>
+</head>
+
+<body class="off-canvas hide-extras" style="min-width:1200px; min-height:750px;">
+    <style>
+    table.tablesorter {
+        font-family: arial;
+        font-size: 12pt;
+        width: 60%;
+        text-align: left;
+    }
+
+    table.tablesorter thead tr th,
+    table.tablesorter tfoot tr th {
+        font-size: 12pt;
+        padding: 4px;
+    }
+
+    table.tablesorter th.tablesorter-headerUnSorted {
+        background-image: url('./static/img/sortdisb.png');
+        background-repeat: no-repeat;
+        background-position: center right;
+        cursor: pointer;
+    }
+
+    table.tablesorter tbody td {
+        color: #3D3D3D;
+        padding: 0px;
+        background-color: #FFF;
+        vertical-align: top;
+    }
+
+    table.tablesorter tbody tr.odd td {
+        background-color: #F0F0F6;
+    }
+
+    table.tablesorter th.tablesorter-headerAsc {
+        background-image: url(http://tablesorter.com/themes/blue/desc.gif);
+        background-repeat: no-repeat;
+        background-position: center right;
+    }
+
+    table.tablesorter th.tablesorter-headerDesc {
+        background-image: url('./static/img/down.png');
+        background-repeat: no-repeat;
+        background-position: center right;
+    }
+
+    table.tablesorter th.headerSortDown,
+    table.tablesorter th.headerSortUp {
+        background-color: #8dbdd8;
+    }
+
+    table.tablesorter .tablesorter-header.sorter-false {
+        background-image: url();
+    }
+    </style>
+    <header>
+        <div class="row">
+            <a href="http://visualqa.org/"><img style="height: 100px; position:absolute; top:4px; left:0px;" src="./static/img/main.png" alt="logo" /></a>
+            <h1><img style="height: 90px;" src="./static/img/logo.png" alt="logo" /><br></h1>
+            <br>
+        </div>
+    </header>
+    <div class="contain-to-grid">
+        <nav class="top-bar" data-topbar>
+            <section class="top-bar-section">
+                <!-- Right Nav Section -->
+                <ul class="right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="people.html">People</a></li>
+                    <li><a href="code.html">Code</a></li>
+                    <li><a href="http://vqa.cloudcv.org/" onClick="ga('send', 'event', { eventCategory: 'Outgoing Link', eventAction: 'Demo', eventLabel: 'Demo'});">Demo</a></li>
+                    <li class="has-dropdown"><a href="download.html">Download</a>
+                        <ul class="dropdown">
+                            <li><a href="download.html">VQA v2</a></li>
+                            <li><a href="vqa_v1_download.html">VQA v1</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="evaluation.html">Evaluation</a></li>
+                    <li class="active has-dropdown"><a href="challenge.html">Challenge</a>
+                        <ul class="dropdown">
+                             <li><a href="challenge.html">2021</a></li>
+                            <li><a href="challenge_2020.html">2020</a></li>
+                            <li><a href="challenge_2019.html">2019</a></li><li><a href="challenge_2018.html">2018</a></li>
+                            <li><a href="challenge_2017.html">2017</a></li>
+                            <li><a href="challenge_2016.html">2016</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown"><a href="http://visualqa.org/vqa_v2_teaser.html">Browse</a>
+                        <ul class="dropdown">
+                            <li><a href="http://visualqa.org/vqa_v2_teaser.html">VQA v2</a></li>
+                            <li><a href="https://vqabrowser.cloudcv.org/">VQA v1</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="http://visualqa.org/visualize/">Visualize</a></li>
+                    <!--                     <li class="has-dropdown"><a href="http://visualqa.org/visualize/">Visualize</a>
+                        <ul class="dropdown">
+                            <li><a href="http://visualqa.org/visualize/">VQA v2</a></li>
+                            <li><a href="http://visualqa.org/visualize/">VQA v1</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="has-dropdown"><a href="workshop.html">Workshop</a>
+                        <ul class="dropdown">
+                            <li><a href="workshop.html">2021</a></li>
+                            <li><a href="workshop_2020.html">2020</a></li>
+                            <li><a href="workshop_2019.html">2019</a></li>
+                            <li><a href="workshop_2018.html">2018</a></li>
+                            <li><a href="workshop_2017.html">2017</a></li>
+                            <li><a href="workshop_2016.html">2016</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sponsors.html">Sponsors</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="external.html">External</a></li>
+                </ul>
+            </section>
+        </nav>
+    </div>
+    <section role="main">
+        <div class="row">
+            <p style="font-size:20px; color:black; font-weight: 50" align=center>
+                <a href="http://visualqa.org/challenge.html#overview" style="padding:13px">Overview</a>
+                <a href="http://visualqa.org/challenge.html#guidelines" style="padding:13px">Challenge Guidelines</a>
+                <!--                 <a href="javascript:void(0)" data-dropdown="hover1" data-options="is_hover:true; hover_timeout:5000">Leaderboards &darr;</a>
+                <ul id="hover1" class="f-dropdown" data-dropdown-content>
+                    <li><a href="roe.html">Real Open-Ended</a></li>
+                    <li><a href="aoe.html">Abstract Open-Ended</a></li>
+                    <li><a href="rmc.html">Real Multiple-Choice</a></li>
+                    <li><a href="amc.html">Abstract Multiple-Choice</a></li>
+                </ul> -->
+            </p>
+            <p style="font-size:30px; color:black; font-weight: 50" align=center>Real Open-Ended</p>
+            <p style="font-size:20px; color:black; font-weight: 50" align=center>
+                <a onClick="std()" id="stdbtn" style="padding:13px;">Standard</a>
+                <a onClick="dev()" id="devbtn" style="padding:13px">&nbsp;Dev</a>
+                <a href="javascript:chall();" onClick="chall()" id="challbtn" style="padding:13px; background-color: #E5E4E2;">&nbsp;Challenge</a>
+            </p>
+            <br>
+            <p id="date" style="font-size:20px; color:black; font-weight: 50" align=center></p>
+        </div>
+        <div class="row">
+            <table id="std" class="tablesorter" align="center" cellpadding="1" style="display:none">
+                <thead>
+                    <tr>
+                        <th data-sorter="false" class="stubhead" rowspan="2" style="cursor:  default;"></th>
+                        <th data-sorter="false" class="stubhead" colspan="3" style="text-align:center; cursor:  default;">By Answer Type</th>
+                        <th class="stubhead" rowspan="2">Overall</th>
+                    </tr>
+                    <tr>
+                        <th colspan="1">Yes/No</th>
+                        <th colspan="1">Number</th>
+                        <th colspan="1">Other</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <table id="dev" class="tablesorter" align="center" cellpadding="1" style="display:none">
+                <thead>
+                    <tr>
+                        <th data-sorter="false" class="stubhead" rowspan="2" style="cursor:  default;"></th>
+                        <th data-sorter="false" class="stubhead" colspan="3" style="text-align:center; cursor:  default;">By Answer Type</th>
+                        <th class="stubhead" rowspan="2">Overall</th>
+                    </tr>
+                    <tr>
+                        <th colspan="1">Yes/No</th>
+                        <th colspan="1">Number</th>
+                        <th colspan="1">Other</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <table id="chall" class="tablesorter" align="center" cellpadding="1">
+                <thead>
+                    <tr>
+                        <th data-sorter="false" class="stubhead" rowspan="2" style="cursor:  default;"></th>
+                        <th data-sorter="false" class="stubhead" colspan="3" style="text-align:center; cursor:  default;">By Answer Type</th>
+                        <th class="stubhead" rowspan="2">Overall</th>
+                    </tr>
+                    <tr>
+                        <th colspan="1">Yes/No</th>
+                        <th colspan="1">Number</th>
+                        <th colspan="1">Other</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <p style="font-size:15px; color:black; font-weight: 50" align=center>Please see the <a href="http://visualqa.org/evaluation.html">evaluation</a> page for information about the metrics.</p>
+            <div style="margin-left:240px;"><span style="font-size:20px; color:black; font-weight: 50">References</span></div>
+            <br>
+            <table id="ref_std" align="center" cellpadding="1" width="60%" style="display:none">
+                <tbody>
+                </tbody>
+            </table>
+            <table id="ref" align="center" cellpadding="1" width="60%">
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script>
+    var roe;
+    var roe_std;
+    $.ajax({
+        dataType: "json",
+        url: "vqa_challenge_2020_leaderboard.json",
+        mimeType: "application/json",
+        async: false,
+        success: function(result) {
+            roe = result;
+        }
+    });
+
+    $.ajax({
+        dataType: "json",
+        url: "vqa_challenge_2020_leaderboard.json",
+        mimeType: "application/json",
+        async: false,
+        success: function(result) {
+            roe_std = result;
+        }
+    });
+
+    var $str = "Results as of 05/15/2020 (deadline for VQA Challenge 2020). <br>For information about each test split, please see the <a href=" + "http://visualqa.org/challenge.html" + ">challenge</a> page.";
+    $("#date").html($str);
+
+    for (var i = 0; i < roe_std.length - 1; i++) {
+        var $row = $('<tr>' + '<th>' + '<p class="sub0" style="height: 2px; padding:0px;">' + roe_std[i]['team_name'] + '<sup>[' + roe_std[i]['team_name_order'] + ']</sup>' + '</p></th>' + '<th>' + '<p class="dataCell" style="height: 2px; padding:0px;">' + roe_std[i]['standard']['perAnswerType']['yes/no'] + '</p></th>' + '<th>' + '<p class="dataCell" style="height: 2px; padding:0px;">' + roe_std[i]['standard']['perAnswerType']['number'] + '</p></th>' + '<th>' + '<p class="dataCell" style="height: 2px; padding:0px;">' + roe_std[i]['standard']['perAnswerType']['other'] + '</p></th>' + '<th>' + '<p class="dataCell" style="height: 2px; padding:0px;">' + roe_std[i]['standard']['overall'] + '</p></th>' +
+            '</tr>');
+
+        if (roe_std[i]['ref'] == "") {
+            var $ref = $('<tr>' + '<th style="text-align: left; width: 20%;">' + '<p class="sub0">[' + roe_std[i]['team_name_order'] + '] ' + roe_std[i]['team_name'] + '</a></p></th>' + '<td style="width: 40%">' + '<p class="dataCell">' + roe_std[i]['team_members'] + '</p></td>' + '<td>' + '<p class="dataCell">' + roe_std[i]['method'] + '</p></td>' + '</tr>');
+        } else {
+            var $ref = $('<tr>' + '<th style="text-align: left; width: 20%;">' + '<p class="sub0">[' + roe_std[i]['team_name_order'] + '] ' + '<a href="' + roe_std[i]['ref'] + '">' + roe_std[i]['team_name'] + '</a></p></th>' + '<td style="width: 40%">' + '<p class="dataCell">' + roe_std[i]['team_members'] + '</p></td>' + '<td>' + '<p class="dataCell">' + roe_std[i]['method'] + '</p></td>' + '</tr>');
+        }
+        $('#std').append($row);
+        $('#ref_std').append($ref);
+    }
+
+    for (var i = 0; i < roe.length; i++) {
+        // var $row = $('<tr>' + '<th>' + '<p class="sub0" style="height: 2px; padding:0px;">' + roe[i]['team_name'] + '</p></th>' + '<th>' + '<p class="dataCell" style="height: 2px; padding:0px;">' + roe[i]['standard']['perAnswerType']['yes/no'] + '</p></th>' + '<th>' + '<p class="dataCell" style="height: 2px; padding:0px;">' + roe[i]['standard']['perAnswerType']['number'] + '</p></th>' + '<th>' + '<p class="dataCell" style="height: 2px; padding:0px;">' + roe[i]['standard']['perAnswerType']['other'] + '</p></th>' + '<th>' + '<p class="dataCell" style="height: 2px; padding:0px;">' + roe[i]['standard']['overall'] + '</p></th>' +
+        //     '</tr>');
+
+        var $row2 = $('<tr>' + '<th>' + '<p class="sub0" style="height: 2px; padding:0px;">' + roe[i]['team_name'] + '</p></th>' + '<th>' + '<p class="dataCell" style="height: 2px; padding:0px;">' + roe[i]['dev']['perAnswerType']['yes/no'] + '</p></th>' + '<th>' + '<p class="dataCell" style="height: 2px; padding:0px;">' + roe[i]['dev']['perAnswerType']['number'] + '</p></th>' + '<th>' + '<p class="dataCell" style="height: 2px; padding:0px;">' + roe[i]['dev']['perAnswerType']['other'] + '</p></th>' + '<th>' + '<p class="dataCell" style="height: 2px; padding:0px;">' + roe[i]['dev']['overall'] + '</p></th>' + '</tr>');
+
+        var $row3 = $('<tr>' + '<th>' + '<p class="sub0" style="height: 2px; padding:0px;">' + roe[i]['team_name'] + '</p></th>' + '<th>' + '<p class="dataCell" style="height: 2px; padding:0px;">' + roe[i]['challenge']['perAnswerType']['yes/no'] + '</p></th>' + '<th>' + '<p class="dataCell" style="height: 2px; padding:0px;">' + roe[i]['challenge']['perAnswerType']['number'] + '</p></th>' + '<th>' + '<p class="dataCell" style="height: 2px; padding:0px;">' + roe[i]['challenge']['perAnswerType']['other'] + '</p></th>' + '<th>' + '<p class="dataCell" style="height: 2px; padding:0px;">' + roe[i]['challenge']['overall'] + '</p></th>' + '</tr>');
+
+        var $row2 = $('<tr>' + '<th>' + '<p class="sub0" style="height: 2px; padding:0px;">' + roe[i]['team_name'] + '<sup>[' + roe[i]['team_name_order'] + ']</sup>' + '</p></th>' + '<th>' + '<p class="dataCell" style="height: 2px; padding:0px;">' + roe[i]['dev']['perAnswerType']['yes/no'] + '</p></th>' + '<th>' + '<p class="dataCell" style="height: 2px; padding:0px;">' + roe[i]['dev']['perAnswerType']['number'] + '</p></th>' + '<th>' + '<p class="dataCell" style="height: 2px; padding:0px;">' + roe[i]['dev']['perAnswerType']['other'] + '</p></th>' + '<th>' + '<p class="dataCell" style="height: 2px; padding:0px;">' + roe[i]['dev']['overall'] + '</p></th>' + '</tr>');
+
+        var $row3 = $('<tr>' + '<th>' + '<p class="sub0" style="height: 2px; padding:0px;">' + roe[i]['team_name'] + '<sup>[' + roe[i]['team_name_order'] + ']</sup>' + '</p></th>' + '<th>' + '<p class="dataCell" style="height: 2px; padding:0px;">' + roe[i]['challenge']['perAnswerType']['yes/no'] + '</p></th>' + '<th>' + '<p class="dataCell" style="height: 2px; padding:0px;">' + roe[i]['challenge']['perAnswerType']['number'] + '</p></th>' + '<th>' + '<p class="dataCell" style="height: 2px; padding:0px;">' + roe[i]['challenge']['perAnswerType']['other'] + '</p></th>' + '<th>' + '<p class="dataCell" style="height: 2px; padding:0px;">' + roe[i]['challenge']['overall'] + '</p></th>' + '</tr>');
+
+        if (roe[i]['ref'] == "") {
+            var $ref = $('<tr>' + '<th style="text-align: left; width: 20%;">' + '<p class="sub0">' + roe[i]['team_name'] + '</a></p></th>' + '<td style="width: 40%">' + '<p class="dataCell">' + roe[i]['team_members'] + '</p></td>' + '<td>' + '<p class="dataCell">' + roe[i]['method'] + '</p></td>' + '</tr>');
+        } else {
+            var $ref = $('<tr>' + '<th style="text-align: left; width: 20%;">' + '<p class="sub0">' + '<a href="' + roe[i]['ref'] + '">' + roe[i]['team_name'] + '</a></p></th>' + '<td style="width: 40%">' + '<p class="dataCell">' + roe[i]['team_members'] + '</p></td>' + '<td>' + '<p class="dataCell">' + roe[i]['method'] + '</p></td>' + '</tr>');
+        }
+
+        if (roe[i]['ref'] == "") {
+            var $ref = $('<tr>' + '<th style="text-align: left; width: 20%;">' + '<p class="sub0">[' + roe[i]['team_name_order'] + '] ' + roe[i]['team_name'] + '</a></p></th>' + '<td style="width: 40%">' + '<p class="dataCell">' + roe[i]['team_members'] + '</p></td>' + '<td>' + '<p class="dataCell">' + roe[i]['method'] + '</p></td>' + '</tr>');
+        } else {
+            var $ref = $('<tr>' + '<th style="text-align: left; width: 20%;">' + '<p class="sub0">[' + roe[i]['team_name_order'] + '] ' + '<a href="' + roe[i]['ref'] + '">' + roe[i]['team_name'] + '</a></p></th>' + '<td style="width: 40%">' + '<p class="dataCell">' + roe[i]['team_members'] + '</p></td>' + '<td>' + '<p class="dataCell">' + roe[i]['method'] + '</p></td>' + '</tr>');
+        }
+
+        $('#std').append($row);
+        $('#dev').append($row2);
+        $('#chall').append($row3);
+        $('#ref').append($ref);
+    }
+    </script>
+    <script>
+    function std() {
+        // var $str = "Updated: " + roe_std[roe_std.length - 1]['date'] + " (results migrated weekly from <a href=" + "https://competitions.codalab.org/competitions/6961#results" + ">CodaLab</a>). <br>For information about each test split please see the <a href=" + "http://visualqa.org/challenge.html" + ">challenge</a> page.";
+        var $str = "Results as of 05/15/2020 (deadline for VQA Challenge 2020). <br>For information about each test split, please see the <a href=" + "http://visualqa.org/challenge.html" + ">challenge</a> page.";
+        $("#date").html($str);
+        $("#dev").hide();
+        $("#chall").hide();
+        $("#ref").hide();
+        $("#ref_std").show();
+        $("#std").show();
+        $("#stdbtn").attr("style", "padding:13px; background-color: #E5E4E2;")
+        $("#devbtn").attr("style", "padding:13px; background-color: #FFFFFF;")
+        $("#challbtn").attr("style", "padding:13px; background-color: #FFFFFF;")
+    }
+
+    function dev() {
+        var $str = "Results as of 05/15/2020 (deadline for VQA Challenge 2020). <br>For information about each test split, please see the <a href=" + "http://visualqa.org/challenge.html" + ">challenge</a> page.";
+        $("#date").html($str);
+        $("#std").hide();
+        $("#chall").hide();
+        $("#ref_std").hide();
+        $("#ref").show();
+        $("#dev").show();
+        $("#stdbtn").attr("style", "padding:13px; background-color: #FFFFFF;")
+        $("#devbtn").attr("style", "padding:13px; background-color: #E5E4E2;")
+        $("#challbtn").attr("style", "padding:13px; background-color: #FFFFFF;")
+    }
+
+    function chall() {
+        $("#ref_std").hide();
+        $("#ref").show();
+        var $str = "Results as of 05/15/2020 (deadline for VQA Challenge 2020). <br>For information about each test split, please see the <a href=" + "http://visualqa.org/challenge.html" + ">challenge</a> page.";
+        $("#date").html($str);
+        $("#std").hide();
+        $("#dev").hide();
+        $("#chall").show();
+        $("#stdbtn").attr("style", "padding:13px; background-color: #FFFFFF;")
+        $("#devbtn").attr("style", "padding:13px; background-color: #FFFFFF;")
+        $("#challbtn").attr("style", "padding:13px; background-color: #E5E4E2;")
+    }
+    </script>
+    <script src="./static/js/foundation.js"></script>
+    <script src="./static/js/foundation.dropdown.js"></script>
+    <script>
+    $(function() {
+        $("#std").tablesorter({
+            sortList: [
+                [4, 1]
+            ],
+            headers: {
+                1: {
+                    lockedOrder: 'desc'
+                },
+                2: {
+                    lockedOrder: 'desc'
+                },
+                3: {
+                    lockedOrder: 'desc'
+                },
+                4: {
+                    lockedOrder: 'desc'
+                },
+                5: {
+                    lockedOrder: 'desc'
+                }
+            }
+        });
+
+        $("#dev").tablesorter({
+            sortList: [
+                [4, 1]
+            ],
+            headers: {
+                1: {
+                    lockedOrder: 'desc'
+                },
+                2: {
+                    lockedOrder: 'desc'
+                },
+                3: {
+                    lockedOrder: 'desc'
+                },
+                4: {
+                    lockedOrder: 'desc'
+                },
+                5: {
+                    lockedOrder: 'desc'
+                }
+            }
+        });
+
+        $("#chall").tablesorter({
+            sortList: [
+                [4, 1]
+            ],
+            headers: {
+                1: {
+                    lockedOrder: 'desc'
+                },
+                2: {
+                    lockedOrder: 'desc'
+                },
+                3: {
+                    lockedOrder: 'desc'
+                },
+                4: {
+                    lockedOrder: 'desc'
+                },
+                5: {
+                    lockedOrder: 'desc'
+                }
+            }
+        });
+    });
+    </script>
+    <script>
+    $(document).foundation();
+    </script>
+    <!-- jquery smooth scroll to id's -->
+    <script>
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+</body>
+
+</html>

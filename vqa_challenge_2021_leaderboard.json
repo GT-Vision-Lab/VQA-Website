@@ -1,0 +1,1742 @@
+[
+	{
+		"challenge": {
+			"overall": 80.78,
+			"perAnswerType": {
+				"number": 80.84,
+				"other": 67.89,
+				"yes/no": 95.49
+			}
+		},
+		"dev": {
+			"overall": 80.73,
+			"perAnswerType": {
+				"number": 81.2,
+				"other": 67.82,
+				"yes/no": 95.47
+			}
+		},
+		"standard": {
+			"overall": 80.83,
+			"perAnswerType": {
+				"number": 81.29,
+				"other": 67.97,
+				"yes/no": 95.48
+			}
+		},
+		"team_name": "Human Baseline",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 56
+	},
+    
+    {
+		"challenge": {
+			"overall": 39.06,
+			"perAnswerType": {
+				"number": 27.38,
+				"other": 18.7,
+				"yes/no": 65.44
+			}
+		},
+		"dev": {
+			"overall": 38.45,
+			"perAnswerType": {
+				"number": 26.71,
+				"other": 18.17,
+				"yes/no": 65.05
+			}
+		},
+		"standard": {
+			"overall": 38.83,
+			"perAnswerType": {
+				"number": 27.31,
+				"other": 18.21,
+				"yes/no": 65.55
+			}
+		},
+		"team_name": "AI beast from mcgill",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 1
+	},
+	{
+		"challenge": {
+			"overall": 62.92,
+			"perAnswerType": {
+				"number": 43.48,
+				"other": 53.16,
+				"yes/no": 79.29
+			}
+		},
+		"dev": {
+			"overall": 62.61,
+			"perAnswerType": {
+				"number": 43.24,
+				"other": 53.02,
+				"yes/no": 78.99
+			}
+		},
+		"standard": {
+			"overall": 62.96,
+			"perAnswerType": {
+				"number": 42.79,
+				"other": 53.18,
+				"yes/no": 79.49
+			}
+		},
+		"team_name": "AL_polaris",
+		"team_members": "N/A",
+		"ref": "16",
+		"method": "16",
+		"team_name_order": 2
+	},
+	{
+		"challenge": {
+			"overall": 70.82,
+			"perAnswerType": {
+				"number": 53.9,
+				"other": 60.79,
+				"yes/no": 86.82
+			}
+		},
+		"dev": {
+			"overall": 70.41,
+			"perAnswerType": {
+				"number": 53.69,
+				"other": 60.38,
+				"yes/no": 86.57
+			}
+		},
+		"standard": {
+			"overall": 70.73,
+			"perAnswerType": {
+				"number": 53.55,
+				"other": 60.74,
+				"yes/no": 86.73
+			}
+		},
+		"team_name": "Ana",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 3
+	},
+	{
+		"challenge": {
+			"overall": 68.06,
+			"perAnswerType": {
+				"number": 48.95,
+				"other": 59.14,
+				"yes/no": 83.39
+			}
+		},
+		"dev": {
+			"overall": 67.68,
+			"perAnswerType": {
+				"number": 48.52,
+				"other": 58.66,
+				"yes/no": 83.35
+			}
+		},
+		"standard": {
+			"overall": 68.12,
+			"perAnswerType": {
+				"number": 48.15,
+				"other": 59.23,
+				"yes/no": 83.59
+			}
+		},
+		"team_name": "Arthurs",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 4
+	},
+	{
+		"challenge": {
+			"overall": 46.36,
+			"perAnswerType": {
+				"number": 31.67,
+				"other": 30.34,
+				"yes/no": 68.61
+			}
+		},
+		"dev": {
+			"overall": 46.28,
+			"perAnswerType": {
+				"number": 31.48,
+				"other": 30.08,
+				"yes/no": 69.02
+			}
+		},
+		"standard": {
+			"overall": 46.45,
+			"perAnswerType": {
+				"number": 31.86,
+				"other": 30.28,
+				"yes/no": 68.86
+			}
+		},
+		"team_name": "Bazavan Cristian",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 5
+	},
+	{
+		"challenge": {
+			"overall": 76.68,
+			"perAnswerType": {
+				"number": 61.85,
+				"other": 66.65,
+				"yes/no": 92.13
+			}
+		},
+		"dev": {
+			"overall": 76.58,
+			"perAnswerType": {
+				"number": 62.59,
+				"other": 66.6,
+				"yes/no": 91.95
+			}
+		},
+		"standard": {
+			"overall": 76.65,
+			"perAnswerType": {
+				"number": 61.53,
+				"other": 66.71,
+				"yes/no": 92.04
+			}
+		},
+		"team_name": "HSSLAB_INSPUR",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 6
+	},
+	{
+		"challenge": {
+			"overall": 70.52,
+			"perAnswerType": {
+				"number": 51.57,
+				"other": 60.9,
+				"yes/no": 86.62
+			}
+		},
+		"dev": {
+			"overall": 70.1,
+			"perAnswerType": {
+				"number": 51.91,
+				"other": 60.43,
+				"yes/no": 86.26
+			}
+		},
+		"standard": {
+			"overall": 70.46,
+			"perAnswerType": {
+				"number": 51.63,
+				"other": 60.67,
+				"yes/no": 86.66
+			}
+		},
+		"team_name": "Hao Shen",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "hbhbhb",
+		"team_name_order": 7
+	},
+	{
+		"challenge": {
+			"overall": 71.88,
+			"perAnswerType": {
+				"number": 55.16,
+				"other": 62.08,
+				"yes/no": 87.58
+			}
+		},
+		"dev": {
+			"overall": 71.59,
+			"perAnswerType": {
+				"number": 55.76,
+				"other": 61.75,
+				"yes/no": 87.29
+			}
+		},
+		"standard": {
+			"overall": 71.93,
+			"perAnswerType": {
+				"number": 55.27,
+				"other": 62.1,
+				"yes/no": 87.6
+			}
+		},
+		"team_name": "Haris",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 8
+	},
+	{
+		"challenge": {
+			"overall": 74.22,
+			"perAnswerType": {
+				"number": 53.48,
+				"other": 65.61,
+				"yes/no": 89.64
+			}
+		},
+		"dev": {
+			"overall": 73.92,
+			"perAnswerType": {
+				"number": 53.57,
+				"other": 65.24,
+				"yes/no": 89.53
+			}
+		},
+		"standard": {
+			"overall": 74.09,
+			"perAnswerType": {
+				"number": 53.82,
+				"other": 65.31,
+				"yes/no": 89.52
+			}
+		},
+		"team_name": "Harold",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 9
+	},
+	{
+		"challenge": {
+			"overall": 71.29,
+			"perAnswerType": {
+				"number": 53.22,
+				"other": 61.57,
+				"yes/no": 87.24
+			}
+		},
+		"dev": {
+			"overall": 71.02,
+			"perAnswerType": {
+				"number": 52.96,
+				"other": 61.25,
+				"yes/no": 87.25
+			}
+		},
+		"standard": {
+			"overall": 71.33,
+			"perAnswerType": {
+				"number": 53.26,
+				"other": 61.43,
+				"yes/no": 87.45
+			}
+		},
+		"team_name": "HooLoo",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 10
+	},
+	{
+		"challenge": {
+			"overall": 76.81,
+			"perAnswerType": {
+				"number": 61.57,
+				"other": 67.03,
+				"yes/no": 92.08
+			}
+		},
+		"dev": {
+			"overall": 76.63,
+			"perAnswerType": {
+				"number": 62.31,
+				"other": 66.76,
+				"yes/no": 91.95
+			}
+		},
+		"standard": {
+			"overall": 76.8,
+			"perAnswerType": {
+				"number": 61.51,
+				"other": 67.04,
+				"yes/no": 92.03
+			}
+		},
+		"team_name": "Katya",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 11
+	},
+	{
+		"challenge": {
+			"overall": 68.48,
+			"perAnswerType": {
+				"number": 49.28,
+				"other": 58.22,
+				"yes/no": 85.37
+			}
+		},
+		"dev": {
+			"overall": 68.04,
+			"perAnswerType": {
+				"number": 49.38,
+				"other": 57.86,
+				"yes/no": 84.91
+			}
+		},
+		"standard": {
+			"overall": 68.37,
+			"perAnswerType": {
+				"number": 48.98,
+				"other": 58.03,
+				"yes/no": 85.36
+			}
+		},
+		"team_name": "MC-CAN",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "hb",
+		"team_name_order": 12
+	},
+	{
+		"challenge": {
+			"overall": 75.58,
+			"perAnswerType": {
+				"number": 58.42,
+				"other": 66.47,
+				"yes/no": 90.6
+			}
+		},
+		"dev": {
+			"overall": 75.48,
+			"perAnswerType": {
+				"number": 58.93,
+				"other": 66.16,
+				"yes/no": 90.77
+			}
+		},
+		"standard": {
+			"overall": 75.73,
+			"perAnswerType": {
+				"number": 58.66,
+				"other": 66.51,
+				"yes/no": 90.82
+			}
+		},
+		"team_name": "MIL-nbgao",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "ens_25model",
+		"team_name_order": 13
+	},
+	{
+		"challenge": {
+			"overall": 76.65,
+			"perAnswerType": {
+				"number": 62.25,
+				"other": 66.6,
+				"yes/no": 92.0
+			}
+		},
+		"dev": {
+			"overall": 76.4,
+			"perAnswerType": {
+				"number": 62.22,
+				"other": 66.34,
+				"yes/no": 91.9
+			}
+		},
+		"standard": {
+			"overall": 76.51,
+			"perAnswerType": {
+				"number": 61.63,
+				"other": 66.58,
+				"yes/no": 91.84
+			}
+		},
+		"team_name": "Modal Master",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 14
+	},
+	{
+		"challenge": {
+			"overall": 71.44,
+			"perAnswerType": {
+				"number": 52.86,
+				"other": 61.73,
+				"yes/no": 87.52
+			}
+		},
+		"dev": {
+			"overall": 71.28,
+			"perAnswerType": {
+				"number": 53.66,
+				"other": 61.43,
+				"yes/no": 87.47
+			}
+		},
+		"standard": {
+			"overall": 71.6,
+			"perAnswerType": {
+				"number": 53.4,
+				"other": 61.71,
+				"yes/no": 87.76
+			}
+		},
+		"team_name": "Moka",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 15
+	},
+	{
+		"challenge": {
+			"overall": 78.8,
+			"perAnswerType": {
+				"number": 74.85,
+				"other": 67.67,
+				"yes/no": 92.56
+			}
+		},
+		"dev": {
+			"overall": 78.62,
+			"perAnswerType": {
+				"number": 74.78,
+				"other": 67.5,
+				"yes/no": 92.48
+			}
+		},
+		"standard": {
+			"overall": 78.69,
+			"perAnswerType": {
+				"number": 74.94,
+				"other": 67.62,
+				"yes/no": 92.39
+			}
+		},
+		"team_name": "PASH-SFE",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 16
+	},
+	{
+		"challenge": {
+			"overall": 70.8,
+			"perAnswerType": {
+				"number": 51.46,
+				"other": 60.87,
+				"yes/no": 87.35
+			}
+		},
+		"dev": {
+			"overall": 70.7,
+			"perAnswerType": {
+				"number": 51.59,
+				"other": 60.67,
+				"yes/no": 87.53
+			}
+		},
+		"standard": {
+			"overall": 70.82,
+			"perAnswerType": {
+				"number": 51.72,
+				"other": 60.61,
+				"yes/no": 87.56
+			}
+		},
+		"team_name": "PHIKN1GHT",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 17
+	},
+	{
+		"challenge": {
+			"overall": 78.4,
+			"perAnswerType": {
+				"number": 63.76,
+				"other": 69.42,
+				"yes/no": 92.6
+			}
+		},
+		"dev": {
+			"overall": 78.28,
+			"perAnswerType": {
+				"number": 63.96,
+				"other": 69.25,
+				"yes/no": 92.62
+			}
+		},
+		"standard": {
+			"overall": 78.34,
+			"perAnswerType": {
+				"number": 63.24,
+				"other": 69.33,
+				"yes/no": 92.66
+			}
+		},
+		"team_name": "ROSITA",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 18
+	},
+	{
+		"challenge": {
+			"overall": 70.33,
+			"perAnswerType": {
+				"number": 51.59,
+				"other": 60.78,
+				"yes/no": 86.28
+			}
+		},
+		"dev": {
+			"overall": 70.06,
+			"perAnswerType": {
+				"number": 51.55,
+				"other": 60.34,
+				"yes/no": 86.35
+			}
+		},
+		"standard": {
+			"overall": 70.43,
+			"perAnswerType": {
+				"number": 51.24,
+				"other": 60.77,
+				"yes/no": 86.59
+			}
+		},
+		"team_name": "RWSAN",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 19
+	},
+	{
+		"challenge": {
+			"overall": 79.78,
+			"perAnswerType": {
+				"number": 68.4,
+				"other": 70.65,
+				"yes/no": 93.27
+			}
+		},
+		"dev": {
+			"overall": 79.78,
+			"perAnswerType": {
+				"number": 68.86,
+				"other": 70.65,
+				"yes/no": 93.32
+			}
+		},
+		"standard": {
+			"overall": 79.69,
+			"perAnswerType": {
+				"number": 68.31,
+				"other": 70.42,
+				"yes/no": 93.32
+			}
+		},
+		"team_name": "Renaissance",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 20
+	},
+	{
+		"challenge": {
+			"overall": 29.03,
+			"perAnswerType": {
+				"number": 23.89,
+				"other": 9.33,
+				"yes/no": 52.9
+			}
+		},
+		"dev": {
+			"overall": 28.99,
+			"perAnswerType": {
+				"number": 23.76,
+				"other": 9.32,
+				"yes/no": 53.09
+			}
+		},
+		"standard": {
+			"overall": 28.95,
+			"perAnswerType": {
+				"number": 23.56,
+				"other": 9.13,
+				"yes/no": 53.13
+			}
+		},
+		"team_name": "SteveM Lancaster Uni",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "CLip fine tuned with near-matches used to train a variety of LSTMs, which are then selected MCQ style by a CLIP model using a maximum cosine similarity score between the Q+suggested answer pairs and the image embedding",
+		"team_name_order": 21
+	},
+	{
+		"challenge": {
+			"overall": 77.68,
+			"perAnswerType": {
+				"number": 64.75,
+				"other": 67.7,
+				"yes/no": 92.55
+			}
+		},
+		"dev": {
+			"overall": 77.52,
+			"perAnswerType": {
+				"number": 65.33,
+				"other": 67.47,
+				"yes/no": 92.47
+			}
+		},
+		"standard": {
+			"overall": 77.56,
+			"perAnswerType": {
+				"number": 64.72,
+				"other": 67.59,
+				"yes/no": 92.4
+			}
+		},
+		"team_name": "Summer",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 22
+	},
+	{
+		"challenge": {
+			"overall": 76.76,
+			"perAnswerType": {
+				"number": 61.01,
+				"other": 67.18,
+				"yes/no": 91.95
+			}
+		},
+		"dev": {
+			"overall": 76.65,
+			"perAnswerType": {
+				"number": 61.39,
+				"other": 66.98,
+				"yes/no": 92.0
+			}
+		},
+		"standard": {
+			"overall": 76.72,
+			"perAnswerType": {
+				"number": 61.27,
+				"other": 67.08,
+				"yes/no": 91.85
+			}
+		},
+		"team_name": "TaiwanTech",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 23
+	},
+	{
+		"challenge": {
+			"overall": 70.34,
+			"perAnswerType": {
+				"number": 52.52,
+				"other": 60.41,
+				"yes/no": 86.49
+			}
+		},
+		"dev": {
+			"overall": 70.2,
+			"perAnswerType": {
+				"number": 52.26,
+				"other": 60.22,
+				"yes/no": 86.63
+			}
+		},
+		"standard": {
+			"overall": 70.37,
+			"perAnswerType": {
+				"number": 51.93,
+				"other": 60.33,
+				"yes/no": 86.76
+			}
+		},
+		"team_name": "Telsa",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 24
+	},
+	{
+		"challenge": {
+			"overall": 70.38,
+			"perAnswerType": {
+				"number": 52.64,
+				"other": 60.4,
+				"yes/no": 86.56
+			}
+		},
+		"dev": {
+			"overall": 70.12,
+			"perAnswerType": {
+				"number": 52.04,
+				"other": 60.09,
+				"yes/no": 86.64
+			}
+		},
+		"standard": {
+			"overall": 70.48,
+			"perAnswerType": {
+				"number": 51.65,
+				"other": 60.59,
+				"yes/no": 86.79
+			}
+		},
+		"team_name": "Telsa2",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 25
+	},
+	{
+		"challenge": {
+			"overall": 78.63,
+			"perAnswerType": {
+				"number": 63.99,
+				"other": 69.27,
+				"yes/no": 93.26
+			}
+		},
+		"dev": {
+			"overall": 78.33,
+			"perAnswerType": {
+				"number": 63.56,
+				"other": 69.06,
+				"yes/no": 93.06
+			}
+		},
+		"standard": {
+			"overall": 78.4,
+			"perAnswerType": {
+				"number": 63.06,
+				"other": 69.12,
+				"yes/no": 93.1
+			}
+		},
+		"team_name": "UNIMO",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "https://arxiv.org/abs/2012.15409",
+		"team_name_order": 26
+	},
+	{
+		"challenge": {
+			"overall": 73.31,
+			"perAnswerType": {
+				"number": 55.98,
+				"other": 62.97,
+				"yes/no": 89.8
+			}
+		},
+		"dev": {
+			"overall": 73.07,
+			"perAnswerType": {
+				"number": 56.07,
+				"other": 62.7,
+				"yes/no": 89.7
+			}
+		},
+		"standard": {
+			"overall": 73.28,
+			"perAnswerType": {
+				"number": 55.73,
+				"other": 62.89,
+				"yes/no": 89.83
+			}
+		},
+		"team_name": "Uniter-CL",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 27
+	},
+	{
+		"challenge": {
+			"overall": 72.93,
+			"perAnswerType": {
+				"number": 55.57,
+				"other": 63.51,
+				"yes/no": 88.37
+			}
+		},
+		"dev": {
+			"overall": 72.62,
+			"perAnswerType": {
+				"number": 55.33,
+				"other": 63.31,
+				"yes/no": 88.11
+			}
+		},
+		"standard": {
+			"overall": 72.93,
+			"perAnswerType": {
+				"number": 55.3,
+				"other": 63.5,
+				"yes/no": 88.4
+			}
+		},
+		"team_name": "XMU_MAC_VQA",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 28
+	},
+	{
+		"challenge": {
+			"overall": 71.29,
+			"perAnswerType": {
+				"number": 52.75,
+				"other": 61.67,
+				"yes/no": 87.26
+			}
+		},
+		"dev": {
+			"overall": 70.94,
+			"perAnswerType": {
+				"number": 52.72,
+				"other": 61.2,
+				"yes/no": 87.19
+			}
+		},
+		"standard": {
+			"overall": 71.38,
+			"perAnswerType": {
+				"number": 52.15,
+				"other": 61.72,
+				"yes/no": 87.54
+			}
+		},
+		"team_name": "YichaoWang",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 29
+	},
+	{
+		"challenge": {
+			"overall": 69.57,
+			"perAnswerType": {
+				"number": 53.02,
+				"other": 59.47,
+				"yes/no": 85.56
+			}
+		},
+		"dev": {
+			"overall": 69.41,
+			"perAnswerType": {
+				"number": 53.42,
+				"other": 59.39,
+				"yes/no": 85.36
+			}
+		},
+		"standard": {
+			"overall": 69.69,
+			"perAnswerType": {
+				"number": 52.57,
+				"other": 59.78,
+				"yes/no": 85.58
+			}
+		},
+		"team_name": "ckjzjh",
+		"team_members": "N/A",
+		"ref": "mmm",
+		"method": "mmm",
+		"team_name_order": 30
+	},
+	{
+		"challenge": {
+			"overall": 71.38,
+			"perAnswerType": {
+				"number": 53.35,
+				"other": 61.59,
+				"yes/no": 87.41
+			}
+		},
+		"dev": {
+			"overall": 71.14,
+			"perAnswerType": {
+				"number": 53.17,
+				"other": 61.33,
+				"yes/no": 87.39
+			}
+		},
+		"standard": {
+			"overall": 71.51,
+			"perAnswerType": {
+				"number": 52.76,
+				"other": 61.74,
+				"yes/no": 87.65
+			}
+		},
+		"team_name": "cp",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 31
+	},
+	{
+		"challenge": {
+			"overall": 75.46,
+			"perAnswerType": {
+				"number": 57.78,
+				"other": 65.77,
+				"yes/no": 91.28
+			}
+		},
+		"dev": {
+			"overall": 75.21,
+			"perAnswerType": {
+				"number": 58.21,
+				"other": 65.42,
+				"yes/no": 91.18
+			}
+		},
+		"standard": {
+			"overall": 75.45,
+			"perAnswerType": {
+				"number": 58.03,
+				"other": 65.68,
+				"yes/no": 91.25
+			}
+		},
+		"team_name": "dice",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "DICE(base_20e)",
+		"team_name_order": 32
+	},
+	{
+		"challenge": {
+			"overall": 71.63,
+			"perAnswerType": {
+				"number": 55.96,
+				"other": 61.78,
+				"yes/no": 87.1
+			}
+		},
+		"dev": {
+			"overall": 71.31,
+			"perAnswerType": {
+				"number": 55.84,
+				"other": 61.45,
+				"yes/no": 86.94
+			}
+		},
+		"standard": {
+			"overall": 71.67,
+			"perAnswerType": {
+				"number": 55.34,
+				"other": 61.82,
+				"yes/no": 87.29
+			}
+		},
+		"team_name": "enenenne",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 33
+	},
+	{
+		"challenge": {
+			"overall": 65.7,
+			"perAnswerType": {
+				"number": 46.37,
+				"other": 55.71,
+				"yes/no": 82.31
+			}
+		},
+		"dev": {
+			"overall": 65.39,
+			"perAnswerType": {
+				"number": 45.56,
+				"other": 55.67,
+				"yes/no": 82.06
+			}
+		},
+		"standard": {
+			"overall": 65.91,
+			"perAnswerType": {
+				"number": 46.09,
+				"other": 56.05,
+				"yes/no": 82.44
+			}
+		},
+		"team_name": "gxnu",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "None",
+		"team_name_order": 34
+	},
+	{
+		"challenge": {
+			"overall": 70.88,
+			"perAnswerType": {
+				"number": 52.52,
+				"other": 61.03,
+				"yes/no": 87.07
+			}
+		},
+		"dev": {
+			"overall": 70.5,
+			"perAnswerType": {
+				"number": 52.54,
+				"other": 60.68,
+				"yes/no": 86.76
+			}
+		},
+		"standard": {
+			"overall": 70.85,
+			"perAnswerType": {
+				"number": 52.17,
+				"other": 60.87,
+				"yes/no": 87.23
+			}
+		},
+		"team_name": "hhhy",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 35
+	},
+	{
+		"challenge": {
+			"overall": 72.47,
+			"perAnswerType": {
+				"number": 54.46,
+				"other": 63.27,
+				"yes/no": 87.84
+			}
+		},
+		"dev": {
+			"overall": 72.45,
+			"perAnswerType": {
+				"number": 54.56,
+				"other": 63.13,
+				"yes/no": 88.12
+			}
+		},
+		"standard": {
+			"overall": 72.66,
+			"perAnswerType": {
+				"number": 55.27,
+				"other": 63.16,
+				"yes/no": 88.14
+			}
+		},
+		"team_name": "lisizhandui",
+		"team_members": "N/A",
+		"ref": "4_6rl.json",
+		"method": "4_6rl.json",
+		"team_name_order": 36
+	},
+	{
+		"challenge": {
+			"overall": 74.59,
+			"perAnswerType": {
+				"number": 58.68,
+				"other": 64.97,
+				"yes/no": 89.87
+			}
+		},
+		"dev": {
+			"overall": 74.22,
+			"perAnswerType": {
+				"number": 59.35,
+				"other": 64.61,
+				"yes/no": 89.4
+			}
+		},
+		"standard": {
+			"overall": 74.59,
+			"perAnswerType": {
+				"number": 58.6,
+				"other": 64.91,
+				"yes/no": 89.91
+			}
+		},
+		"team_name": "liuyuhang",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 37
+	},
+	{
+		"challenge": {
+			"overall": 71.19,
+			"perAnswerType": {
+				"number": 53.69,
+				"other": 61.28,
+				"yes/no": 87.23
+			}
+		},
+		"dev": {
+			"overall": 70.93,
+			"perAnswerType": {
+				"number": 53.37,
+				"other": 61.15,
+				"yes/no": 87.03
+			}
+		},
+		"standard": {
+			"overall": 71.31,
+			"perAnswerType": {
+				"number": 52.99,
+				"other": 61.41,
+				"yes/no": 87.51
+			}
+		},
+		"team_name": "lpp",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 38
+	},
+	{
+		"challenge": {
+			"overall": 0.02,
+			"perAnswerType": {
+				"number": 0.0,
+				"other": 0.05,
+				"yes/no": 0.0
+			}
+		},
+		"dev": {
+			"overall": 0.04,
+			"perAnswerType": {
+				"number": 0.0,
+				"other": 0.07,
+				"yes/no": 0.0
+			}
+		},
+		"standard": {
+			"overall": 0.03,
+			"perAnswerType": {
+				"number": 0.01,
+				"other": 0.05,
+				"yes/no": 0.0
+			}
+		},
+		"team_name": "mafia",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 39
+	},
+	{
+		"challenge": {
+			"overall": 69.57,
+			"perAnswerType": {
+				"number": 50.34,
+				"other": 60.02,
+				"yes/no": 85.66
+			}
+		},
+		"dev": {
+			"overall": 69.38,
+			"perAnswerType": {
+				"number": 49.82,
+				"other": 59.82,
+				"yes/no": 85.79
+			}
+		},
+		"standard": {
+			"overall": 69.53,
+			"perAnswerType": {
+				"number": 49.34,
+				"other": 59.83,
+				"yes/no": 85.99
+			}
+		},
+		"team_name": "muziyongshixin",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 40
+	},
+	{
+		"challenge": {
+			"overall": 71.5,
+			"perAnswerType": {
+				"number": 53.56,
+				"other": 61.69,
+				"yes/no": 87.53
+			}
+		},
+		"dev": {
+			"overall": 70.93,
+			"perAnswerType": {
+				"number": 52.64,
+				"other": 61.19,
+				"yes/no": 87.19
+			}
+		},
+		"standard": {
+			"overall": 71.48,
+			"perAnswerType": {
+				"number": 53.09,
+				"other": 61.76,
+				"yes/no": 87.48
+			}
+		},
+		"team_name": "outlook_vqa",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 41
+	},
+	{
+		"challenge": {
+			"overall": 71.1,
+			"perAnswerType": {
+				"number": 53.43,
+				"other": 61.2,
+				"yes/no": 87.15
+			}
+		},
+		"dev": {
+			"overall": 70.84,
+			"perAnswerType": {
+				"number": 53.46,
+				"other": 60.9,
+				"yes/no": 87.09
+			}
+		},
+		"standard": {
+			"overall": 71.14,
+			"perAnswerType": {
+				"number": 53.38,
+				"other": 61.15,
+				"yes/no": 87.29
+			}
+		},
+		"team_name": "shi",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 42
+	},
+	{
+		"challenge": {
+			"overall": 72.04,
+			"perAnswerType": {
+				"number": 53.49,
+				"other": 62.63,
+				"yes/no": 87.78
+			}
+		},
+		"dev": {
+			"overall": 71.82,
+			"perAnswerType": {
+				"number": 53.82,
+				"other": 62.07,
+				"yes/no": 88.02
+			}
+		},
+		"standard": {
+			"overall": 72.12,
+			"perAnswerType": {
+				"number": 53.79,
+				"other": 62.38,
+				"yes/no": 88.12
+			}
+		},
+		"team_name": "snow",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 43
+	},
+	{
+		"challenge": {
+			"overall": 77.95,
+			"perAnswerType": {
+				"number": 67.52,
+				"other": 67.59,
+				"yes/no": 92.58
+			}
+		},
+		"dev": {
+			"overall": 77.79,
+			"perAnswerType": {
+				"number": 67.98,
+				"other": 67.42,
+				"yes/no": 92.44
+			}
+		},
+		"standard": {
+			"overall": 77.82,
+			"perAnswerType": {
+				"number": 67.52,
+				"other": 67.56,
+				"yes/no": 92.32
+			}
+		},
+		"team_name": "sunlan",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 44
+	},
+	{
+		"challenge": {
+			"overall": 75.19,
+			"perAnswerType": {
+				"number": 56.95,
+				"other": 65.58,
+				"yes/no": 91.09
+			}
+		},
+		"dev": {
+			"overall": 74.95,
+			"perAnswerType": {
+				"number": 57.04,
+				"other": 65.36,
+				"yes/no": 90.94
+			}
+		},
+		"standard": {
+			"overall": 75.14,
+			"perAnswerType": {
+				"number": 57.45,
+				"other": 65.35,
+				"yes/no": 91.02
+			}
+		},
+		"team_name": "test987456",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 45
+	},
+	{
+		"challenge": {
+			"overall": 72.24,
+			"perAnswerType": {
+				"number": 54.75,
+				"other": 62.7,
+				"yes/no": 87.85
+			}
+		},
+		"dev": {
+			"overall": 71.99,
+			"perAnswerType": {
+				"number": 55.11,
+				"other": 62.13,
+				"yes/no": 87.99
+			}
+		},
+		"standard": {
+			"overall": 72.24,
+			"perAnswerType": {
+				"number": 54.68,
+				"other": 62.48,
+				"yes/no": 88.07
+			}
+		},
+		"team_name": "test_tju",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 46
+	},
+	{
+		"challenge": {
+			"overall": 73.18,
+			"perAnswerType": {
+				"number": 55.64,
+				"other": 63.93,
+				"yes/no": 88.47
+			}
+		},
+		"dev": {
+			"overall": 73.03,
+			"perAnswerType": {
+				"number": 55.34,
+				"other": 63.61,
+				"yes/no": 88.76
+			}
+		},
+		"standard": {
+			"overall": 73.21,
+			"perAnswerType": {
+				"number": 55.51,
+				"other": 63.7,
+				"yes/no": 88.79
+			}
+		},
+		"team_name": "threepigs",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 47
+	},
+	{
+		"challenge": {
+			"overall": 70.85,
+			"perAnswerType": {
+				"number": 51.24,
+				"other": 61.3,
+				"yes/no": 87.04
+			}
+		},
+		"dev": {
+			"overall": 70.73,
+			"perAnswerType": {
+				"number": 51.71,
+				"other": 61.07,
+				"yes/no": 87.11
+			}
+		},
+		"standard": {
+			"overall": 71.02,
+			"perAnswerType": {
+				"number": 51.24,
+				"other": 61.31,
+				"yes/no": 87.37
+			}
+		},
+		"team_name": "tomato",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "5049230",
+		"team_name_order": 48
+	},
+	{
+		"challenge": {
+			"overall": 69.92,
+			"perAnswerType": {
+				"number": 51.5,
+				"other": 59.74,
+				"yes/no": 86.51
+			}
+		},
+		"dev": {
+			"overall": 69.6,
+			"perAnswerType": {
+				"number": 51.51,
+				"other": 59.36,
+				"yes/no": 86.38
+			}
+		},
+		"standard": {
+			"overall": 69.96,
+			"perAnswerType": {
+				"number": 50.94,
+				"other": 59.76,
+				"yes/no": 86.69
+			}
+		},
+		"team_name": "trouble",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "None",
+		"team_name_order": 49
+	},
+	{
+		"challenge": {
+			"overall": 71.54,
+			"perAnswerType": {
+				"number": 55.99,
+				"other": 61.47,
+				"yes/no": 87.23
+			}
+		},
+		"dev": {
+			"overall": 71.27,
+			"perAnswerType": {
+				"number": 55.42,
+				"other": 61.22,
+				"yes/no": 87.21
+			}
+		},
+		"standard": {
+			"overall": 71.53,
+			"perAnswerType": {
+				"number": 55.11,
+				"other": 61.46,
+				"yes/no": 87.42
+			}
+		},
+		"team_name": "vqa",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 50
+	},
+	{
+		"challenge": {
+			"overall": 71.29,
+			"perAnswerType": {
+				"number": 52.84,
+				"other": 61.69,
+				"yes/no": 87.23
+			}
+		},
+		"dev": {
+			"overall": 71.1,
+			"perAnswerType": {
+				"number": 52.76,
+				"other": 61.5,
+				"yes/no": 87.23
+			}
+		},
+		"standard": {
+			"overall": 71.48,
+			"perAnswerType": {
+				"number": 52.87,
+				"other": 61.77,
+				"yes/no": 87.53
+			}
+		},
+		"team_name": "vqa1",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 51
+	},
+	{
+		"challenge": {
+			"overall": 71.36,
+			"perAnswerType": {
+				"number": 52.98,
+				"other": 61.7,
+				"yes/no": 87.33
+			}
+		},
+		"dev": {
+			"overall": 71.06,
+			"perAnswerType": {
+				"number": 52.77,
+				"other": 61.36,
+				"yes/no": 87.27
+			}
+		},
+		"standard": {
+			"overall": 71.46,
+			"perAnswerType": {
+				"number": 52.95,
+				"other": 61.67,
+				"yes/no": 87.56
+			}
+		},
+		"team_name": "vqa2",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 52
+	},
+	{
+		"challenge": {
+			"overall": 71.4,
+			"perAnswerType": {
+				"number": 53.64,
+				"other": 61.66,
+				"yes/no": 87.3
+			}
+		},
+		"dev": {
+			"overall": 70.93,
+			"perAnswerType": {
+				"number": 53.37,
+				"other": 61.11,
+				"yes/no": 87.09
+			}
+		},
+		"standard": {
+			"overall": 71.37,
+			"perAnswerType": {
+				"number": 53.11,
+				"other": 61.5,
+				"yes/no": 87.51
+			}
+		},
+		"team_name": "vqa_ccq",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 53
+	},
+	{
+		"challenge": {
+			"overall": 72.04,
+			"perAnswerType": {
+				"number": 53.49,
+				"other": 62.63,
+				"yes/no": 87.79
+			}
+		},
+		"dev": {
+			"overall": 71.83,
+			"perAnswerType": {
+				"number": 53.82,
+				"other": 62.08,
+				"yes/no": 88.02
+			}
+		},
+		"standard": {
+			"overall": 72.13,
+			"perAnswerType": {
+				"number": 53.81,
+				"other": 62.4,
+				"yes/no": 88.12
+			}
+		},
+		"team_name": "zxs",
+		"team_members": "N/A",
+		"ref": "",
+		"method": "",
+		"team_name_order": 54
+	},
+	{
+		"challenge": {
+			"overall": 72.66,
+			"perAnswerType": {
+				"number": 54.89,
+				"other": 63.44,
+				"yes/no": 87.98
+			}
+		},
+		"dev": {
+			"overall": 72.59,
+			"perAnswerType": {
+				"number": 55.3,
+				"other": 63.06,
+				"yes/no": 88.34
+			}
+		},
+		"standard": {
+			"overall": 72.67,
+			"perAnswerType": {
+				"number": 54.78,
+				"other": 63.29,
+				"yes/no": 88.16
+			}
+		},
+		"team_name": "zxxw",
+		"team_members": "N/A",
+		"ref": "4_4rl.json",
+		"method": "4_4rl.json",
+		"team_name_order": 55
+	},
+	{
+		"date": "2021-06-06"
+	}
+]
