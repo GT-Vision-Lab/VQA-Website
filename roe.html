@@ -220,7 +220,7 @@
     var roe_std;
     $.ajax({
         dataType: "json",
-        url: "vqa_challenge_2020_leaderboard.json",
+        url: "vqa_challenge_2021_leaderboard.json",
         mimeType: "application/json",
         async: false,
         success: function(result) {
@@ -230,7 +230,7 @@
 
     $.ajax({
         dataType: "json",
-        url: "vqa_challenge_2020_leaderboard.json",
+        url: "vqa_challenge_2021_leaderboard.json",
         mimeType: "application/json",
         async: false,
         success: function(result) {
@@ -238,7 +238,7 @@
         }
     });
 
-    var $str = "Results as of 05/15/2020 (deadline for VQA Challenge 2020). <br>For information about each test split, please see the <a href=" + "http://visualqa.org/challenge.html" + ">challenge</a> page.";
+    var $str = "Results as of 05/07/2021 (deadline for VQA Challenge 2021). <br>For information about each test split, please see the <a href=" + "http://visualqa.org/challenge.html" + ">challenge</a> page.";
     $("#date").html($str);
 
     for (var i = 0; i < roe_std.length - 1; i++) {
