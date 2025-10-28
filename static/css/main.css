@@ -109,3 +109,23 @@ header h4 {
     font-size: 30px;
     line-height: 60px;
 }
+
+.announcement-banner {
+  background-color: #fffae6;
+  border-bottom: 2px solid #ffd24d;
+  text-align: center;
+  padding: 10px 15px;
+  font-size: 1.1em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.announcement-banner p {
+  margin: 0;
+  color: #333;
+}
+
+.announcement-banner a {
+  color: #b57f00;
+  text-decoration: underline;
+  font-weight: 600;
+}
